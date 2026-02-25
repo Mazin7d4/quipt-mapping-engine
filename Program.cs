@@ -1,3 +1,5 @@
+using System.Linq;
+using QuiptMappingEngine.Services;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -32,6 +34,47 @@ app.MapGet("/weatherforecast", () =>
     return forecast;
 })
 .WithName("GetWeatherForecast");
+
+
+// ===============================
+// Quipt Schema Parser
+// ===============================
+
+app.MapGet("/quipt-schema", () =>
+{
+    var parser = new QuiptSchemaParser();
+    var filePath = @"QuiptData\Laptops.xml";
+
+    if (!File.Exists(filePath))
+    {
+        return Results.Text($"File NOT found at: {filePath}");
+    }
+
+    try
+    {
+        var fields = parser.ParseFields(filePath);
+
+        var result = "";
+
+        foreach (var f in fields)
+        {
+            result += $"Name: {f.Name}\n";
+            result += $"Path: {f.Path}\n";
+            result += $"Type: {f.DataType}\n";
+            result += $"Required: {f.IsRequired}\n";
+            result += "-------------------------\n";
+        }
+
+        result += $"\nTotal Fields: {fields.Count}\n";
+
+        return Results.Text(result);
+    }
+    catch (Exception ex)
+    {
+        return Results.Text($"ERROR:\n{ex.Message}");
+    }
+});
+
 
 app.Run();
 

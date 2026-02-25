@@ -1,0 +1,3308 @@
+<ArrayOfInventoryVirtualResult xmlns="http://schemas.quipt.com/api" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+	<InventoryVirtualResult>
+		<Id i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">e3b2415e-7985-4b6e-914d-2800d6aa1129</Id>
+		<SKU>164302</SKU>
+		<Vendor>
+			<Id>6c6b5974-a9af-4a96-9aaa-d84347126457</Id>
+			<Name>Regency Technologies</Name>
+			<Code i:nil="true"/>
+			<RelationshipId>993d856b-2461-4737-bc62-2dec5cee993a</RelationshipId>
+			<MarketplaceName/>
+		</Vendor>
+		<MapId>B0FMWD67K7</MapId>
+		<ARP>
+			<Units>USD</Units>
+			<Value>279.0000</Value>
+		</ARP>
+		<CatalogStatus>Published</CatalogStatus>
+		<InventoryStatus>None</InventoryStatus>
+		<Comment i:nil="true"/>
+		<On>true</On>
+		<Available>
+			<Units>Each</Units>
+			<Value>155.0000</Value>
+		</Available>
+		<Blocked>
+			<Units>Each</Units>
+			<Value>0.0000</Value>
+		</Blocked>
+		<Catalog>
+			<AdditionalImages>
+				<Asset>
+					<Description i:nil="true"/>
+					<Flags>0</Flags>
+					<Id>e011879f-e412-4083-9f81-4352d1edd573</Id>
+					<Name>2</Name>
+					<Type>Image</Type>
+					<URL>https://api.getquipt.com/v2/Image/e011879f-e412-4083-9f81-4352d1edd573.jpg</URL>
+					<Height i:nil="true"/>
+					<Resolution i:nil="true"/>
+					<Width i:nil="true"/>
+				</Asset>
+				<Asset>
+					<Description i:nil="true"/>
+					<Flags>0</Flags>
+					<Id>94a2e241-9e38-4f33-9686-925535451852</Id>
+					<Name>3</Name>
+					<Type>Image</Type>
+					<URL>https://api.getquipt.com/v2/Image/94a2e241-9e38-4f33-9686-925535451852.jpg</URL>
+					<Height i:nil="true"/>
+					<Resolution i:nil="true"/>
+					<Width i:nil="true"/>
+				</Asset>
+				<Asset>
+					<Description i:nil="true"/>
+					<Flags>0</Flags>
+					<Id>8ae24f53-4839-458d-8e1c-acd2c409b534</Id>
+					<Name>4</Name>
+					<Type>Image</Type>
+					<URL>https://api.getquipt.com/v2/Image/8ae24f53-4839-458d-8e1c-acd2c409b534.jpg</URL>
+					<Height i:nil="true"/>
+					<Resolution i:nil="true"/>
+					<Width i:nil="true"/>
+				</Asset>
+			</AdditionalImages>
+			<AltTitle>Lenovo ThinkCentre M80q (16GB RAM, 256GB SSD, i5-10500T 2.3GHz) Win11P, Black</AltTitle>
+			<AltTitle2/>
+			<Attributes>
+				<Attribute>
+					<Code>HDSPEED</Code>
+					<Id>2638d3c6-cf49-4f7f-9ef9-0239112f9784</Id>
+					<IsOption>false</IsOption>
+					<Name>Hard Drive Speed (RPM)</Name>
+					<Section>
+						<Id>cc57cc52-2b21-406f-903d-252fd3591945</Id>
+						<Name>Storage</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>TOTALPCIX8</Code>
+					<Id>9643bfee-d26d-406f-9860-023a07da871f</Id>
+					<IsOption>false</IsOption>
+					<Name>Total PCI Express X8 Slots</Name>
+					<Section>
+						<Id>c848017d-5f8b-4cad-91da-528b1bc64524</Id>
+						<Name>Expandability</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>USBCPORTS</Code>
+					<Id>3af6a066-2ada-48c1-9a28-0716fc5ca35e</Id>
+					<IsOption>false</IsOption>
+					<Name>Total USB-C Ports</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>1</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>HDTYPEHWARE</Code>
+					<Id>8b33a26d-ad6e-4d82-8595-08ce484b5d8f</Id>
+					<IsOption>false</IsOption>
+					<Name>Hard Drive Type</Name>
+					<Section>
+						<Id>cc57cc52-2b21-406f-903d-252fd3591945</Id>
+						<Name>Storage</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Solid State Drive (SSD)</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>ENERGYSTAR</Code>
+					<Id>7ced7df3-1a11-4e61-ba52-127f031b2118</Id>
+					<IsOption>false</IsOption>
+					<Name>Energy Star Compliant</Name>
+					<Section>
+						<Id>52e50eed-2591-4014-8f37-2980b06e689d</Id>
+						<Name>General Information</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>YES</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>LIQUIDCOOL</Code>
+					<Id>bbbbd019-ec58-401f-9351-14bb9dffb0c7</Id>
+					<IsOption>false</IsOption>
+					<Name>Liquid Cooling</Name>
+					<Section>
+						<Id>52e50eed-2591-4014-8f37-2980b06e689d</Id>
+						<Name>General Information</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>NO</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>OPTDR1</Code>
+					<Id>548c52d8-28af-4682-b0a2-1bba6bd42ddd</Id>
+					<IsOption>false</IsOption>
+					<Name>Optical Drive Type</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Not Applicable</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>CPUCORE</Code>
+					<Id>57e6db51-87ac-494e-b434-1c0cc28f5131</Id>
+					<IsOption>false</IsOption>
+					<Name># of Processor Cores</Name>
+					<Section>
+						<Id>69a2c798-6e32-4223-a197-c9a0dcd19bff</Id>
+						<Name>Processor</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>6</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>TOTALEXPBAY</Code>
+					<Id>370e45be-e678-4346-bb69-1da1fc9b85f4</Id>
+					<IsOption>false</IsOption>
+					<Name>Total Open Expansion Bays</Name>
+					<Section>
+						<Id>c848017d-5f8b-4cad-91da-528b1bc64524</Id>
+						<Name>Expandability</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>TOTALPCIX16</Code>
+					<Id>cbf7e85e-e41a-4d9a-9c85-200f36edb6c5</Id>
+					<IsOption>false</IsOption>
+					<Name>Total PCI Express X16 Slots</Name>
+					<Section>
+						<Id>c848017d-5f8b-4cad-91da-528b1bc64524</Id>
+						<Name>Expandability</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>RAMTYPE</Code>
+					<Id>1059ca3c-9b23-4902-9807-2340a91b7f4c</Id>
+					<IsOption>false</IsOption>
+					<Name>Memory Type</Name>
+					<Section>
+						<Id>42e60555-d692-4d3d-a01b-19c3b57e8ec0</Id>
+						<Name>RAM</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>DDR4</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>MODELNBR</Code>
+					<Id>d39a65cd-d1b9-4edd-85d0-243e7c2d7e9b</Id>
+					<IsOption>false</IsOption>
+					<Name>Model Number</Name>
+					<Section>
+						<Id>52e50eed-2591-4014-8f37-2980b06e689d</Id>
+						<Name>General Information</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>M80q</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>GPUSIZE</Code>
+					<Id>119c344d-393a-42c5-a5c9-274ceb8bf301</Id>
+					<IsOption>false</IsOption>
+					<Name>Video Memory Available (MB)</Name>
+					<Section>
+						<Id>0f87f420-d759-4478-a1ee-78c064169e46</Id>
+						<Name>Graphics</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>ITEMDIMS</Code>
+					<Id>c553c2b5-464f-4551-a84a-288c04c1d3cb</Id>
+					<IsOption>false</IsOption>
+					<Name>Item Dimensions - H x W x D (IN)</Name>
+					<Section i:nil="true"/>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>7 x 1.5 x 7.2</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>MAXDISPLSUP</Code>
+					<Id>ef8ec3ce-7948-4194-80fb-29b030a571ba</Id>
+					<IsOption>false</IsOption>
+					<Name>Maximum Displays Supported</Name>
+					<Section>
+						<Id>05febb0f-459e-40ee-a272-68a9a5d9f5d3</Id>
+						<Name>Display</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>3</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>TOTALDVI</Code>
+					<Id>332dd5ae-0ac3-43e7-9519-31841fa7ea04</Id>
+					<IsOption>false</IsOption>
+					<Name>Total DVI Outputs</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>SPECIALNOTE</Code>
+					<Id>e3eff483-688b-4a66-89e8-387a9a2f75d9</Id>
+					<IsOption>false</IsOption>
+					<Name>Product Special Notes - 0 if None</Name>
+					<Section i:nil="true"/>
+					<Value i:nil="true" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+				</Attribute>
+				<Attribute>
+					<Code>USBPRT</Code>
+					<Id>6cb861df-3b4f-4050-ab50-4aa903968826</Id>
+					<IsOption>false</IsOption>
+					<Name>Total USB 2.0 Ports</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>EXACTCOLOR</Code>
+					<Id>97f947e1-e7be-49a6-906f-4ac6b92c7885</Id>
+					<IsOption>false</IsOption>
+					<Name>Color - Exact</Name>
+					<Section i:nil="true"/>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Black</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>MOUSEINCL</Code>
+					<Id>4d1d9409-4b87-432e-beca-4b443b71f64f</Id>
+					<IsOption>false</IsOption>
+					<Name>Mouse Included</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>NO</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>TOTALPCIX1</Code>
+					<Id>e046e246-f2f8-4bf1-836b-4d873ce1d18a</Id>
+					<IsOption>false</IsOption>
+					<Name>Total PCI Express X1 Slots</Name>
+					<Section>
+						<Id>c848017d-5f8b-4cad-91da-528b1bc64524</Id>
+						<Name>Expandability</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>DVDSPD</Code>
+					<Id>e2c16332-d825-4edc-8f5e-55e587b63136</Id>
+					<IsOption>false</IsOption>
+					<Name>DVD Speed (R/W/RW)</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0/0/0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>HDPHNJACK</Code>
+					<Id>11dd71c8-fbf8-48ef-b755-56fa179e628f</Id>
+					<IsOption>false</IsOption>
+					<Name>Total Headphone Outputs</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>1</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>PLUGTYPE</Code>
+					<Id>94139df5-09b6-4cb9-8550-61a73e87ac69</Id>
+					<IsOption>false</IsOption>
+					<Name>Power Adapter Plug Type</Name>
+					<Section i:nil="true"/>
+					<Value i:nil="true" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+				</Attribute>
+				<Attribute>
+					<Code>KEYBOARDINCL</Code>
+					<Id>c5fb990d-0af8-4139-aee3-6585968c5fa6</Id>
+					<IsOption>false</IsOption>
+					<Name>Keyboard Included</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>NO</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>HDMI</Code>
+					<Id>322b7d6e-a4dc-4cc7-8850-662b86343ce5</Id>
+					<IsOption>false</IsOption>
+					<Name>Total HDMI Outputs</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>1</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>AVAILPCIX16</Code>
+					<Id>bf2f0763-1211-48df-b8ed-67ea12244bac</Id>
+					<IsOption>false</IsOption>
+					<Name>Available PCI Express X16 Slots</Name>
+					<Section>
+						<Id>c848017d-5f8b-4cad-91da-528b1bc64524</Id>
+						<Name>Expandability</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>GPUTYPE</Code>
+					<Id>d90841ce-8458-4822-b742-68f3ea91e2d2</Id>
+					<IsOption>false</IsOption>
+					<Name>Graphics Type</Name>
+					<Section>
+						<Id>0f87f420-d759-4478-a1ee-78c064169e46</Id>
+						<Name>Graphics</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Integrated</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>PRODGEN</Code>
+					<Id>0ab8ed76-fa4b-4c4c-9ddd-696c3e110be4</Id>
+					<IsOption>false</IsOption>
+					<Name>Product Generation</Name>
+					<Section i:nil="true"/>
+					<Value i:nil="true" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+				</Attribute>
+				<Attribute>
+					<Code>CPUSPEED</Code>
+					<Id>b9d46621-7143-44b0-96b6-6c5036514cec</Id>
+					<IsOption>false</IsOption>
+					<Name>Processor Speed (GHz)</Name>
+					<Section>
+						<Id>69a2c798-6e32-4223-a197-c9a0dcd19bff</Id>
+						<Name>Processor</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>2.3</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>RELEASEYEAR</Code>
+					<Id>3f5f19e4-9600-4901-b620-7088a1602289</Id>
+					<IsOption>false</IsOption>
+					<Name>Release Year</Name>
+					<Section i:nil="true"/>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>2020</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>TOTAL35EXTBAY</Code>
+					<Id>028c1ebf-a0fa-4982-8fb7-758cbbdb7ed3</Id>
+					<IsOption>false</IsOption>
+					<Name>Total 3.5" External Bays</Name>
+					<Section>
+						<Id>c848017d-5f8b-4cad-91da-528b1bc64524</Id>
+						<Name>Expandability</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>CPUSERIES</Code>
+					<Id>3e3fef0f-706a-4df9-a596-7a23ca126b81</Id>
+					<IsOption>false</IsOption>
+					<Name>Processor Series</Name>
+					<Section>
+						<Id>69a2c798-6e32-4223-a197-c9a0dcd19bff</Id>
+						<Name>Processor</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Intel Core i5 10th Gen</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>BLUSPD</Code>
+					<Id>fb211e51-4998-4a4e-aad8-7c1d953741ce</Id>
+					<IsOption>false</IsOption>
+					<Name>Blu-ray Speed (R/W/RW)</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0/0/0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>BUNDSOFT</Code>
+					<Id>f50d462b-6fa7-4939-9cd1-85e5005f9ac4</Id>
+					<IsOption>false</IsOption>
+					<Name>Bundled Software - 0 if None</Name>
+					<Section i:nil="true"/>
+					<Value i:nil="true" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+				</Attribute>
+				<Attribute>
+					<Code>RAMSIZE</Code>
+					<Id>a29a4f7c-3b74-4211-906e-86675263ccb6</Id>
+					<IsOption>false</IsOption>
+					<Name>Total RAM (GB)</Name>
+					<Section>
+						<Id>42e60555-d692-4d3d-a01b-19c3b57e8ec0</Id>
+						<Name>RAM</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>16</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>BLUETOOTHVER</Code>
+					<Id>a87c1e0d-d996-481b-a415-8972183eb32f</Id>
+					<IsOption>false</IsOption>
+					<Name>Bluetooth Compatibility</Name>
+					<Section>
+						<Id>93d475be-eadc-4b2d-ba6c-a04e1cf444b2</Id>
+						<Name>Networking</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>No Bluetooth</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>RAMMAX</Code>
+					<Id>c7318d51-25df-42d4-a871-9418dc67c3de</Id>
+					<IsOption>false</IsOption>
+					<Name>Maximum Memory Supported (GB)</Name>
+					<Section>
+						<Id>42e60555-d692-4d3d-a01b-19c3b57e8ec0</Id>
+						<Name>RAM</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>16</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>NUMPROCESSOR</Code>
+					<Id>63b14482-aae1-44cf-9fdd-9ca6ea2fdb0a</Id>
+					<IsOption>false</IsOption>
+					<Name># of Processors</Name>
+					<Section i:nil="true"/>
+					<Value i:nil="true" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+				</Attribute>
+				<Attribute>
+					<Code>TOTAL35INTBAY</Code>
+					<Id>d8c2d2d2-9fb0-4384-9551-9d2a6a781b5d</Id>
+					<IsOption>false</IsOption>
+					<Name>Total 3.5" Internal Bays</Name>
+					<Section>
+						<Id>c848017d-5f8b-4cad-91da-528b1bc64524</Id>
+						<Name>Expandability</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>MEDIACARDREADER</Code>
+					<Id>12a3286c-d3f8-4a38-aeaa-9f7fc23c555e</Id>
+					<IsOption>false</IsOption>
+					<Name>Built-in Media Card Reader</Name>
+					<Section>
+						<Id>c848017d-5f8b-4cad-91da-528b1bc64524</Id>
+						<Name>Expandability</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Not Applicable</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>HDTYPE</Code>
+					<Id>82fc413c-9701-415f-87e4-a5e8e928242b</Id>
+					<IsOption>false</IsOption>
+					<Name>Hard Drive Interface</Name>
+					<Section>
+						<Id>cc57cc52-2b21-406f-903d-252fd3591945</Id>
+						<Name>Storage</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>PCIe NVMe</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>CPUNUM</Code>
+					<Id>7aacee32-7971-441a-b55a-abfadd9ca288</Id>
+					<IsOption>false</IsOption>
+					<Name>Processor Model Number</Name>
+					<Section>
+						<Id>69a2c798-6e32-4223-a197-c9a0dcd19bff</Id>
+						<Name>Processor</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Intel Core i5-10500T</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>DESKTOPFORMFACT</Code>
+					<Id>8703cc0e-531d-47f0-911f-accb4a8ba243</Id>
+					<IsOption>false</IsOption>
+					<Name>Form Factor</Name>
+					<Section>
+						<Id>52e50eed-2591-4014-8f37-2980b06e689d</Id>
+						<Name>General Information</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Tiny Desktop</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>MOUSECON</Code>
+					<Id>ab3fdbb1-b9e2-4387-a264-b643d31d6fc6</Id>
+					<IsOption>false</IsOption>
+					<Name>Mouse Connection Type</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Wired</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>MICPHNJACK</Code>
+					<Id>fb4e6a6d-5995-4adb-8506-b812129d955a</Id>
+					<IsOption>false</IsOption>
+					<Name>Total Microphone Outputs</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>1</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>USBPWR</Code>
+					<Id>af5c0f1c-56f6-479f-815d-babb2b268c68</Id>
+					<IsOption>false</IsOption>
+					<Name>Total USB 3.0 Ports</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>5</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>AVAILPCIX8</Code>
+					<Id>06c8218c-6c44-4f0e-a626-bbd41f501f7d</Id>
+					<IsOption>false</IsOption>
+					<Name>Available PCI Express X8 Slots</Name>
+					<Section>
+						<Id>c848017d-5f8b-4cad-91da-528b1bc64524</Id>
+						<Name>Expandability</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>KEYBOARDCON</Code>
+					<Id>37e3d934-407d-4854-a3cb-bec2dddb3ef7</Id>
+					<IsOption>false</IsOption>
+					<Name>Keyboard Connection Type</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Not Applicable</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>HDSIZE</Code>
+					<Id>7fcd5dc2-7b92-4412-bfbc-c110a3a973b7</Id>
+					<IsOption>false</IsOption>
+					<Name>Hard Drive Size (GB)</Name>
+					<Section>
+						<Id>cc57cc52-2b21-406f-903d-252fd3591945</Id>
+						<Name>Storage</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>256</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>PCLIFESTYLE</Code>
+					<Id>0669caf9-37fa-4d3d-adfd-c7db6a0d5c70</Id>
+					<IsOption>false</IsOption>
+					<Name>Lifestyle</Name>
+					<Section>
+						<Id>52e50eed-2591-4014-8f37-2980b06e689d</Id>
+						<Name>General Information</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Business</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>LANCOMPAT</Code>
+					<Id>115e9be0-0387-4932-9306-cfb0841dd793</Id>
+					<IsOption>false</IsOption>
+					<Name>LAN Compatibility</Name>
+					<Section>
+						<Id>93d475be-eadc-4b2d-ba6c-a04e1cf444b2</Id>
+						<Name>Networking</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>10/100/1000 Gigabit</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>DESKTOPPRODLINE</Code>
+					<Id>ff4933a2-ef61-4e49-99ed-d5e37b885341</Id>
+					<IsOption>false</IsOption>
+					<Name>Product Line (Desktop)</Name>
+					<Section>
+						<Id>52e50eed-2591-4014-8f37-2980b06e689d</Id>
+						<Name>General Information</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Lenovo ThinkCentre</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>TOTALDSLPRT</Code>
+					<Id>c73383f4-6770-42b7-ac6d-d7b3d6423879</Id>
+					<IsOption>false</IsOption>
+					<Name>Total DisplayPort Outputs</Name>
+					<Section i:nil="true"/>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>2</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>CPUCACHE</Code>
+					<Id>bb031bc0-e0be-4f9f-bd16-dcad282e7089</Id>
+					<IsOption>false</IsOption>
+					<Name>Processor L3 Cache (MB)</Name>
+					<Section>
+						<Id>69a2c798-6e32-4223-a197-c9a0dcd19bff</Id>
+						<Name>Processor</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>12</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>AVAILPCIX1</Code>
+					<Id>d4f2ff1f-6f63-4968-9514-df31975f9af4</Id>
+					<IsOption>false</IsOption>
+					<Name>Available PCI Express X1 Slots</Name>
+					<Section>
+						<Id>c848017d-5f8b-4cad-91da-528b1bc64524</Id>
+						<Name>Expandability</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>ITEMWEIGHT</Code>
+					<Id>82139195-741e-4d70-85c6-e4edcd2a6e0f</Id>
+					<IsOption>false</IsOption>
+					<Name>Item Weight (LBS)</Name>
+					<Section i:nil="true"/>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>2.76</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>USBPRTFRT</Code>
+					<Id>3187212b-ef60-4f76-89ee-e890905f0cdd</Id>
+					<IsOption>false</IsOption>
+					<Name>Front USB 2.0 Ports</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>OPTANEMEM</Code>
+					<Id>473edacf-c114-4346-860f-ee1f3ae8183f</Id>
+					<IsOption>false</IsOption>
+					<Name>Optane Memory (GB)</Name>
+					<Section i:nil="true"/>
+					<Value i:nil="true" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+				</Attribute>
+				<Attribute>
+					<Code>GENERICCOLOR</Code>
+					<Id>410e31fe-c378-4a96-8099-f0c25ddd2d2b</Id>
+					<IsOption>false</IsOption>
+					<Name>Color - Generic</Name>
+					<Section i:nil="true"/>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Black</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>EPEATLVL</Code>
+					<Id>adfc84df-6088-4827-b1e3-f16beb162fa0</Id>
+					<IsOption>false</IsOption>
+					<Name>EPEAT Level</Name>
+					<Section>
+						<Id>52e50eed-2591-4014-8f37-2980b06e689d</Id>
+						<Name>General Information</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Not Applicable</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>DESKTOPOSEDITION</Code>
+					<Id>93156a80-cc36-4af9-95bd-f3c13f560c2c</Id>
+					<IsOption>false</IsOption>
+					<Name>Operating System Version</Name>
+					<Section>
+						<Id>21ec2c3d-96d9-48ea-bd84-5004b332dfe6</Id>
+						<Name>Operating System</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Professional</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>GPUMODEL</Code>
+					<Id>dcf8ce51-510b-4621-aa2e-f7de59b9e907</Id>
+					<IsOption>false</IsOption>
+					<Name>Graphics Card Model Number</Name>
+					<Section>
+						<Id>0f87f420-d759-4478-a1ee-78c064169e46</Id>
+						<Name>Graphics</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Intel UHD Graphics 630</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>TOTALHOTSWAP</Code>
+					<Id>3ab43da9-d355-4b01-9f81-f90411b964c6</Id>
+					<IsOption>false</IsOption>
+					<Name>Total Hot-Swap Bays</Name>
+					<Section>
+						<Id>c848017d-5f8b-4cad-91da-528b1bc64524</Id>
+						<Name>Expandability</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>WIFICOMPAT</Code>
+					<Id>ca51be5b-b727-4a2d-9ca0-f92fb1092c02</Id>
+					<IsOption>false</IsOption>
+					<Name>Wireless Network Compatibility</Name>
+					<Section i:nil="true"/>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Not Applicable</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>DESKTOPOS</Code>
+					<Id>4b763ec9-6193-4514-a4bf-fb2020a2e462</Id>
+					<IsOption>false</IsOption>
+					<Name>Operating System</Name>
+					<Section>
+						<Id>21ec2c3d-96d9-48ea-bd84-5004b332dfe6</Id>
+						<Name>Operating System</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Microsoft Windows 11</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>TOTAL525EXTBAY</Code>
+					<Id>48470368-cf39-4581-aacb-fbf3aec20eed</Id>
+					<IsOption>false</IsOption>
+					<Name>Total 5.25" External Bays</Name>
+					<Section>
+						<Id>c848017d-5f8b-4cad-91da-528b1bc64524</Id>
+						<Name>Expandability</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>VGA</Code>
+					<Id>70278144-312d-4398-9ebb-ff7621962d70</Id>
+					<IsOption>false</IsOption>
+					<Name>Total VGA Outputs</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+			</Attributes>
+			<Brand>
+				<Id>4833ffbe-ec35-4aad-a8c7-c23ad4481394</Id>
+				<Name>Lenovo</Name>
+			</Brand>
+			<Category>
+				<Id>d423ff2d-f254-465c-bf69-36e1dad50ba4</Id>
+				<Name>Electronics: Computers &amp; Tablets: Desktop Computers: System Only</Name>
+			</Category>
+			<CountryOfOrigin>
+				<ISO>CN</ISO>
+				<ISO3>CHN</ISO3>
+				<Name>Peoples Republic of China</Name>
+			</CountryOfOrigin>
+			<Description>Experience powerful performance with the Lenovo ThinkCentre M80q Tiny Desktop. It features an Intel Core i5-10500T processor, 16GB DDR4 RAM, 256GB PCIe NVMe SSD, and Intel UHD Graphics 630. This business desktop is equipped with Windows 11 Professional, offering seamless functionality for your office needs. Its compact form factor and energy-efficient design make it perfect for small workspaces.</Description>
+			<Documents/>
+			<Features xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+				<a:string>Intel Core i5-10500T Processor (Hexa-Core, 2.3GHz, 12MB Cache)</a:string>
+				<a:string>16GB DDR4 System Memory</a:string>
+				<a:string>256GB PCIe NVMe Solid State Drive (SSD)</a:string>
+				<a:string>Integrated Intel UHD Graphics 630</a:string>
+			</Features>
+			<Flags>0</Flags>
+			<Id i:nil="true"/>
+			<IsBundle>false</IsBundle>
+			<Manufacturer>
+				<Id>4833ffbe-ec35-4aad-a8c7-c23ad4481394</Id>
+				<Name>Lenovo</Name>
+			</Manufacturer>
+			<Pricing>
+				<MSRP>
+					<Units>USD</Units>
+					<Value>599.9900</Value>
+				</MSRP>
+				<MSRPURL/>
+				<SRP>
+					<Units>USD</Units>
+					<Value>0.0</Value>
+				</SRP>
+			</Pricing>
+			<PrimaryImage>
+				<Description i:nil="true"/>
+				<Flags>0</Flags>
+				<Id>44bc5c7a-9c40-4c60-aa88-037b94136bb7</Id>
+				<Name>1</Name>
+				<Type>Image</Type>
+				<URL>https://api.getquipt.com/v2/Image/44bc5c7a-9c40-4c60-aa88-037b94136bb7.jpg</URL>
+				<Height i:nil="true"/>
+				<Resolution i:nil="true"/>
+				<Width i:nil="true"/>
+			</PrimaryImage>
+			<SKUs>
+				<SKU>
+					<Type>UPC</Type>
+					<Value>026531623273</Value>
+				</SKU>
+				<SKU>
+					<Type>MPN</Type>
+					<Value>THINKCENTRE M80Q G2-I5-256-CR</Value>
+				</SKU>
+			</SKUs>
+			<SpecSheetURL>https://www.amazon.com/dp/B0DJ9QWBMH?th=1</SpecSheetURL>
+			<SwatchImages/>
+			<Tags xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+				<a:string>Tiny Desktop</a:string>
+				<a:string>business desktop</a:string>
+				<a:string>16GB RAM</a:string>
+				<a:string>Lenovo ThinkCentre M80q</a:string>
+				<a:string>256GB SSD</a:string>
+				<a:string>Energy Star Compliant</a:string>
+				<a:string> "Intel Core i5"</a:string>
+				<a:string>Windows 11 Pro</a:string>
+				<a:string>Intel UHD Graphics 630</a:string>
+				<a:string>Compact Form Factor</a:string>
+			</Tags>
+			<Title>Lenovo ThinkCentre M80q (16GB RAM, 256GB SSD, i5-10500T 2.3GHz) Win11P, Black</Title>
+			<VersionNumber>0</VersionNumber>
+			<Condition>
+				<Code>REFURBMAN</Code>
+				<Id>2709f4bb-8c27-4dde-b8eb-4b8d79ae5b26</Id>
+				<Name>Certified Refurbished</Name>
+			</Condition>
+			<Dimensions>
+				<Units>IN</Units>
+				<Height>4.00</Height>
+				<Length>10.00</Length>
+				<Width>10.00</Width>
+			</Dimensions>
+			<Id>e16b7cd2-ca9a-4742-8619-de2bd42bff4d</Id>
+			<InBox xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+				<a:string>Thinkcentre M80q Gen 2 Desktop</a:string>
+				<a:string>Power Adapter</a:string>
+			</InBox>
+			<Packaging>
+				<Code>GENERIC</Code>
+				<Id>e5aca3ec-636c-40e8-8c33-6669ffbdee22</Id>
+				<Name>Brown/White Box</Name>
+			</Packaging>
+			<SKUsMatrix i:nil="true"/>
+			<Support>
+				<Email i:nil="true"/>
+				<PhoneNumber>
+					<CountryISO>US</CountryISO>
+					<Number/>
+				</PhoneNumber>
+				<Provider>None</Provider>
+				<ProviderString>None</ProviderString>
+				<URL i:nil="true"/>
+			</Support>
+			<Warranty>
+				<Email>auctions@regencytechnologies.com</Email>
+				<PhoneNumber>
+					<CountryISO>US</CountryISO>
+					<Number>8889095049</Number>
+				</PhoneNumber>
+				<Provider>Distributor</Provider>
+				<ProviderString>Distributor</ProviderString>
+				<URL/>
+				<Duration>90 Days</Duration>
+			</Warranty>
+			<Weight>
+				<Units>Pounds</Units>
+				<Value>4.0000</Value>
+			</Weight>
+		</Catalog>
+		<CatalogStatusAt>2026-02-05T11:43:22.183Z</CatalogStatusAt>
+		<CatalogStatusDisplayName>Published</CatalogStatusDisplayName>
+		<CurrentPricing>
+			<Price>
+				<Units>USD</Units>
+				<Value>279.0000</Value>
+			</Price>
+			<SRP>
+				<Units>USD</Units>
+				<Value>279.0000</Value>
+			</SRP>
+		</CurrentPricing>
+		<Freight i:nil="true"/>
+		<Id i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">e3b2415e-7985-4b6e-914d-2800d6aa1129</Id>
+		<InventoryStatusAt>2026-02-05T11:43:22.183Z</InventoryStatusAt>
+		<InventoryStatusDisplayName>Pending Export</InventoryStatusDisplayName>
+		<LastARPChangeAt>2026-02-05T11:43:22.183Z</LastARPChangeAt>
+		<MapURL>http://www.amazon.com/gp/product/B0FMWD67K7/</MapURL>
+		<Pricing>
+			<Price>
+				<Units>USD</Units>
+				<Value>279.0000</Value>
+			</Price>
+			<SRP>
+				<Units>USD</Units>
+				<Value>279.0000</Value>
+			</SRP>
+		</Pricing>
+		<Promotion>
+			<Allocation>
+				<Units>Each</Units>
+				<Value>0.0000</Value>
+				<ExpectedAt i:nil="true"/>
+			</Allocation>
+			<Pricing i:nil="true"/>
+			<Status>None</Status>
+			<StatusName>None</StatusName>
+		</Promotion>
+		<Properties i:nil="true"/>
+		<ShippingInfo>
+			<Dimensions>
+				<Units>IN</Units>
+				<Height>4.00</Height>
+				<Length>10.00</Length>
+				<Width>10.00</Width>
+			</Dimensions>
+			<Weight>
+				<Units>Pounds</Units>
+				<Value>4.0000</Value>
+			</Weight>
+		</ShippingInfo>
+		<Summary>
+			<Condition>
+				<Code>REFURBMAN</Code>
+				<Id>2709f4bb-8c27-4dde-b8eb-4b8d79ae5b26</Id>
+				<Name>Certified Refurbished</Name>
+				<Suffix i:nil="true"/>
+			</Condition>
+			<Id>e3b2415e-7985-4b6e-914d-2800d6aa1129</Id>
+			<InventoryCatalogId>e16b7cd2-ca9a-4742-8619-de2bd42bff4d</InventoryCatalogId>
+			<MPN>THINKCENTRE M80Q G2-I5-256-CR</MPN>
+			<MSRP>
+				<Units>USD</Units>
+				<Value>599.9900</Value>
+			</MSRP>
+			<Manufacturer>Lenovo</Manufacturer>
+			<Notes i:nil="true"/>
+			<PrimaryImageId>44bc5c7a-9c40-4c60-aa88-037b94136bb7</PrimaryImageId>
+			<SKU>164302</SKU>
+			<Title>Lenovo ThinkCentre M80q (16GB RAM, 256GB SSD, i5-10500T 2.3GHz) Win11P, Black</Title>
+			<UPC>026531623273</UPC>
+			<VariantKey i:nil="true"/>
+		</Summary>
+		<Threshold>
+			<Units>Each</Units>
+			<Value>0.0</Value>
+		</Threshold>
+		<Details i:nil="true"/>
+	</InventoryVirtualResult>
+	<InventoryVirtualResult>
+		<Id i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">f167bd94-1c95-4035-bbe2-49712ce1ed96</Id>
+		<SKU>176699</SKU>
+		<Vendor>
+			<Id>6c6b5974-a9af-4a96-9aaa-d84347126457</Id>
+			<Name>Regency Technologies</Name>
+			<Code i:nil="true"/>
+			<RelationshipId>993d856b-2461-4737-bc62-2dec5cee993a</RelationshipId>
+			<MarketplaceName/>
+		</Vendor>
+		<MapId>B0FJKD719W</MapId>
+		<ARP>
+			<Units>USD</Units>
+			<Value>1499.9900</Value>
+		</ARP>
+		<CatalogStatus>Published</CatalogStatus>
+		<InventoryStatus>None</InventoryStatus>
+		<Comment i:nil="true"/>
+		<On>true</On>
+		<Available>
+			<Units>Each</Units>
+			<Value>0.0000</Value>
+		</Available>
+		<Blocked>
+			<Units>Each</Units>
+			<Value>0.0000</Value>
+		</Blocked>
+		<Catalog>
+			<AdditionalImages>
+				<Asset>
+					<Description/>
+					<Flags>0</Flags>
+					<Id>1819676a-6443-48b3-a76a-d21abddbd15b</Id>
+					<Name>2</Name>
+					<Type>Image</Type>
+					<URL>https://api.getquipt.com/v2/Image/1819676a-6443-48b3-a76a-d21abddbd15b.jpg</URL>
+					<Height i:nil="true"/>
+					<Resolution i:nil="true"/>
+					<Width i:nil="true"/>
+				</Asset>
+				<Asset>
+					<Description/>
+					<Flags>0</Flags>
+					<Id>8af187d0-fb33-4dab-9bc7-8dbaba6c2edf</Id>
+					<Name>3</Name>
+					<Type>Image</Type>
+					<URL>https://api.getquipt.com/v2/Image/8af187d0-fb33-4dab-9bc7-8dbaba6c2edf.jpg</URL>
+					<Height i:nil="true"/>
+					<Resolution i:nil="true"/>
+					<Width i:nil="true"/>
+				</Asset>
+				<Asset>
+					<Description/>
+					<Flags>0</Flags>
+					<Id>f0cbef06-c761-4f9b-ba1b-cf9d396463eb</Id>
+					<Name>4</Name>
+					<Type>Image</Type>
+					<URL>https://api.getquipt.com/v2/Image/f0cbef06-c761-4f9b-ba1b-cf9d396463eb.jpg</URL>
+					<Height i:nil="true"/>
+					<Resolution i:nil="true"/>
+					<Width i:nil="true"/>
+				</Asset>
+				<Asset>
+					<Description/>
+					<Flags>0</Flags>
+					<Id>0900ee73-48d3-4b57-911e-62e77c2d0e23</Id>
+					<Name>5</Name>
+					<Type>Image</Type>
+					<URL>https://api.getquipt.com/v2/Image/0900ee73-48d3-4b57-911e-62e77c2d0e23.jpg</URL>
+					<Height i:nil="true"/>
+					<Resolution i:nil="true"/>
+					<Width i:nil="true"/>
+				</Asset>
+			</AdditionalImages>
+			<AltTitle>Apple Mac Studio (32GB 1TB SSD Apple M2 Max 3.5GHz) Silver</AltTitle>
+			<AltTitle2/>
+			<Attributes>
+				<Attribute>
+					<Code>HDSPEED</Code>
+					<Id>2638d3c6-cf49-4f7f-9ef9-0239112f9784</Id>
+					<IsOption>false</IsOption>
+					<Name>Hard Drive Speed (RPM)</Name>
+					<Section>
+						<Id>cc57cc52-2b21-406f-903d-252fd3591945</Id>
+						<Name>Storage</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>TOTALPCIX8</Code>
+					<Id>9643bfee-d26d-406f-9860-023a07da871f</Id>
+					<IsOption>false</IsOption>
+					<Name>Total PCI Express X8 Slots</Name>
+					<Section>
+						<Id>c848017d-5f8b-4cad-91da-528b1bc64524</Id>
+						<Name>Expandability</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>USBCPORTS</Code>
+					<Id>3af6a066-2ada-48c1-9a28-0716fc5ca35e</Id>
+					<IsOption>false</IsOption>
+					<Name>Total USB-C Ports</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>6</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>HDTYPEHWARE</Code>
+					<Id>8b33a26d-ad6e-4d82-8595-08ce484b5d8f</Id>
+					<IsOption>false</IsOption>
+					<Name>Hard Drive Type</Name>
+					<Section>
+						<Id>cc57cc52-2b21-406f-903d-252fd3591945</Id>
+						<Name>Storage</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Solid State Drive (SSD)</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>ENERGYSTAR</Code>
+					<Id>7ced7df3-1a11-4e61-ba52-127f031b2118</Id>
+					<IsOption>false</IsOption>
+					<Name>Energy Star Compliant</Name>
+					<Section>
+						<Id>52e50eed-2591-4014-8f37-2980b06e689d</Id>
+						<Name>General Information</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>NO</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>LIQUIDCOOL</Code>
+					<Id>bbbbd019-ec58-401f-9351-14bb9dffb0c7</Id>
+					<IsOption>false</IsOption>
+					<Name>Liquid Cooling</Name>
+					<Section>
+						<Id>52e50eed-2591-4014-8f37-2980b06e689d</Id>
+						<Name>General Information</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>NO</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>OPTDR1</Code>
+					<Id>548c52d8-28af-4682-b0a2-1bba6bd42ddd</Id>
+					<IsOption>false</IsOption>
+					<Name>Optical Drive Type</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Not Applicable</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>CPUCORE</Code>
+					<Id>57e6db51-87ac-494e-b434-1c0cc28f5131</Id>
+					<IsOption>false</IsOption>
+					<Name># of Processor Cores</Name>
+					<Section>
+						<Id>69a2c798-6e32-4223-a197-c9a0dcd19bff</Id>
+						<Name>Processor</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>12</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>TOTALEXPBAY</Code>
+					<Id>370e45be-e678-4346-bb69-1da1fc9b85f4</Id>
+					<IsOption>false</IsOption>
+					<Name>Total Open Expansion Bays</Name>
+					<Section>
+						<Id>c848017d-5f8b-4cad-91da-528b1bc64524</Id>
+						<Name>Expandability</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>TOTALPCIX16</Code>
+					<Id>cbf7e85e-e41a-4d9a-9c85-200f36edb6c5</Id>
+					<IsOption>false</IsOption>
+					<Name>Total PCI Express X16 Slots</Name>
+					<Section>
+						<Id>c848017d-5f8b-4cad-91da-528b1bc64524</Id>
+						<Name>Expandability</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>RAMTYPE</Code>
+					<Id>1059ca3c-9b23-4902-9807-2340a91b7f4c</Id>
+					<IsOption>false</IsOption>
+					<Name>Memory Type</Name>
+					<Section>
+						<Id>42e60555-d692-4d3d-a01b-19c3b57e8ec0</Id>
+						<Name>RAM</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Unified</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>MODELNBR</Code>
+					<Id>d39a65cd-d1b9-4edd-85d0-243e7c2d7e9b</Id>
+					<IsOption>false</IsOption>
+					<Name>Model Number</Name>
+					<Section>
+						<Id>52e50eed-2591-4014-8f37-2980b06e689d</Id>
+						<Name>General Information</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>MQH73LL/A</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>GPUSIZE</Code>
+					<Id>119c344d-393a-42c5-a5c9-274ceb8bf301</Id>
+					<IsOption>false</IsOption>
+					<Name>Video Memory Available (MB)</Name>
+					<Section>
+						<Id>0f87f420-d759-4478-a1ee-78c064169e46</Id>
+						<Name>Graphics</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>ITEMDIMS</Code>
+					<Id>c553c2b5-464f-4551-a84a-288c04c1d3cb</Id>
+					<IsOption>false</IsOption>
+					<Name>Item Dimensions - H x W x D (IN)</Name>
+					<Section i:nil="true"/>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>12.6 x 12 x 9</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>MAXDISPLSUP</Code>
+					<Id>ef8ec3ce-7948-4194-80fb-29b030a571ba</Id>
+					<IsOption>false</IsOption>
+					<Name>Maximum Displays Supported</Name>
+					<Section>
+						<Id>05febb0f-459e-40ee-a272-68a9a5d9f5d3</Id>
+						<Name>Display</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>4</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>TOTALDVI</Code>
+					<Id>332dd5ae-0ac3-43e7-9519-31841fa7ea04</Id>
+					<IsOption>false</IsOption>
+					<Name>Total DVI Outputs</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>SPECIALNOTE</Code>
+					<Id>e3eff483-688b-4a66-89e8-387a9a2f75d9</Id>
+					<IsOption>false</IsOption>
+					<Name>Product Special Notes - 0 if None</Name>
+					<Section i:nil="true"/>
+					<Value i:nil="true" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+				</Attribute>
+				<Attribute>
+					<Code>USBPRT</Code>
+					<Id>6cb861df-3b4f-4050-ab50-4aa903968826</Id>
+					<IsOption>false</IsOption>
+					<Name>Total USB 2.0 Ports</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>EXACTCOLOR</Code>
+					<Id>97f947e1-e7be-49a6-906f-4ac6b92c7885</Id>
+					<IsOption>false</IsOption>
+					<Name>Color - Exact</Name>
+					<Section i:nil="true"/>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Silver</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>MOUSEINCL</Code>
+					<Id>4d1d9409-4b87-432e-beca-4b443b71f64f</Id>
+					<IsOption>false</IsOption>
+					<Name>Mouse Included</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>NO</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>TOTALPCIX1</Code>
+					<Id>e046e246-f2f8-4bf1-836b-4d873ce1d18a</Id>
+					<IsOption>false</IsOption>
+					<Name>Total PCI Express X1 Slots</Name>
+					<Section>
+						<Id>c848017d-5f8b-4cad-91da-528b1bc64524</Id>
+						<Name>Expandability</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>DVDSPD</Code>
+					<Id>e2c16332-d825-4edc-8f5e-55e587b63136</Id>
+					<IsOption>false</IsOption>
+					<Name>DVD Speed (R/W/RW)</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0/0/0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>HDPHNJACK</Code>
+					<Id>11dd71c8-fbf8-48ef-b755-56fa179e628f</Id>
+					<IsOption>false</IsOption>
+					<Name>Total Headphone Outputs</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>1</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>PLUGTYPE</Code>
+					<Id>94139df5-09b6-4cb9-8550-61a73e87ac69</Id>
+					<IsOption>false</IsOption>
+					<Name>Power Adapter Plug Type</Name>
+					<Section i:nil="true"/>
+					<Value i:nil="true" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+				</Attribute>
+				<Attribute>
+					<Code>KEYBOARDINCL</Code>
+					<Id>c5fb990d-0af8-4139-aee3-6585968c5fa6</Id>
+					<IsOption>false</IsOption>
+					<Name>Keyboard Included</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>NO</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>HDMI</Code>
+					<Id>322b7d6e-a4dc-4cc7-8850-662b86343ce5</Id>
+					<IsOption>false</IsOption>
+					<Name>Total HDMI Outputs</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>1</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>AVAILPCIX16</Code>
+					<Id>bf2f0763-1211-48df-b8ed-67ea12244bac</Id>
+					<IsOption>false</IsOption>
+					<Name>Available PCI Express X16 Slots</Name>
+					<Section>
+						<Id>c848017d-5f8b-4cad-91da-528b1bc64524</Id>
+						<Name>Expandability</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>GPUTYPE</Code>
+					<Id>d90841ce-8458-4822-b742-68f3ea91e2d2</Id>
+					<IsOption>false</IsOption>
+					<Name>Graphics Type</Name>
+					<Section>
+						<Id>0f87f420-d759-4478-a1ee-78c064169e46</Id>
+						<Name>Graphics</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Integrated</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>PRODGEN</Code>
+					<Id>0ab8ed76-fa4b-4c4c-9ddd-696c3e110be4</Id>
+					<IsOption>false</IsOption>
+					<Name>Product Generation</Name>
+					<Section i:nil="true"/>
+					<Value i:nil="true" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+				</Attribute>
+				<Attribute>
+					<Code>CPUSPEED</Code>
+					<Id>b9d46621-7143-44b0-96b6-6c5036514cec</Id>
+					<IsOption>false</IsOption>
+					<Name>Processor Speed (GHz)</Name>
+					<Section>
+						<Id>69a2c798-6e32-4223-a197-c9a0dcd19bff</Id>
+						<Name>Processor</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>3.5</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>RELEASEYEAR</Code>
+					<Id>3f5f19e4-9600-4901-b620-7088a1602289</Id>
+					<IsOption>false</IsOption>
+					<Name>Release Year</Name>
+					<Section i:nil="true"/>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>2023</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>TOTAL35EXTBAY</Code>
+					<Id>028c1ebf-a0fa-4982-8fb7-758cbbdb7ed3</Id>
+					<IsOption>false</IsOption>
+					<Name>Total 3.5" External Bays</Name>
+					<Section>
+						<Id>c848017d-5f8b-4cad-91da-528b1bc64524</Id>
+						<Name>Expandability</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>CPUSERIES</Code>
+					<Id>3e3fef0f-706a-4df9-a596-7a23ca126b81</Id>
+					<IsOption>false</IsOption>
+					<Name>Processor Series</Name>
+					<Section>
+						<Id>69a2c798-6e32-4223-a197-c9a0dcd19bff</Id>
+						<Name>Processor</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Apple M2</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>BLUSPD</Code>
+					<Id>fb211e51-4998-4a4e-aad8-7c1d953741ce</Id>
+					<IsOption>false</IsOption>
+					<Name>Blu-ray Speed (R/W/RW)</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0/0/0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>BUNDSOFT</Code>
+					<Id>f50d462b-6fa7-4939-9cd1-85e5005f9ac4</Id>
+					<IsOption>false</IsOption>
+					<Name>Bundled Software - 0 if None</Name>
+					<Section i:nil="true"/>
+					<Value i:nil="true" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+				</Attribute>
+				<Attribute>
+					<Code>RAMSIZE</Code>
+					<Id>a29a4f7c-3b74-4211-906e-86675263ccb6</Id>
+					<IsOption>false</IsOption>
+					<Name>Total RAM (GB)</Name>
+					<Section>
+						<Id>42e60555-d692-4d3d-a01b-19c3b57e8ec0</Id>
+						<Name>RAM</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>32</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>BLUETOOTHVER</Code>
+					<Id>a87c1e0d-d996-481b-a415-8972183eb32f</Id>
+					<IsOption>false</IsOption>
+					<Name>Bluetooth Compatibility</Name>
+					<Section>
+						<Id>93d475be-eadc-4b2d-ba6c-a04e1cf444b2</Id>
+						<Name>Networking</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>5.0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>RAMMAX</Code>
+					<Id>c7318d51-25df-42d4-a871-9418dc67c3de</Id>
+					<IsOption>false</IsOption>
+					<Name>Maximum Memory Supported (GB)</Name>
+					<Section>
+						<Id>42e60555-d692-4d3d-a01b-19c3b57e8ec0</Id>
+						<Name>RAM</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>32</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>NUMPROCESSOR</Code>
+					<Id>63b14482-aae1-44cf-9fdd-9ca6ea2fdb0a</Id>
+					<IsOption>false</IsOption>
+					<Name># of Processors</Name>
+					<Section i:nil="true"/>
+					<Value i:nil="true" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+				</Attribute>
+				<Attribute>
+					<Code>TOTAL35INTBAY</Code>
+					<Id>d8c2d2d2-9fb0-4384-9551-9d2a6a781b5d</Id>
+					<IsOption>false</IsOption>
+					<Name>Total 3.5" Internal Bays</Name>
+					<Section>
+						<Id>c848017d-5f8b-4cad-91da-528b1bc64524</Id>
+						<Name>Expandability</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>MEDIACARDREADER</Code>
+					<Id>12a3286c-d3f8-4a38-aeaa-9f7fc23c555e</Id>
+					<IsOption>false</IsOption>
+					<Name>Built-in Media Card Reader</Name>
+					<Section>
+						<Id>c848017d-5f8b-4cad-91da-528b1bc64524</Id>
+						<Name>Expandability</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Not Applicable</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>HDTYPE</Code>
+					<Id>82fc413c-9701-415f-87e4-a5e8e928242b</Id>
+					<IsOption>false</IsOption>
+					<Name>Hard Drive Interface</Name>
+					<Section>
+						<Id>cc57cc52-2b21-406f-903d-252fd3591945</Id>
+						<Name>Storage</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>SSD</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>CPUNUM</Code>
+					<Id>7aacee32-7971-441a-b55a-abfadd9ca288</Id>
+					<IsOption>false</IsOption>
+					<Name>Processor Model Number</Name>
+					<Section>
+						<Id>69a2c798-6e32-4223-a197-c9a0dcd19bff</Id>
+						<Name>Processor</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Apple M2 Max</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>DESKTOPFORMFACT</Code>
+					<Id>8703cc0e-531d-47f0-911f-accb4a8ba243</Id>
+					<IsOption>false</IsOption>
+					<Name>Form Factor</Name>
+					<Section>
+						<Id>52e50eed-2591-4014-8f37-2980b06e689d</Id>
+						<Name>General Information</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Mini PC</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>MOUSECON</Code>
+					<Id>ab3fdbb1-b9e2-4387-a264-b643d31d6fc6</Id>
+					<IsOption>false</IsOption>
+					<Name>Mouse Connection Type</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Not Applicable</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>MICPHNJACK</Code>
+					<Id>fb4e6a6d-5995-4adb-8506-b812129d955a</Id>
+					<IsOption>false</IsOption>
+					<Name>Total Microphone Outputs</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>USBPWR</Code>
+					<Id>af5c0f1c-56f6-479f-815d-babb2b268c68</Id>
+					<IsOption>false</IsOption>
+					<Name>Total USB 3.0 Ports</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>2</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>AVAILPCIX8</Code>
+					<Id>06c8218c-6c44-4f0e-a626-bbd41f501f7d</Id>
+					<IsOption>false</IsOption>
+					<Name>Available PCI Express X8 Slots</Name>
+					<Section>
+						<Id>c848017d-5f8b-4cad-91da-528b1bc64524</Id>
+						<Name>Expandability</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>KEYBOARDCON</Code>
+					<Id>37e3d934-407d-4854-a3cb-bec2dddb3ef7</Id>
+					<IsOption>false</IsOption>
+					<Name>Keyboard Connection Type</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Not Applicable</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>HDSIZE</Code>
+					<Id>7fcd5dc2-7b92-4412-bfbc-c110a3a973b7</Id>
+					<IsOption>false</IsOption>
+					<Name>Hard Drive Size (GB)</Name>
+					<Section>
+						<Id>cc57cc52-2b21-406f-903d-252fd3591945</Id>
+						<Name>Storage</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>1000</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>PCLIFESTYLE</Code>
+					<Id>0669caf9-37fa-4d3d-adfd-c7db6a0d5c70</Id>
+					<IsOption>false</IsOption>
+					<Name>Lifestyle</Name>
+					<Section>
+						<Id>52e50eed-2591-4014-8f37-2980b06e689d</Id>
+						<Name>General Information</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Home &amp; Student</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>LANCOMPAT</Code>
+					<Id>115e9be0-0387-4932-9306-cfb0841dd793</Id>
+					<IsOption>false</IsOption>
+					<Name>LAN Compatibility</Name>
+					<Section>
+						<Id>93d475be-eadc-4b2d-ba6c-a04e1cf444b2</Id>
+						<Name>Networking</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>10/100/1000 Gigabit</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>DESKTOPPRODLINE</Code>
+					<Id>ff4933a2-ef61-4e49-99ed-d5e37b885341</Id>
+					<IsOption>false</IsOption>
+					<Name>Product Line (Desktop)</Name>
+					<Section>
+						<Id>52e50eed-2591-4014-8f37-2980b06e689d</Id>
+						<Name>General Information</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Apple Mac Studio</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>TOTALDSLPRT</Code>
+					<Id>c73383f4-6770-42b7-ac6d-d7b3d6423879</Id>
+					<IsOption>false</IsOption>
+					<Name>Total DisplayPort Outputs</Name>
+					<Section i:nil="true"/>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>CPUCACHE</Code>
+					<Id>bb031bc0-e0be-4f9f-bd16-dcad282e7089</Id>
+					<IsOption>false</IsOption>
+					<Name>Processor L3 Cache (MB)</Name>
+					<Section>
+						<Id>69a2c798-6e32-4223-a197-c9a0dcd19bff</Id>
+						<Name>Processor</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>AVAILPCIX1</Code>
+					<Id>d4f2ff1f-6f63-4968-9514-df31975f9af4</Id>
+					<IsOption>false</IsOption>
+					<Name>Available PCI Express X1 Slots</Name>
+					<Section>
+						<Id>c848017d-5f8b-4cad-91da-528b1bc64524</Id>
+						<Name>Expandability</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>ITEMWEIGHT</Code>
+					<Id>82139195-741e-4d70-85c6-e4edcd2a6e0f</Id>
+					<IsOption>false</IsOption>
+					<Name>Item Weight (LBS)</Name>
+					<Section i:nil="true"/>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>12</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>USBPRTFRT</Code>
+					<Id>3187212b-ef60-4f76-89ee-e890905f0cdd</Id>
+					<IsOption>false</IsOption>
+					<Name>Front USB 2.0 Ports</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>OPTANEMEM</Code>
+					<Id>473edacf-c114-4346-860f-ee1f3ae8183f</Id>
+					<IsOption>false</IsOption>
+					<Name>Optane Memory (GB)</Name>
+					<Section i:nil="true"/>
+					<Value i:nil="true" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+				</Attribute>
+				<Attribute>
+					<Code>GENERICCOLOR</Code>
+					<Id>410e31fe-c378-4a96-8099-f0c25ddd2d2b</Id>
+					<IsOption>false</IsOption>
+					<Name>Color - Generic</Name>
+					<Section i:nil="true"/>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Silver</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>EPEATLVL</Code>
+					<Id>adfc84df-6088-4827-b1e3-f16beb162fa0</Id>
+					<IsOption>false</IsOption>
+					<Name>EPEAT Level</Name>
+					<Section>
+						<Id>52e50eed-2591-4014-8f37-2980b06e689d</Id>
+						<Name>General Information</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Not Applicable</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>DESKTOPOSEDITION</Code>
+					<Id>93156a80-cc36-4af9-95bd-f3c13f560c2c</Id>
+					<IsOption>false</IsOption>
+					<Name>Operating System Version</Name>
+					<Section>
+						<Id>21ec2c3d-96d9-48ea-bd84-5004b332dfe6</Id>
+						<Name>Operating System</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Not Applicable</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>GPUMODEL</Code>
+					<Id>dcf8ce51-510b-4621-aa2e-f7de59b9e907</Id>
+					<IsOption>false</IsOption>
+					<Name>Graphics Card Model Number</Name>
+					<Section>
+						<Id>0f87f420-d759-4478-a1ee-78c064169e46</Id>
+						<Name>Graphics</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Integrated Graphics</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>TOTALHOTSWAP</Code>
+					<Id>3ab43da9-d355-4b01-9f81-f90411b964c6</Id>
+					<IsOption>false</IsOption>
+					<Name>Total Hot-Swap Bays</Name>
+					<Section>
+						<Id>c848017d-5f8b-4cad-91da-528b1bc64524</Id>
+						<Name>Expandability</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>WIFICOMPAT</Code>
+					<Id>ca51be5b-b727-4a2d-9ca0-f92fb1092c02</Id>
+					<IsOption>false</IsOption>
+					<Name>Wireless Network Compatibility</Name>
+					<Section i:nil="true"/>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>802.11AX</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>DESKTOPOS</Code>
+					<Id>4b763ec9-6193-4514-a4bf-fb2020a2e462</Id>
+					<IsOption>false</IsOption>
+					<Name>Operating System</Name>
+					<Section>
+						<Id>21ec2c3d-96d9-48ea-bd84-5004b332dfe6</Id>
+						<Name>Operating System</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Apple Mac OS 15 (Sequoia)</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>TOTAL525EXTBAY</Code>
+					<Id>48470368-cf39-4581-aacb-fbf3aec20eed</Id>
+					<IsOption>false</IsOption>
+					<Name>Total 5.25" External Bays</Name>
+					<Section>
+						<Id>c848017d-5f8b-4cad-91da-528b1bc64524</Id>
+						<Name>Expandability</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>VGA</Code>
+					<Id>70278144-312d-4398-9ebb-ff7621962d70</Id>
+					<IsOption>false</IsOption>
+					<Name>Total VGA Outputs</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+			</Attributes>
+			<Brand>
+				<Id>a26c4503-95da-4f5c-8e2d-b1726c21eacb</Id>
+				<Name>Apple</Name>
+			</Brand>
+			<Category>
+				<Id>d423ff2d-f254-465c-bf69-36e1dad50ba4</Id>
+				<Name>Electronics: Computers &amp; Tablets: Desktop Computers: System Only</Name>
+			</Category>
+			<CountryOfOrigin>
+				<ISO>CN</ISO>
+				<ISO3>CHN</ISO3>
+				<Name>Peoples Republic of China</Name>
+			</CountryOfOrigin>
+			<Description>Experience powerful performance with the Apple Mac Studio Mini PC featuring a 32GB RAM, 1000GB SSD, and Apple M2 Max Processor. This mini PC is designed for home and student use, offering seamless wireless connectivity with 802.11AX Wi-Fi and 5.0 Bluetooth. With a sleek silver design, integrated graphics, and Apple Mac OS 15, this mini PC delivers a smooth and efficient computing experience.</Description>
+			<Documents/>
+			<Features xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+				<a:string>Apple M2 Max Processor (12-Core, 3.5GHz, 0MB Cache)</a:string>
+				<a:string>32GB Unified System Memory</a:string>
+				<a:string>1TB  Solid State Drive (SSD)</a:string>
+				<a:string>Integrated Graphics</a:string>
+			</Features>
+			<Flags>0</Flags>
+			<Id i:nil="true"/>
+			<IsBundle>false</IsBundle>
+			<Manufacturer>
+				<Id>a26c4503-95da-4f5c-8e2d-b1726c21eacb</Id>
+				<Name>Apple</Name>
+			</Manufacturer>
+			<Pricing>
+				<MSRP>
+					<Units>USD</Units>
+					<Value>1799.9900</Value>
+				</MSRP>
+				<MSRPURL>https://www.amazon.com/dp/B0DWG2K761</MSRPURL>
+				<SRP>
+					<Units>USD</Units>
+					<Value>0.0</Value>
+				</SRP>
+			</Pricing>
+			<PrimaryImage>
+				<Description/>
+				<Flags>0</Flags>
+				<Id>2c06c2fc-269d-4198-be5a-1ab121edacc9</Id>
+				<Name>1</Name>
+				<Type>Image</Type>
+				<URL>https://api.getquipt.com/v2/Image/2c06c2fc-269d-4198-be5a-1ab121edacc9.jpg</URL>
+				<Height i:nil="true"/>
+				<Resolution i:nil="true"/>
+				<Width i:nil="true"/>
+			</PrimaryImage>
+			<SKUs>
+				<SKU>
+					<Type>MPN</Type>
+					<Value>2023-MAC STUDIO-M2 MAX-1TB-SND</Value>
+				</SKU>
+				<SKU>
+					<Type>UPC</Type>
+					<Value>026571015274</Value>
+				</SKU>
+			</SKUs>
+			<SpecSheetURL>https://www.amazon.com/dp/B0DWG2K761</SpecSheetURL>
+			<SwatchImages/>
+			<Tags xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+				<a:string>wireless connectivity</a:string>
+				<a:string>32GB Ram</a:string>
+				<a:string>1000GB SSD</a:string>
+				<a:string>Student use</a:string>
+				<a:string>Mini PC</a:string>
+				<a:string> Silver</a:string>
+				<a:string>Apple Mac OS 15</a:string>
+				<a:string>Home use</a:string>
+				<a:string>Apple M2 Max</a:string>
+				<a:string>Apple Mac Studio</a:string>
+			</Tags>
+			<Title>Apple Mac Studio (32GB 1TB SSD Apple M2 Max 3.5GHz) Silver</Title>
+			<VersionNumber>0</VersionNumber>
+			<Condition>
+				<Code>SCRADDNT</Code>
+				<Id>a51bbfbc-682e-4379-8276-735f8e48ed92</Id>
+				<Name>Scratch and Dent Refurbished</Name>
+			</Condition>
+			<Dimensions>
+				<Units>IN</Units>
+				<Height>9.00</Height>
+				<Length>12.60</Length>
+				<Width>12.00</Width>
+			</Dimensions>
+			<Id>eda5f27c-0ab8-455d-affb-629eae7457ec</Id>
+			<InBox xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+				<a:string>2023 Mac Studio M2 Max Desktop</a:string>
+				<a:string>Power Cable</a:string>
+			</InBox>
+			<Packaging>
+				<Code>GENERIC</Code>
+				<Id>e5aca3ec-636c-40e8-8c33-6669ffbdee22</Id>
+				<Name>Brown/White Box</Name>
+			</Packaging>
+			<SKUsMatrix i:nil="true"/>
+			<Support>
+				<Email i:nil="true"/>
+				<PhoneNumber>
+					<CountryISO>US</CountryISO>
+					<Number/>
+				</PhoneNumber>
+				<Provider>None</Provider>
+				<ProviderString>None</ProviderString>
+				<URL i:nil="true"/>
+			</Support>
+			<Warranty>
+				<Email>auctions@regencytechnologies.com</Email>
+				<PhoneNumber>
+					<CountryISO>US</CountryISO>
+					<Number>8889095049</Number>
+				</PhoneNumber>
+				<Provider>Distributor</Provider>
+				<ProviderString>Distributor</ProviderString>
+				<URL/>
+				<Duration>90 Days</Duration>
+			</Warranty>
+			<Weight>
+				<Units>Pounds</Units>
+				<Value>12.0000</Value>
+			</Weight>
+		</Catalog>
+		<CatalogStatusAt>2026-02-05T12:08:19.843Z</CatalogStatusAt>
+		<CatalogStatusDisplayName>Published</CatalogStatusDisplayName>
+		<CurrentPricing>
+			<Price>
+				<Units>USD</Units>
+				<Value>1499.9900</Value>
+			</Price>
+			<SRP>
+				<Units>USD</Units>
+				<Value>1499.9900</Value>
+			</SRP>
+		</CurrentPricing>
+		<Freight i:nil="true"/>
+		<Id i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">f167bd94-1c95-4035-bbe2-49712ce1ed96</Id>
+		<InventoryStatusAt>2026-02-05T12:08:19.843Z</InventoryStatusAt>
+		<InventoryStatusDisplayName>Pending Export</InventoryStatusDisplayName>
+		<LastARPChangeAt>2026-02-05T12:08:19.843Z</LastARPChangeAt>
+		<MapURL>http://www.amazon.com/gp/product/B0FJKD719W/</MapURL>
+		<Pricing>
+			<Price>
+				<Units>USD</Units>
+				<Value>1499.9900</Value>
+			</Price>
+			<SRP>
+				<Units>USD</Units>
+				<Value>1499.9900</Value>
+			</SRP>
+		</Pricing>
+		<Promotion>
+			<Allocation>
+				<Units>Each</Units>
+				<Value>0.0000</Value>
+				<ExpectedAt i:nil="true"/>
+			</Allocation>
+			<Pricing i:nil="true"/>
+			<Status>None</Status>
+			<StatusName>None</StatusName>
+		</Promotion>
+		<Properties i:nil="true"/>
+		<ShippingInfo>
+			<Dimensions>
+				<Units>IN</Units>
+				<Height>9.00</Height>
+				<Length>12.60</Length>
+				<Width>12.00</Width>
+			</Dimensions>
+			<Weight>
+				<Units>Pounds</Units>
+				<Value>12.0000</Value>
+			</Weight>
+		</ShippingInfo>
+		<Summary>
+			<Condition>
+				<Code>SCRADDNT</Code>
+				<Id>a51bbfbc-682e-4379-8276-735f8e48ed92</Id>
+				<Name>Scratch and Dent Refurbished</Name>
+				<Suffix i:nil="true"/>
+			</Condition>
+			<Id>f167bd94-1c95-4035-bbe2-49712ce1ed96</Id>
+			<InventoryCatalogId>eda5f27c-0ab8-455d-affb-629eae7457ec</InventoryCatalogId>
+			<MPN>2023-MAC STUDIO-M2 MAX-1TB-SND</MPN>
+			<MSRP>
+				<Units>USD</Units>
+				<Value>1799.9900</Value>
+			</MSRP>
+			<Manufacturer>Apple</Manufacturer>
+			<Notes i:nil="true"/>
+			<PrimaryImageId>2c06c2fc-269d-4198-be5a-1ab121edacc9</PrimaryImageId>
+			<SKU>176699</SKU>
+			<Title>Apple Mac Studio (32GB 1TB SSD Apple M2 Max 3.5GHz) Silver</Title>
+			<UPC>026571015274</UPC>
+			<VariantKey i:nil="true"/>
+		</Summary>
+		<Threshold>
+			<Units>Each</Units>
+			<Value>0.0</Value>
+		</Threshold>
+		<Details i:nil="true"/>
+	</InventoryVirtualResult>
+	<InventoryVirtualResult>
+		<Id i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">16c99ccb-51fd-4d1d-ab17-3e528fe5db9e</Id>
+		<SKU>164334</SKU>
+		<Vendor>
+			<Id>6c6b5974-a9af-4a96-9aaa-d84347126457</Id>
+			<Name>Regency Technologies</Name>
+			<Code i:nil="true"/>
+			<RelationshipId>993d856b-2461-4737-bc62-2dec5cee993a</RelationshipId>
+			<MarketplaceName/>
+		</Vendor>
+		<MapId/>
+		<ARP i:nil="true"/>
+		<CatalogStatus>Accepted</CatalogStatus>
+		<InventoryStatus>None</InventoryStatus>
+		<Comment i:nil="true"/>
+		<On>true</On>
+		<Available>
+			<Units>Each</Units>
+			<Value>16.0000</Value>
+		</Available>
+		<Blocked>
+			<Units>Each</Units>
+			<Value>0.0000</Value>
+		</Blocked>
+		<Catalog>
+			<AdditionalImages>
+				<Asset>
+					<Description i:nil="true"/>
+					<Flags>0</Flags>
+					<Id>e3e9af45-97f7-44d2-9898-b2e0ff4c6086</Id>
+					<Name>2</Name>
+					<Type>Image</Type>
+					<URL>https://api.getquipt.com/v2/Image/e3e9af45-97f7-44d2-9898-b2e0ff4c6086.jpg</URL>
+					<Height i:nil="true"/>
+					<Resolution i:nil="true"/>
+					<Width i:nil="true"/>
+				</Asset>
+				<Asset>
+					<Description i:nil="true"/>
+					<Flags>0</Flags>
+					<Id>cd593de4-db8e-46d0-b796-f84f9e0d947b</Id>
+					<Name>3</Name>
+					<Type>Image</Type>
+					<URL>https://api.getquipt.com/v2/Image/cd593de4-db8e-46d0-b796-f84f9e0d947b.jpg</URL>
+					<Height i:nil="true"/>
+					<Resolution i:nil="true"/>
+					<Width i:nil="true"/>
+				</Asset>
+			</AdditionalImages>
+			<AltTitle>HP Z2 G4 Tower (32GB RAM, 512GB SSD, i7-8700 3.0GHz) Win11P, Black</AltTitle>
+			<AltTitle2/>
+			<Attributes>
+				<Attribute>
+					<Code>HDSPEED</Code>
+					<Id>2638d3c6-cf49-4f7f-9ef9-0239112f9784</Id>
+					<IsOption>false</IsOption>
+					<Name>Hard Drive Speed (RPM)</Name>
+					<Section>
+						<Id>cc57cc52-2b21-406f-903d-252fd3591945</Id>
+						<Name>Storage</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>TOTALPCIX8</Code>
+					<Id>9643bfee-d26d-406f-9860-023a07da871f</Id>
+					<IsOption>false</IsOption>
+					<Name>Total PCI Express X8 Slots</Name>
+					<Section>
+						<Id>c848017d-5f8b-4cad-91da-528b1bc64524</Id>
+						<Name>Expandability</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>USBCPORTS</Code>
+					<Id>3af6a066-2ada-48c1-9a28-0716fc5ca35e</Id>
+					<IsOption>false</IsOption>
+					<Name>Total USB-C Ports</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>HDTYPEHWARE</Code>
+					<Id>8b33a26d-ad6e-4d82-8595-08ce484b5d8f</Id>
+					<IsOption>false</IsOption>
+					<Name>Hard Drive Type</Name>
+					<Section>
+						<Id>cc57cc52-2b21-406f-903d-252fd3591945</Id>
+						<Name>Storage</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Solid State Drive (SSD)</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>ENERGYSTAR</Code>
+					<Id>7ced7df3-1a11-4e61-ba52-127f031b2118</Id>
+					<IsOption>false</IsOption>
+					<Name>Energy Star Compliant</Name>
+					<Section>
+						<Id>52e50eed-2591-4014-8f37-2980b06e689d</Id>
+						<Name>General Information</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>YES</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>LIQUIDCOOL</Code>
+					<Id>bbbbd019-ec58-401f-9351-14bb9dffb0c7</Id>
+					<IsOption>false</IsOption>
+					<Name>Liquid Cooling</Name>
+					<Section>
+						<Id>52e50eed-2591-4014-8f37-2980b06e689d</Id>
+						<Name>General Information</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>NO</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>OPTDR1</Code>
+					<Id>548c52d8-28af-4682-b0a2-1bba6bd42ddd</Id>
+					<IsOption>false</IsOption>
+					<Name>Optical Drive Type</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Not Applicable</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>CPUCORE</Code>
+					<Id>57e6db51-87ac-494e-b434-1c0cc28f5131</Id>
+					<IsOption>false</IsOption>
+					<Name># of Processor Cores</Name>
+					<Section>
+						<Id>69a2c798-6e32-4223-a197-c9a0dcd19bff</Id>
+						<Name>Processor</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>6</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>TOTALEXPBAY</Code>
+					<Id>370e45be-e678-4346-bb69-1da1fc9b85f4</Id>
+					<IsOption>false</IsOption>
+					<Name>Total Open Expansion Bays</Name>
+					<Section>
+						<Id>c848017d-5f8b-4cad-91da-528b1bc64524</Id>
+						<Name>Expandability</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>TOTALPCIX16</Code>
+					<Id>cbf7e85e-e41a-4d9a-9c85-200f36edb6c5</Id>
+					<IsOption>false</IsOption>
+					<Name>Total PCI Express X16 Slots</Name>
+					<Section>
+						<Id>c848017d-5f8b-4cad-91da-528b1bc64524</Id>
+						<Name>Expandability</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>2</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>RAMTYPE</Code>
+					<Id>1059ca3c-9b23-4902-9807-2340a91b7f4c</Id>
+					<IsOption>false</IsOption>
+					<Name>Memory Type</Name>
+					<Section>
+						<Id>42e60555-d692-4d3d-a01b-19c3b57e8ec0</Id>
+						<Name>RAM</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>DDR4</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>MODELNBR</Code>
+					<Id>d39a65cd-d1b9-4edd-85d0-243e7c2d7e9b</Id>
+					<IsOption>false</IsOption>
+					<Name>Model Number</Name>
+					<Section>
+						<Id>52e50eed-2591-4014-8f37-2980b06e689d</Id>
+						<Name>General Information</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>G4</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>GPUSIZE</Code>
+					<Id>119c344d-393a-42c5-a5c9-274ceb8bf301</Id>
+					<IsOption>false</IsOption>
+					<Name>Video Memory Available (MB)</Name>
+					<Section>
+						<Id>0f87f420-d759-4478-a1ee-78c064169e46</Id>
+						<Name>Graphics</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>4096</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>ITEMDIMS</Code>
+					<Id>c553c2b5-464f-4551-a84a-288c04c1d3cb</Id>
+					<IsOption>false</IsOption>
+					<Name>Item Dimensions - H x W x D (IN)</Name>
+					<Section i:nil="true"/>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>17.1 x 14 x 6.7</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>MAXDISPLSUP</Code>
+					<Id>ef8ec3ce-7948-4194-80fb-29b030a571ba</Id>
+					<IsOption>false</IsOption>
+					<Name>Maximum Displays Supported</Name>
+					<Section>
+						<Id>05febb0f-459e-40ee-a272-68a9a5d9f5d3</Id>
+						<Name>Display</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>2</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>TOTALDVI</Code>
+					<Id>332dd5ae-0ac3-43e7-9519-31841fa7ea04</Id>
+					<IsOption>false</IsOption>
+					<Name>Total DVI Outputs</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>SPECIALNOTE</Code>
+					<Id>e3eff483-688b-4a66-89e8-387a9a2f75d9</Id>
+					<IsOption>false</IsOption>
+					<Name>Product Special Notes - 0 if None</Name>
+					<Section i:nil="true"/>
+					<Value i:nil="true" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+				</Attribute>
+				<Attribute>
+					<Code>USBPRT</Code>
+					<Id>6cb861df-3b4f-4050-ab50-4aa903968826</Id>
+					<IsOption>false</IsOption>
+					<Name>Total USB 2.0 Ports</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>2</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>EXACTCOLOR</Code>
+					<Id>97f947e1-e7be-49a6-906f-4ac6b92c7885</Id>
+					<IsOption>false</IsOption>
+					<Name>Color - Exact</Name>
+					<Section i:nil="true"/>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Black</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>MOUSEINCL</Code>
+					<Id>4d1d9409-4b87-432e-beca-4b443b71f64f</Id>
+					<IsOption>false</IsOption>
+					<Name>Mouse Included</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>NO</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>TOTALPCIX1</Code>
+					<Id>e046e246-f2f8-4bf1-836b-4d873ce1d18a</Id>
+					<IsOption>false</IsOption>
+					<Name>Total PCI Express X1 Slots</Name>
+					<Section>
+						<Id>c848017d-5f8b-4cad-91da-528b1bc64524</Id>
+						<Name>Expandability</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>1</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>DVDSPD</Code>
+					<Id>e2c16332-d825-4edc-8f5e-55e587b63136</Id>
+					<IsOption>false</IsOption>
+					<Name>DVD Speed (R/W/RW)</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0/0/0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>HDPHNJACK</Code>
+					<Id>11dd71c8-fbf8-48ef-b755-56fa179e628f</Id>
+					<IsOption>false</IsOption>
+					<Name>Total Headphone Outputs</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>1</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>PLUGTYPE</Code>
+					<Id>94139df5-09b6-4cb9-8550-61a73e87ac69</Id>
+					<IsOption>false</IsOption>
+					<Name>Power Adapter Plug Type</Name>
+					<Section i:nil="true"/>
+					<Value i:nil="true" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+				</Attribute>
+				<Attribute>
+					<Code>KEYBOARDINCL</Code>
+					<Id>c5fb990d-0af8-4139-aee3-6585968c5fa6</Id>
+					<IsOption>false</IsOption>
+					<Name>Keyboard Included</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>NO</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>HDMI</Code>
+					<Id>322b7d6e-a4dc-4cc7-8850-662b86343ce5</Id>
+					<IsOption>false</IsOption>
+					<Name>Total HDMI Outputs</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>AVAILPCIX16</Code>
+					<Id>bf2f0763-1211-48df-b8ed-67ea12244bac</Id>
+					<IsOption>false</IsOption>
+					<Name>Available PCI Express X16 Slots</Name>
+					<Section>
+						<Id>c848017d-5f8b-4cad-91da-528b1bc64524</Id>
+						<Name>Expandability</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>2</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>GPUTYPE</Code>
+					<Id>d90841ce-8458-4822-b742-68f3ea91e2d2</Id>
+					<IsOption>false</IsOption>
+					<Name>Graphics Type</Name>
+					<Section>
+						<Id>0f87f420-d759-4478-a1ee-78c064169e46</Id>
+						<Name>Graphics</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Dedicated</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>PRODGEN</Code>
+					<Id>0ab8ed76-fa4b-4c4c-9ddd-696c3e110be4</Id>
+					<IsOption>false</IsOption>
+					<Name>Product Generation</Name>
+					<Section i:nil="true"/>
+					<Value i:nil="true" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+				</Attribute>
+				<Attribute>
+					<Code>CPUSPEED</Code>
+					<Id>b9d46621-7143-44b0-96b6-6c5036514cec</Id>
+					<IsOption>false</IsOption>
+					<Name>Processor Speed (GHz)</Name>
+					<Section>
+						<Id>69a2c798-6e32-4223-a197-c9a0dcd19bff</Id>
+						<Name>Processor</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>3.0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>RELEASEYEAR</Code>
+					<Id>3f5f19e4-9600-4901-b620-7088a1602289</Id>
+					<IsOption>false</IsOption>
+					<Name>Release Year</Name>
+					<Section i:nil="true"/>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>2018</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>TOTAL35EXTBAY</Code>
+					<Id>028c1ebf-a0fa-4982-8fb7-758cbbdb7ed3</Id>
+					<IsOption>false</IsOption>
+					<Name>Total 3.5" External Bays</Name>
+					<Section>
+						<Id>c848017d-5f8b-4cad-91da-528b1bc64524</Id>
+						<Name>Expandability</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>CPUSERIES</Code>
+					<Id>3e3fef0f-706a-4df9-a596-7a23ca126b81</Id>
+					<IsOption>false</IsOption>
+					<Name>Processor Series</Name>
+					<Section>
+						<Id>69a2c798-6e32-4223-a197-c9a0dcd19bff</Id>
+						<Name>Processor</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Intel Core i7 8th Gen</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>BLUSPD</Code>
+					<Id>fb211e51-4998-4a4e-aad8-7c1d953741ce</Id>
+					<IsOption>false</IsOption>
+					<Name>Blu-ray Speed (R/W/RW)</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0/0/0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>BUNDSOFT</Code>
+					<Id>f50d462b-6fa7-4939-9cd1-85e5005f9ac4</Id>
+					<IsOption>false</IsOption>
+					<Name>Bundled Software - 0 if None</Name>
+					<Section i:nil="true"/>
+					<Value i:nil="true" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+				</Attribute>
+				<Attribute>
+					<Code>RAMSIZE</Code>
+					<Id>a29a4f7c-3b74-4211-906e-86675263ccb6</Id>
+					<IsOption>false</IsOption>
+					<Name>Total RAM (GB)</Name>
+					<Section>
+						<Id>42e60555-d692-4d3d-a01b-19c3b57e8ec0</Id>
+						<Name>RAM</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>32</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>BLUETOOTHVER</Code>
+					<Id>a87c1e0d-d996-481b-a415-8972183eb32f</Id>
+					<IsOption>false</IsOption>
+					<Name>Bluetooth Compatibility</Name>
+					<Section>
+						<Id>93d475be-eadc-4b2d-ba6c-a04e1cf444b2</Id>
+						<Name>Networking</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>No Bluetooth</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>RAMMAX</Code>
+					<Id>c7318d51-25df-42d4-a871-9418dc67c3de</Id>
+					<IsOption>false</IsOption>
+					<Name>Maximum Memory Supported (GB)</Name>
+					<Section>
+						<Id>42e60555-d692-4d3d-a01b-19c3b57e8ec0</Id>
+						<Name>RAM</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>64</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>NUMPROCESSOR</Code>
+					<Id>63b14482-aae1-44cf-9fdd-9ca6ea2fdb0a</Id>
+					<IsOption>false</IsOption>
+					<Name># of Processors</Name>
+					<Section i:nil="true"/>
+					<Value i:nil="true" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+				</Attribute>
+				<Attribute>
+					<Code>TOTAL35INTBAY</Code>
+					<Id>d8c2d2d2-9fb0-4384-9551-9d2a6a781b5d</Id>
+					<IsOption>false</IsOption>
+					<Name>Total 3.5" Internal Bays</Name>
+					<Section>
+						<Id>c848017d-5f8b-4cad-91da-528b1bc64524</Id>
+						<Name>Expandability</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>2</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>MEDIACARDREADER</Code>
+					<Id>12a3286c-d3f8-4a38-aeaa-9f7fc23c555e</Id>
+					<IsOption>false</IsOption>
+					<Name>Built-in Media Card Reader</Name>
+					<Section>
+						<Id>c848017d-5f8b-4cad-91da-528b1bc64524</Id>
+						<Name>Expandability</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Not Applicable</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>HDTYPE</Code>
+					<Id>82fc413c-9701-415f-87e4-a5e8e928242b</Id>
+					<IsOption>false</IsOption>
+					<Name>Hard Drive Interface</Name>
+					<Section>
+						<Id>cc57cc52-2b21-406f-903d-252fd3591945</Id>
+						<Name>Storage</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>PCIe NVMe</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>CPUNUM</Code>
+					<Id>7aacee32-7971-441a-b55a-abfadd9ca288</Id>
+					<IsOption>false</IsOption>
+					<Name>Processor Model Number</Name>
+					<Section>
+						<Id>69a2c798-6e32-4223-a197-c9a0dcd19bff</Id>
+						<Name>Processor</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Intel Core  i7-8700</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>DESKTOPFORMFACT</Code>
+					<Id>8703cc0e-531d-47f0-911f-accb4a8ba243</Id>
+					<IsOption>false</IsOption>
+					<Name>Form Factor</Name>
+					<Section>
+						<Id>52e50eed-2591-4014-8f37-2980b06e689d</Id>
+						<Name>General Information</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Full Tower</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>MOUSECON</Code>
+					<Id>ab3fdbb1-b9e2-4387-a264-b643d31d6fc6</Id>
+					<IsOption>false</IsOption>
+					<Name>Mouse Connection Type</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Not Applicable</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>MICPHNJACK</Code>
+					<Id>fb4e6a6d-5995-4adb-8506-b812129d955a</Id>
+					<IsOption>false</IsOption>
+					<Name>Total Microphone Outputs</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>1</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>USBPWR</Code>
+					<Id>af5c0f1c-56f6-479f-815d-babb2b268c68</Id>
+					<IsOption>false</IsOption>
+					<Name>Total USB 3.0 Ports</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>6</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>AVAILPCIX8</Code>
+					<Id>06c8218c-6c44-4f0e-a626-bbd41f501f7d</Id>
+					<IsOption>false</IsOption>
+					<Name>Available PCI Express X8 Slots</Name>
+					<Section>
+						<Id>c848017d-5f8b-4cad-91da-528b1bc64524</Id>
+						<Name>Expandability</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>KEYBOARDCON</Code>
+					<Id>37e3d934-407d-4854-a3cb-bec2dddb3ef7</Id>
+					<IsOption>false</IsOption>
+					<Name>Keyboard Connection Type</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Not Applicable</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>HDSIZE</Code>
+					<Id>7fcd5dc2-7b92-4412-bfbc-c110a3a973b7</Id>
+					<IsOption>false</IsOption>
+					<Name>Hard Drive Size (GB)</Name>
+					<Section>
+						<Id>cc57cc52-2b21-406f-903d-252fd3591945</Id>
+						<Name>Storage</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>512</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>PCLIFESTYLE</Code>
+					<Id>0669caf9-37fa-4d3d-adfd-c7db6a0d5c70</Id>
+					<IsOption>false</IsOption>
+					<Name>Lifestyle</Name>
+					<Section>
+						<Id>52e50eed-2591-4014-8f37-2980b06e689d</Id>
+						<Name>General Information</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Business</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>LANCOMPAT</Code>
+					<Id>115e9be0-0387-4932-9306-cfb0841dd793</Id>
+					<IsOption>false</IsOption>
+					<Name>LAN Compatibility</Name>
+					<Section>
+						<Id>93d475be-eadc-4b2d-ba6c-a04e1cf444b2</Id>
+						<Name>Networking</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>10/100/1000 Gigabit</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>DESKTOPPRODLINE</Code>
+					<Id>ff4933a2-ef61-4e49-99ed-d5e37b885341</Id>
+					<IsOption>false</IsOption>
+					<Name>Product Line (Desktop)</Name>
+					<Section>
+						<Id>52e50eed-2591-4014-8f37-2980b06e689d</Id>
+						<Name>General Information</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>HP Z2 G4</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>TOTALDSLPRT</Code>
+					<Id>c73383f4-6770-42b7-ac6d-d7b3d6423879</Id>
+					<IsOption>false</IsOption>
+					<Name>Total DisplayPort Outputs</Name>
+					<Section i:nil="true"/>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>2</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>CPUCACHE</Code>
+					<Id>bb031bc0-e0be-4f9f-bd16-dcad282e7089</Id>
+					<IsOption>false</IsOption>
+					<Name>Processor L3 Cache (MB)</Name>
+					<Section>
+						<Id>69a2c798-6e32-4223-a197-c9a0dcd19bff</Id>
+						<Name>Processor</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>9</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>AVAILPCIX1</Code>
+					<Id>d4f2ff1f-6f63-4968-9514-df31975f9af4</Id>
+					<IsOption>false</IsOption>
+					<Name>Available PCI Express X1 Slots</Name>
+					<Section>
+						<Id>c848017d-5f8b-4cad-91da-528b1bc64524</Id>
+						<Name>Expandability</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>1</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>ITEMWEIGHT</Code>
+					<Id>82139195-741e-4d70-85c6-e4edcd2a6e0f</Id>
+					<IsOption>false</IsOption>
+					<Name>Item Weight (LBS)</Name>
+					<Section i:nil="true"/>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>18</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>USBPRTFRT</Code>
+					<Id>3187212b-ef60-4f76-89ee-e890905f0cdd</Id>
+					<IsOption>false</IsOption>
+					<Name>Front USB 2.0 Ports</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>OPTANEMEM</Code>
+					<Id>473edacf-c114-4346-860f-ee1f3ae8183f</Id>
+					<IsOption>false</IsOption>
+					<Name>Optane Memory (GB)</Name>
+					<Section i:nil="true"/>
+					<Value i:nil="true" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+				</Attribute>
+				<Attribute>
+					<Code>GENERICCOLOR</Code>
+					<Id>410e31fe-c378-4a96-8099-f0c25ddd2d2b</Id>
+					<IsOption>false</IsOption>
+					<Name>Color - Generic</Name>
+					<Section i:nil="true"/>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Black</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>EPEATLVL</Code>
+					<Id>adfc84df-6088-4827-b1e3-f16beb162fa0</Id>
+					<IsOption>false</IsOption>
+					<Name>EPEAT Level</Name>
+					<Section>
+						<Id>52e50eed-2591-4014-8f37-2980b06e689d</Id>
+						<Name>General Information</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Gold</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>DESKTOPOSEDITION</Code>
+					<Id>93156a80-cc36-4af9-95bd-f3c13f560c2c</Id>
+					<IsOption>false</IsOption>
+					<Name>Operating System Version</Name>
+					<Section>
+						<Id>21ec2c3d-96d9-48ea-bd84-5004b332dfe6</Id>
+						<Name>Operating System</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Professional</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>GPUMODEL</Code>
+					<Id>dcf8ce51-510b-4621-aa2e-f7de59b9e907</Id>
+					<IsOption>false</IsOption>
+					<Name>Graphics Card Model Number</Name>
+					<Section>
+						<Id>0f87f420-d759-4478-a1ee-78c064169e46</Id>
+						<Name>Graphics</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>NVIDIA Quadro P2000</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>TOTALHOTSWAP</Code>
+					<Id>3ab43da9-d355-4b01-9f81-f90411b964c6</Id>
+					<IsOption>false</IsOption>
+					<Name>Total Hot-Swap Bays</Name>
+					<Section>
+						<Id>c848017d-5f8b-4cad-91da-528b1bc64524</Id>
+						<Name>Expandability</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>WIFICOMPAT</Code>
+					<Id>ca51be5b-b727-4a2d-9ca0-f92fb1092c02</Id>
+					<IsOption>false</IsOption>
+					<Name>Wireless Network Compatibility</Name>
+					<Section i:nil="true"/>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Not Applicable</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>DESKTOPOS</Code>
+					<Id>4b763ec9-6193-4514-a4bf-fb2020a2e462</Id>
+					<IsOption>false</IsOption>
+					<Name>Operating System</Name>
+					<Section>
+						<Id>21ec2c3d-96d9-48ea-bd84-5004b332dfe6</Id>
+						<Name>Operating System</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>Microsoft Windows 11</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>TOTAL525EXTBAY</Code>
+					<Id>48470368-cf39-4581-aacb-fbf3aec20eed</Id>
+					<IsOption>false</IsOption>
+					<Name>Total 5.25" External Bays</Name>
+					<Section>
+						<Id>c848017d-5f8b-4cad-91da-528b1bc64524</Id>
+						<Name>Expandability</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>2</a:string>
+					</Value>
+				</Attribute>
+				<Attribute>
+					<Code>VGA</Code>
+					<Id>70278144-312d-4398-9ebb-ff7621962d70</Id>
+					<IsOption>false</IsOption>
+					<Name>Total VGA Outputs</Name>
+					<Section>
+						<Id>cd4dd8f2-3e43-4e9e-85bc-57cbdaa1f183</Id>
+						<Name>Inputs/Outputs</Name>
+					</Section>
+					<Value xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>0</a:string>
+					</Value>
+				</Attribute>
+			</Attributes>
+			<Brand>
+				<Id>31279849-45b7-46e6-8d20-40ddb79894b8</Id>
+				<Name>HP</Name>
+			</Brand>
+			<Category>
+				<Id>d423ff2d-f254-465c-bf69-36e1dad50ba4</Id>
+				<Name>Electronics: Computers &amp; Tablets: Desktop Computers: System Only</Name>
+			</Category>
+			<CountryOfOrigin>
+				<ISO>CN</ISO>
+				<ISO3>CHN</ISO3>
+				<Name>Peoples Republic of China</Name>
+			</CountryOfOrigin>
+			<Description>The HP Z2 G4 is a high-performance full tower desktop computer designed for professional use. It features an Intel Core i7-8700 processor, 32GB DDR4 RAM, and a 512GB PCIe NVMe SSD. The NVIDIA Quadro P2000 dedicated graphics card with 4GB video memory ensures seamless rendering and graphical performance. This desktop computer is Energy Star compliant, EPEAT Gold certified, and comes with Microsoft Windows 11 Professional pre-installed. With a sleek black design and various expansion slots, it provides the power and flexibility needed for demanding business applications.</Description>
+			<Documents/>
+			<Features xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+				<a:string>Intel Core i7-8700 Processor (Hexa-Core, 3.0GHz, 9MB Cache)</a:string>
+				<a:string>32GB DDR4 System Memory</a:string>
+				<a:string>512GB PCIe NVMe Solid State Drive (SSD)</a:string>
+				<a:string>Dedicated NVIDIA Quadro P2000 Graphics (4.1GB Dedicated Video Memory)</a:string>
+			</Features>
+			<Flags>0</Flags>
+			<Id i:nil="true"/>
+			<IsBundle>false</IsBundle>
+			<Manufacturer>
+				<Id>31279849-45b7-46e6-8d20-40ddb79894b8</Id>
+				<Name>HP</Name>
+			</Manufacturer>
+			<Pricing>
+				<MSRP>
+					<Units>USD</Units>
+					<Value>1024.0000</Value>
+				</MSRP>
+				<MSRPURL>https://www.cdw.com/product/hp-sb-workstation-z2-tower-g4-core-i5-8500-8gb-ram-1tb-windows-10-pro/5196267</MSRPURL>
+				<SRP>
+					<Units>USD</Units>
+					<Value>0.0</Value>
+				</SRP>
+			</Pricing>
+			<PrimaryImage>
+				<Description i:nil="true"/>
+				<Flags>0</Flags>
+				<Id>de9a79d4-ec9f-4efd-8b7c-6adf38499bb7</Id>
+				<Name>1</Name>
+				<Type>Image</Type>
+				<URL>https://api.getquipt.com/v2/Image/de9a79d4-ec9f-4efd-8b7c-6adf38499bb7.jpg</URL>
+				<Height i:nil="true"/>
+				<Resolution i:nil="true"/>
+				<Width i:nil="true"/>
+			</PrimaryImage>
+			<SKUs>
+				<SKU>
+					<Type>MPN</Type>
+					<Value>Z2 TOWER G4-8700-512-SND</Value>
+				</SKU>
+				<SKU>
+					<Type>UPC</Type>
+					<Value>027501388239</Value>
+				</SKU>
+			</SKUs>
+			<SpecSheetURL>https://www.bhphotovideo.com/c/product/1426795-REG/hp_5du87ut_aba_z2_g4_twr_i5_8500_8gb_1tb_gfx_coffeelake_windows.html/specs</SpecSheetURL>
+			<SwatchImages/>
+			<Tags xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+				<a:string>business desktop</a:string>
+				<a:string>32GB Ram</a:string>
+				<a:string>Intel Core i7</a:string>
+				<a:string>NVIDIA Quadro P2000</a:string>
+				<a:string>HP Z2 G4</a:string>
+				<a:string>Full Tower</a:string>
+				<a:string>Windows 11 Professional</a:string>
+				<a:string>Professional Workstation</a:string>
+				<a:string>512GB SSD</a:string>
+				<a:string>Desktop Computer</a:string>
+			</Tags>
+			<Title>HP Z2 G4 Tower (32GB RAM, 512GB SSD, i7-8700 3.0GHz) Win11P, Black</Title>
+			<VersionNumber>0</VersionNumber>
+			<Condition>
+				<Code>SCRADDNT</Code>
+				<Id>a51bbfbc-682e-4379-8276-735f8e48ed92</Id>
+				<Name>Scratch and Dent Refurbished</Name>
+			</Condition>
+			<Dimensions>
+				<Units>IN</Units>
+				<Height>12.00</Height>
+				<Length>25.00</Length>
+				<Width>20.00</Width>
+			</Dimensions>
+			<Id>4eebb479-d946-4c61-b1f9-4abc4b2e46a3</Id>
+			<InBox xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+				<a:string>HP Z2 Tower G4 Desktop</a:string>
+				<a:string>Power Cable</a:string>
+			</InBox>
+			<Packaging>
+				<Code>GENERIC</Code>
+				<Id>e5aca3ec-636c-40e8-8c33-6669ffbdee22</Id>
+				<Name>Brown/White Box</Name>
+			</Packaging>
+			<SKUsMatrix i:nil="true"/>
+			<Support>
+				<Email i:nil="true"/>
+				<PhoneNumber>
+					<CountryISO>US</CountryISO>
+					<Number/>
+				</PhoneNumber>
+				<Provider>None</Provider>
+				<ProviderString>None</ProviderString>
+				<URL i:nil="true"/>
+			</Support>
+			<Warranty>
+				<Email>auctions@regencytechnologies.com</Email>
+				<PhoneNumber>
+					<CountryISO>US</CountryISO>
+					<Number>8889095049</Number>
+				</PhoneNumber>
+				<Provider>Distributor</Provider>
+				<ProviderString>Distributor</ProviderString>
+				<URL/>
+				<Duration>90 Days</Duration>
+			</Warranty>
+			<Weight>
+				<Units>Pounds</Units>
+				<Value>24.0000</Value>
+			</Weight>
+		</Catalog>
+		<CatalogStatusAt>2026-01-21T16:54:56.913Z</CatalogStatusAt>
+		<CatalogStatusDisplayName>Accepted</CatalogStatusDisplayName>
+		<CurrentPricing>
+			<Price>
+				<Units>USD</Units>
+				<Value>379.9900</Value>
+			</Price>
+			<SRP>
+				<Units>USD</Units>
+				<Value>379.9900</Value>
+			</SRP>
+		</CurrentPricing>
+		<Freight i:nil="true"/>
+		<Id i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">16c99ccb-51fd-4d1d-ab17-3e528fe5db9e</Id>
+		<InventoryStatusAt>2026-02-04T23:07:26.557Z</InventoryStatusAt>
+		<InventoryStatusDisplayName>Pending Export</InventoryStatusDisplayName>
+		<LastARPChangeAt i:nil="true"/>
+		<MapURL i:nil="true"/>
+		<Pricing>
+			<Price>
+				<Units>USD</Units>
+				<Value>379.9900</Value>
+			</Price>
+			<SRP>
+				<Units>USD</Units>
+				<Value>379.9900</Value>
+			</SRP>
+		</Pricing>
+		<Promotion>
+			<Allocation>
+				<Units>Each</Units>
+				<Value>0.0000</Value>
+				<ExpectedAt i:nil="true"/>
+			</Allocation>
+			<Pricing i:nil="true"/>
+			<Status>None</Status>
+			<StatusName>None</StatusName>
+		</Promotion>
+		<Properties i:nil="true"/>
+		<ShippingInfo>
+			<Dimensions>
+				<Units>IN</Units>
+				<Height>12.00</Height>
+				<Length>25.00</Length>
+				<Width>20.00</Width>
+			</Dimensions>
+			<Weight>
+				<Units>Pounds</Units>
+				<Value>24.0000</Value>
+			</Weight>
+		</ShippingInfo>
+		<Summary>
+			<Condition>
+				<Code>SCRADDNT</Code>
+				<Id>a51bbfbc-682e-4379-8276-735f8e48ed92</Id>
+				<Name>Scratch and Dent Refurbished</Name>
+				<Suffix i:nil="true"/>
+			</Condition>
+			<Id>16c99ccb-51fd-4d1d-ab17-3e528fe5db9e</Id>
+			<InventoryCatalogId>4eebb479-d946-4c61-b1f9-4abc4b2e46a3</InventoryCatalogId>
+			<MPN>Z2 TOWER G4-8700-512-SND</MPN>
+			<MSRP>
+				<Units>USD</Units>
+				<Value>1024.0000</Value>
+			</MSRP>
+			<Manufacturer>HP</Manufacturer>
+			<Notes i:nil="true"/>
+			<PrimaryImageId>de9a79d4-ec9f-4efd-8b7c-6adf38499bb7</PrimaryImageId>
+			<SKU>164334</SKU>
+			<Title>HP Z2 G4 Tower (32GB RAM, 512GB SSD, i7-8700 3.0GHz) Win11P, Black</Title>
+			<UPC>027501388239</UPC>
+			<VariantKey i:nil="true"/>
+		</Summary>
+		<Threshold>
+			<Units>Each</Units>
+			<Value>0.0</Value>
+		</Threshold>
+		<Details i:nil="true"/>
+	</InventoryVirtualResult>
+</ArrayOfInventoryVirtualResult>
