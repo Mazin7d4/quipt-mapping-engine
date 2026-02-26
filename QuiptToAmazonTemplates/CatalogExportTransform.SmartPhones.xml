@@ -1,0 +1,921 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatalogTemplateRequest.BuilderDetails xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.quipt.com/api">
+  <Attributes>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;color json:Array="true"&gt;
+&lt;value&gt;
+
+&lt;xsl:variable name='qColor' select="q:Catalog/q:Attributes/q:Attribute[q:Code='GENERICCOLOR']/q:Value/a:string[1]" /&gt;
+&lt;xsl:variable name="map"&gt;
+
+&lt;item qColor="Red"&gt;red&lt;/item&gt;
+&lt;item qColor="Orange"&gt;orange&lt;/item&gt;
+&lt;item qColor="Yellow"&gt;yellow&lt;/item&gt;
+&lt;item qColor="Green"&gt;green&lt;/item&gt;
+&lt;item qColor="Blue"&gt;blue&lt;/item&gt;
+&lt;item qColor="Purple"&gt;purple&lt;/item&gt;
+&lt;item qColor="Pink"&gt;pink&lt;/item&gt;
+&lt;item qColor="Silver"&gt;silver&lt;/item&gt;
+&lt;item qColor="Gold"&gt;gold&lt;/item&gt;
+&lt;item qColor="Beige"&gt;Beige&lt;/item&gt;
+&lt;item qColor="Brown"&gt;brown&lt;/item&gt;
+&lt;item qColor="Grey"&gt;Grey&lt;/item&gt;
+&lt;item qColor="Black"&gt;black&lt;/item&gt;
+&lt;item qColor="White"&gt;white&lt;/item&gt;
+&lt;item qColor="Clear"&gt;Transparent&lt;/item&gt;
+
+
+&lt;/xsl:variable&gt;
+
+&lt;xsl:value-of select="msxsl:node-set($map)/item[@qColor=$qColor]"/&gt;
+
+
+&lt;/value&gt;
+&lt;/color&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;supplier_declared_dg_hz_regulation json:Array="true"&gt;
+   &lt;value&gt;not_applicable&lt;/value&gt;
+&lt;/supplier_declared_dg_hz_regulation&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>
+&lt;size json:Array="true"&gt;
+&lt;value&gt;&lt;xsl:value-of select="q:Catalog/q:Attributes/q:Attribute[q:Code='RAMSIZE']/q:Value/a:string[1]" /&gt;&lt;/value&gt;
+&lt;unit&gt;GB&lt;/unit&gt;
+&lt;/size&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;display json:Array="true"&gt;
+
+&lt;size json:Array="true"&gt;
+&lt;value&gt;&lt;xsl:value-of select="q:Catalog/q:Attributes/q:Attribute[q:Code='SCRNSIZE']/q:Value/a:string[1]" /&gt;&lt;/value&gt;
+&lt;unit&gt;inches&lt;/unit&gt;
+&lt;/size&gt;
+
+&lt;resolution_maximum json:Array="true"&gt;
+&lt;value&gt;&lt;xsl:value-of select="q:Catalog/q:Attributes/q:Attribute[q:Code='NATIVERES']/q:Value/a:string[1]" /&gt;&lt;/value&gt;
+&lt;unit&gt;pixels&lt;/unit&gt;
+&lt;/resolution_maximum&gt;
+
+&lt;!-- anyOf,AMOLED,LCD,OLED --&gt;
+&lt;type json:Array="true"&gt;
+&lt;value&gt;anyOf&lt;/value&gt;
+&lt;/type&gt;
+
+&lt;/display&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;flash_memory json:Array="true"&gt;
+&lt;installed_size json:Array="true"&gt;
+   &lt;value  json:Type="Float"&gt;&lt;xsl:value-of select="q:Catalog/q:Attributes/q:Attribute[q:Code='STORSIZE']/q:Value/a:string[1]" /&gt;&lt;/value&gt;&lt;unit&gt;GB&lt;/unit&gt;
+&lt;/installed_size&gt;
+
+&lt;/flash_memory&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;!-- anyOf,Android 10.0,Android 11.0,Android 12.0,Android 13.0,Android 14,Android 4.0,Android 4.1,Android 4.2,Android 4.3,Android 4.4,Android 5.0,Android 5.1,Android 6.0,Android 7.0,Android 7.1,Android 8.0,Android 8.1,Android 9.0,BlackBerry 10.0,BlackBerry 6.0,BlackBerry 7.0,EMUI 10.0,FunTouch OS 10,FunTouch OS 4,FunTouch OS 9,iOS 10,iOS 11,iOS 12,iOS 13,iOS 14,iOS 15,iOS 16,iOS 17,iOS 3,iOS 4,iOS 7,iOS 8,iOS 9,KaiOS,MIUI 10,MIUI 11,MIUI 12,MIUI 12.5,MIUI 8,MIUI 9,Nucleus OS,OxygenOS,Symbian 9.1,Symbian 9.3,Windows Mobile 6.5 --&gt;
+&lt;operating_system json:Array="true"&gt;
+    &lt;value&gt;
+&lt;xsl:value-of select="q:Catalog/q:Attributes/q:Attribute[q:Code='TABOS']/q:Value/a:string[1]" /&gt;
+ &lt;/value&gt;
+
+&lt;/operating_system&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;!-- anyOf,2G,3G,4G,5G --&gt;
+
+&lt;cellular_technology json:Array="true"&gt;
+&lt;value&gt;
+
+&lt;xsl:variable name="qwireless" select="q:Catalog/q:Attributes/q:Attribute[q:Code='WIRELESSTECH']/q:Value/a:string[1]" /&gt;
+
+&lt;xsl:choose&gt; 
+
+&lt;xsl:when test="contains($qwireless,'2G')"&gt;
+&lt;xsl:text&gt;2G&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+
+&lt;xsl:when test="contains($qwireless,'3G')"&gt;
+&lt;xsl:text&gt;3G&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+
+&lt;xsl:when test="contains($qwireless,'4G LTE')"&gt;
+&lt;xsl:text&gt;4G&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+
+&lt;xsl:when test="contains($qwireless,'5G')"&gt;
+&lt;xsl:text&gt;5G&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+
+
+&lt;/xsl:choose&gt;
+
+&lt;/value&gt;
+&lt;/cellular_technology&gt;
+
+
+</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;!-- amps,CDMA,GSM,Iden,LTE,TDMA,UMTS,unknown,wifi,WiMax --&gt;
+
+&lt;wireless_network_technology json:Array="true"&gt;
+&lt;value&gt;
+
+&lt;xsl:variable name="qcelular" select="q:Catalog/q:Attributes/q:Attribute[q:Code='CELLULARNETWORK']/q:Value/a:string[1]" /&gt;
+
+&lt;xsl:choose&gt; 
+
+&lt;xsl:when test="contains($qcelular,'Not Applicable')"&gt;
+&lt;xsl:text&gt;unknown&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+
+&lt;xsl:when test="contains($qcelular,'GSM')"&gt;
+&lt;xsl:text&gt;GSM&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+
+&lt;xsl:when test="contains($qcelular,'CDMA')"&gt;
+&lt;xsl:text&gt;CDMA&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+
+&lt;/xsl:choose&gt;
+
+&lt;/value&gt;
+&lt;/wireless_network_technology&gt;
+</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;memory_storage_capacity json:Array="true"&gt;
+&lt;value&gt;&lt;xsl:value-of select="q:Catalog/q:Attributes/q:Attribute[q:Code='STORSIZE']/q:Value/a:string[1]" /&gt;&lt;/value&gt;
+&lt;unit&gt;GB&lt;/unit&gt;
+&lt;/memory_storage_capacity&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;connector_type json:Array="true"&gt;
+&lt;value&gt;&lt;/value&gt;
+&lt;/connector_type&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;!-- 1und1,3,airtel,aldi_talk,algar_telecom,america_movil,att,au,base,bell_mobility,biglobe,bild_connect,blue,boost_infinite,boost_mobile,bsnl,cabo_telecom,china_mobile,china_telecom,china_unicom,claro,congstar,consumer_cellular,copel,correios,cricket,deutsche_telekom,docomo,du,e-plus,edeka_mobil,embratel,etisalat,freedompop,freenet,global_village_telecom,go,project_fi,gowireless,h2o_wireless,ig_internet_group,iij,intelig_telecom,jio,kajeet,kt_corporation,lebara,lidl_connect,line_mobile,linksmate,lycamobile,metro_by_tmobile,mineo,mint_mobile,mobilcom,mobily,movistar,mvno,net,net_10,netell,ntt_communications,o2,oi,optus,orange,otelo,rakuten_mobile,republic,republic_wireless,rogers_wireless,sercomtel,simple_mobile,sk_telecom,smartmobil_de,softbank,sprint,stc,sti_mobile_actual,straight_talk,swipe,t_mobile,talkline,tchibo_mobil,telcel,telecom_egypt,telefonica,telstra,telus,tesco,tim,ting,tokai_communications,total_wireless,tpg,tracfone,unlocked,all_carriers,uol_universo_online,uq_mobile,uscellular,verizon,verizon_wireless,virgin_mobile,vodafone,vodafone_idea,voicestream,whatsapp_sim,win_sim,y_mobile,zain --&gt;
+&lt;wireless_provider json:Array="true"&gt;
+&lt;value&gt;
+
+&lt;xsl:variable name="qcelular" select="q:Catalog/q:Attributes/q:Attribute[q:Code='NETWORKPROVIDER']/q:Value/a:string[1]" /&gt;
+
+&lt;xsl:choose&gt; 
+
+&lt;xsl:when test="contains($qcelular,'Not Applicable')"&gt;
+&lt;xsl:text&gt;unlocked&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+&lt;xsl:when test="contains($qcelular,'Not Specified')"&gt;
+&lt;xsl:text&gt;unlocked&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+&lt;xsl:when test="contains($qcelular,'AT&amp;amp;T')"&gt;
+&lt;xsl:text&gt;att&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+&lt;xsl:otherwise&gt;
+&lt;xsl:value-of select="$qcelular" /&gt;
+
+&lt;/xsl:otherwise&gt;
+
+&lt;/xsl:choose&gt;
+
+&lt;/value&gt;
+&lt;/wireless_provider&gt;
+</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;effective_still_resolution json:Array="true"&gt;
+&lt;value&gt;&lt;xsl:value-of select="q:Catalog/q:Attributes/q:Attribute[q:Code='REARCAM']/q:Value/a:string[1]" /&gt;&lt;/value&gt;
+&lt;unit&gt;megapixels&lt;/unit&gt;
+&lt;/effective_still_resolution&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;!-- anyOf,Bar,Foldable Case,Foldable Screen,Slate,Slider --&gt;
+&lt;form_factor json:Array="true"&gt;
+&lt;value&gt;&lt;/value&gt;
+&lt;/form_factor&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;model_number json:Array="true"&gt;
+&lt;value&gt;&lt;xsl:value-of select="q:Catalog/q:Attributes/q:Attribute[q:Code='MODELNBR']/q:Value/a:string[1]" /&gt;&lt;/value&gt;
+&lt;/model_number&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;!-- anyOf,Dual-Micro/Nano,Dual-Nano,Dual-SIM,Dual-SIM/Micro,Dual-SIM/Nano,Micro-SIM,Nano-SIM Dual-Micro,SIM --&gt;
+&lt;telephone_type json:Array="true"&gt;
+&lt;value&gt;&lt;xsl:value-of select="q:Catalog/q:Attributes/q:Attribute[q:Code='DUALSIM']/q:Value/a:string[1]" /&gt;&lt;/value&gt;
+&lt;/telephone_type&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;digital_storage_capacity json:Array="true"&gt;
+&lt;value&gt;&lt;xsl:value-of select="q:Catalog/q:Attributes/q:Attribute[q:Code='STORSIZE']/q:Value/a:string[1]" /&gt;&lt;/value&gt;
+&lt;unit&gt;GB&lt;/unit&gt;
+&lt;/digital_storage_capacity&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;xsl:variable name="qm2" select="q:Catalog/q:Attributes/q:Attribute[q:Code='MODELNBR']/q:Value/a:string[1]" /&gt;
+
+&lt;xsl:variable name="qm1" select="q:Catalog/q:Attributes/q:Attribute[q:Code='PHONEPRODLINE']/q:Value/a:string[1]" /&gt;
+&lt;model_name json:Array="true"&gt;
+    &lt;value&gt;&lt;xsl:value-of select="concat($qm1, $qm2)" /&gt;&lt;/value&gt;
+&lt;/model_name&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;!-- anyOf,Audio Adapter,Headset,Phone Case,Power Adapter,Screen Protector,SIM Tray Ejector,Stylus,USB Cable,USB OTG Adapter --&gt;
+
+&lt;included_components json:Array="true"&gt;
+    &lt;xsl:variable name="hasCharger" select="count(q:Catalog/q:InBox/a:string[contains(., 'Charger') or contains(., 'charger')]) &gt; 0" /&gt;
+
+    &lt;xsl:choose&gt;
+        &lt;xsl:when test="$hasCharger"&gt;
+            &lt;value&gt;Power Adapter&lt;/value&gt;
+            &lt;value&gt;USB Cable&lt;/value&gt;
+        &lt;/xsl:when&gt;
+        &lt;xsl:otherwise&gt;
+            &lt;value&gt;USB Cable&lt;/value&gt;
+        &lt;/xsl:otherwise&gt;
+    &lt;/xsl:choose&gt;
+
+&lt;/included_components&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;number_of_items json:Array="true"&gt;
+    &lt;value json:Type="Integer"&gt;&lt;xsl:value-of select="count(q:Catalog/q:InBox/a:string)"/&gt;&lt;/value&gt;
+&lt;/number_of_items&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;batteries_required json:Array="true"&gt;
+&lt;value&gt;
+
+&lt;xsl:variable name="battery" select="q:Catalog/q:Attributes/q:Attribute[q:Code='BATTYPE']/q:Value/a:string[1]" /&gt;
+
+	&lt;xsl:choose&gt;
+		&lt;xsl:when test="contains($battery, 'No Battery')"&gt;
+&lt;xsl:text&gt;False&lt;/xsl:text&gt;
+		&lt;/xsl:when&gt;
+		
+		
+		&lt;xsl:otherwise&gt;
+		&lt;xsl:text&gt;True&lt;/xsl:text&gt;
+		&lt;/xsl:otherwise&gt;
+	&lt;/xsl:choose&gt;
+
+
+&lt;/value&gt;
+
+&lt;/batteries_required&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;battery json:Array="true"&gt;
+
+&lt;capacity json:Array="true"&gt;
+&lt;value json:Type="Float"&gt;&lt;xsl:value-of select="q:Catalog/q:Attributes/q:Attribute[q:Code='BATCAP']/q:Value/a:string[1]" /&gt;&lt;/value&gt;
+&lt;unit&gt;milliampere_hour&lt;/unit&gt;
+&lt;/capacity&gt;
+
+&lt;xsl:variable name='qbat' select="q:Catalog/q:Attributes/q:Attribute[q:Code='BATTYPE']/q:Value/a:string[1]" /&gt;
+ &lt;cell_composition json:Array="true"&gt;
+            &lt;value&gt;
+                &lt;xsl:choose&gt;
+                    &lt;xsl:when test="$qbat ='Lithium-Ion'"&gt;lithium_ion&lt;/xsl:when&gt;
+                    &lt;xsl:when test="$qbat ='Lithium-Metal'"&gt;lithium_metal&lt;/xsl:when&gt;
+                    &lt;xsl:when test="$qbat ='Lithium-Polymer'"&gt;lithium_polymer&lt;/xsl:when&gt;
+                    &lt;xsl:when test="$qbat ='Nickel Cadmium (NICD)'"&gt;NiCAD&lt;/xsl:when&gt;
+                    &lt;xsl:when test="$qbat ='Nickel-Metal Hydride (NIMH)'"&gt;NiMh&lt;/xsl:when&gt;
+
+                    &lt;xsl:when test="$qbat ='Alkaline'"&gt;alkaline&lt;/xsl:when&gt;
+                    &lt;xsl:when test="$qbat ='Lead-Acid'"&gt;lead_acid&lt;/xsl:when&gt;
+                    &lt;xsl:when test="$qbat ='Sodium-Ion'"&gt;sodium_ion&lt;/xsl:when&gt;
+                    &lt;xsl:when test="$qbat ='Wet-Alkali'"&gt;wet_alkali&lt;/xsl:when&gt;
+
+                    &lt;xsl:otherwise&gt;
+                        &lt;xsl:text&gt;other_than_listed&lt;/xsl:text&gt;
+                    &lt;/xsl:otherwise&gt;
+                &lt;/xsl:choose&gt;
+            &lt;/value&gt;
+        &lt;/cell_composition&gt;
+
+
+&lt;power json:Array="true"&gt;
+&lt;value json:Type="Float"&gt;&lt;xsl:value-of select="q:Catalog/q:Attributes/q:Attribute[q:Code='BATCAP']/q:Value/a:string[1]" /&gt;&lt;/value&gt;
+&lt;unit&gt;milliampere_hour&lt;/unit&gt;
+&lt;/power &gt;
+
+
+&lt;weight json:Array="true"&gt;
+&lt;value json:Type="Float"&gt;&lt;xsl:value-of select="q:Catalog/q:Attributes/q:Attribute[q:Code='BATWEIGHT']/q:Value/a:string[1]" /&gt;&lt;/value&gt;
+&lt;unit&gt;ounces&lt;/unit&gt;
+&lt;/weight&gt;
+&lt;/battery&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;batteries_included json:Array="true"&gt;
+&lt;value&gt;
+
+&lt;xsl:variable name="battery" select="q:Catalog/q:Attributes/q:Attribute[q:Code='BATTYPE']/q:Value/a:string[1]" /&gt;
+
+	&lt;xsl:choose&gt;
+		&lt;xsl:when test="contains($battery, 'No Battery')"&gt;
+&lt;xsl:text&gt;False&lt;/xsl:text&gt;
+		&lt;/xsl:when&gt;
+		
+		
+		&lt;xsl:otherwise&gt;
+		&lt;xsl:text&gt;True&lt;/xsl:text&gt;
+		&lt;/xsl:otherwise&gt;
+	&lt;/xsl:choose&gt;
+
+
+&lt;/value&gt;
+
+&lt;/batteries_included&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;num_batteries json:Array="true"&gt;
+&lt;quantity&gt;1&lt;/quantity&gt;
+&lt;type&gt;nonstandard_battery&lt;/type&gt;
+&lt;/num_batteries&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;has_multiple_battery_powered_components json:Array="true"&gt;
+&lt;value&gt;False&lt;/value&gt;
+&lt;/has_multiple_battery_powered_components&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;contains_battery_or_cell json:Array="true"&gt;
+&lt;xsl:variable name="battery" select="q:Catalog/q:Attributes/q:Attribute[q:Code='BATTYPE']/q:Value/a:string[1]" /&gt;
+&lt;value&gt;
+	&lt;xsl:choose&gt;
+		&lt;xsl:when test="contains($battery, 'No Battery')"&gt;
+&lt;xsl:text&gt;cell&lt;/xsl:text&gt;
+		&lt;/xsl:when&gt;
+		
+		
+		&lt;xsl:otherwise&gt;
+		&lt;xsl:text&gt;battery&lt;/xsl:text&gt;
+		&lt;/xsl:otherwise&gt;
+	&lt;/xsl:choose&gt;
+
+
+&lt;/value&gt;
+&lt;/contains_battery_or_cell&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;lithium_battery json:Array="true"&gt;
+&lt;energy_content  json:Array="true"&gt;
+&lt;value json:Type="Float"&gt;&lt;xsl:value-of select="q:Catalog/q:Attributes/q:Attribute[q:Code='BATCAP']/q:Value/a:string[1]" /&gt;&lt;/value&gt;
+&lt;unit&gt;milliampere_hour&lt;/unit&gt;
+&lt;/energy_content &gt;
+
+&lt;packaging json:Array="true"&gt;
+&lt;xsl:variable name="packaging" select="q:Catalog/q:Attributes/q:Attribute[q:Code='BATTYPE']/q:Value/a:string[1]" /&gt;
+&lt;value&gt;
+	&lt;xsl:choose&gt;
+		&lt;xsl:when test="contains($packaging, '(Not Installed)')"&gt;
+&lt;xsl:text&gt;batteries_packed_with_equipment&lt;/xsl:text&gt;
+		&lt;/xsl:when&gt;
+		
+		
+		&lt;xsl:otherwise&gt;
+		&lt;xsl:text&gt;batteries_contained_in_equipment&lt;/xsl:text&gt;
+		&lt;/xsl:otherwise&gt;
+	&lt;/xsl:choose&gt;
+&lt;/value&gt;
+&lt;/packaging&gt;
+
+
+&lt;weight json:Array="true"&gt;
+&lt;value&gt;&lt;xsl:value-of select="q:Catalog/q:Attributes/q:Attribute[q:Code='BATWEIGHT']/q:Value/a:string[1]" /&gt;&lt;/value&gt;
+&lt;unit&gt;ounces&lt;/unit&gt;
+&lt;/weight&gt;
+
+&lt;/lithium_battery&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;number_of_lithium_ion_cells json:Array="true"&gt;
+&lt;value&gt;
+	&lt;xsl:value-of select="q:Catalog/q:Attributes/q:Attribute[q:Code='BATSIZE']/q:Value/a:string[1]" /&gt;		
+&lt;/value&gt;
+&lt;/number_of_lithium_ion_cells&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;!-- installed_in_equipment,installed_in_vehicle,installed_in_vessel,not_installed --&gt;
+&lt;battery_installation_device_type json:Array="true"&gt;
+&lt;xsl:variable name="packaging" select="q:Catalog/q:Attributes/q:Attribute[q:Code='BATTYPE']/q:Value/a:string[1]" /&gt;
+&lt;value&gt;
+	&lt;xsl:choose&gt;
+		&lt;xsl:when test="contains($packaging, '(Not Installed)')"&gt;
+&lt;xsl:text&gt;installed_in_equipment&lt;/xsl:text&gt;
+		&lt;/xsl:when&gt;
+		
+		
+		&lt;xsl:otherwise&gt;
+		&lt;xsl:text&gt;not_installed&lt;/xsl:text&gt;
+		&lt;/xsl:otherwise&gt;
+	&lt;/xsl:choose&gt;
+&lt;/value&gt;
+&lt;/battery_installation_device_type&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+  </Attributes>
+  <Global>
+    <CatalogTemplateRequest.Property>
+      <Key>TemplateType</Key>
+      <Value></Value>
+    </CatalogTemplateRequest.Property>
+    <CatalogTemplateRequest.Property>
+      <Key>Version</Key>
+      <Value></Value>
+    </CatalogTemplateRequest.Property>
+    <CatalogTemplateRequest.Property>
+      <Key>ItemType</Key>
+      <Value>cell-phones</Value>
+    </CatalogTemplateRequest.Property>
+    <CatalogTemplateRequest.Property>
+      <Key>Filter</Key>
+      <Value></Value>
+    </CatalogTemplateRequest.Property>
+    <CatalogTemplateRequest.Property>
+      <Key>bullet_point1</Key>
+      <Value></Value>
+    </CatalogTemplateRequest.Property>
+    <CatalogTemplateRequest.Property>
+      <Key>bullet_point2</Key>
+      <Value></Value>
+    </CatalogTemplateRequest.Property>
+    <CatalogTemplateRequest.Property>
+      <Key>bullet_point3</Key>
+      <Value></Value>
+    </CatalogTemplateRequest.Property>
+    <CatalogTemplateRequest.Property>
+      <Key>bullet_point4</Key>
+      <Value></Value>
+    </CatalogTemplateRequest.Property>
+    <CatalogTemplateRequest.Property>
+      <Key>bullet_point5</Key>
+      <Value></Value>
+    </CatalogTemplateRequest.Property>
+    <CatalogTemplateRequest.Property>
+      <Key>special_features</Key>
+      <Value></Value>
+    </CatalogTemplateRequest.Property>
+    <CatalogTemplateRequest.Property>
+      <Key>version</Key>
+      <Value>Json</Value>
+    </CatalogTemplateRequest.Property>
+    <CatalogTemplateRequest.Property>
+      <Key>ProductType</Key>
+      <Value>&lt;xsl:text&gt;CELLULAR_PHONE&lt;/xsl:text&gt;</Value>
+    </CatalogTemplateRequest.Property>
+    <CatalogTemplateRequest.Property>
+      <Key>language_tag</Key>
+      <Value>en_US</Value>
+    </CatalogTemplateRequest.Property>
+  </Global>
+  <HasVariantManager>false</HasVariantManager>
+  <Variants />
+</CatalogTemplateRequest.BuilderDetails>

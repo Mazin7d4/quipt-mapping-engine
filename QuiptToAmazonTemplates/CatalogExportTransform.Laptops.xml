@@ -1,0 +1,1861 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatalogTemplateRequest.BuilderDetails xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.quipt.com/api">
+  <Attributes>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;!-- Black,Blue,Burgundy,Gold,Gray,Green,Pink,Purple,Red,Rose Gold,Silver,White --&gt;
+&lt;color json:Array="true"&gt;
+&lt;value&gt;
+&lt;xsl:variable name="COLOR" select="q:Catalog/q:Attributes/q:Attribute[q:Code='GENERICCOLOR']/q:Value/a:string[1]" /&gt;
+
+&lt;xsl:choose&gt;
+
+&lt;xsl:when test="$COLOR='Grey'"&gt;
+&lt;xsl:text&gt;Gray&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+
+&lt;xsl:when test="$COLOR='Gray'"&gt;
+&lt;xsl:text&gt;Gray&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+
+&lt;xsl:when test="$COLOR='Black'"&gt;
+&lt;xsl:text&gt;Black&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+
+&lt;xsl:when test="$COLOR='Silver'"&gt;
+&lt;xsl:text&gt;Silver&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+
+&lt;xsl:when test="$COLOR='White'"&gt;
+&lt;xsl:text&gt;White&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+
+
+&lt;xsl:when test="$COLOR='Gold'"&gt;
+&lt;xsl:text&gt;Rose Gold&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+
+&lt;xsl:when test="$COLOR='Red'"&gt;
+&lt;xsl:text&gt;Red&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+
+
+&lt;xsl:when test="$COLOR='Green'"&gt;
+&lt;xsl:text&gt;Green&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+
+&lt;xsl:when test="$COLOR='Orange'"&gt;
+&lt;xsl:text&gt;Orange&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+
+&lt;xsl:when test="$COLOR='Brown'"&gt;
+&lt;xsl:text&gt;Brown&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+
+&lt;xsl:when test="$COLOR='Purple'"&gt;
+&lt;xsl:text&gt;Purple&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+
+&lt;xsl:when test="$COLOR='Blue'"&gt;
+&lt;xsl:text&gt;Blue&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+
+&lt;xsl:when test="$COLOR='Pink'"&gt;
+&lt;xsl:text&gt;Pink&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+
+&lt;/xsl:choose&gt;
+&lt;/value&gt;
+&lt;/color&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;supplier_declared_dg_hz_regulation json:Array="true"&gt;
+   &lt;value&gt;not_applicable&lt;/value&gt;
+&lt;/supplier_declared_dg_hz_regulation&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;item_length_width_thickness json:Array="true"&gt;
+&lt;thickness&gt;
+&lt;value&gt;
+&lt;xsl:if test="normalize-space(q:Catalog/q:Attributes/q:Attribute[q:Code='ITEMDIMS']/q:Value/a:string)!=''"&gt;
+      &lt;xsl:value-of select="format-number(normalize-space(substring-after(substring-after(q:Catalog/q:Attributes/q:Attribute[q:Code='ITEMDIMS']/q:Value/a:string,'x'),'x')), '0.0')"/&gt;
+    &lt;/xsl:if&gt;
+&lt;/value&gt;
+&lt;unit&gt;&lt;xsl:text&gt;inches&lt;/xsl:text&gt;&lt;/unit&gt;
+&lt;/thickness&gt;
+&lt;length&gt;
+&lt;value&gt;
+&lt;xsl:if test="normalize-space(q:Catalog/q:Attributes/q:Attribute[q:Code='ITEMDIMS']/q:Value/a:string)!=''"&gt;
+      &lt;xsl:value-of select="format-number(normalize-space(substring-before(substring-after(q:Catalog/q:Attributes/q:Attribute[q:Code='ITEMDIMS']/q:Value/a:string,'x'),'x')), '0.0')"/&gt;
+    &lt;/xsl:if&gt;
+&lt;/value&gt;
+&lt;unit&gt;&lt;xsl:text&gt;inches&lt;/xsl:text&gt;&lt;/unit&gt;
+&lt;/length&gt;
+&lt;width&gt;
+&lt;value&gt;
+&lt;xsl:if test="normalize-space(q:Catalog/q:Attributes/q:Attribute[q:Code='ITEMDIMS']/q:Value/a:string)!=''"&gt;
+      &lt;xsl:value-of select="format-number(normalize-space(substring-after(substring-after(q:Catalog/q:Attributes/q:Attribute[q:Code='ITEMDIMS']/q:Value/a:string,'x'),'x')), '0.0')"/&gt;
+    &lt;/xsl:if&gt;
+&lt;/value&gt;
+&lt;unit&gt;&lt;xsl:text&gt;inches&lt;/xsl:text&gt;&lt;/unit&gt;
+&lt;/width&gt;
+&lt;/item_length_width_thickness&gt;
+
+</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;xsl:variable name = "qweight" select="q:Catalog/q:Attributes/q:Attribute[q:Code='ITEMWEIGHT']/q:Value/a:string[1]" /&gt;
+
+&lt;item_weight json:Array="true"&gt;
+&lt;value&gt;
+&lt;xsl:value-of select="format-number($qweight, '0.0')"/&gt;
+&lt;/value&gt;&lt;unit&gt;pounds&lt;/unit&gt;
+&lt;/item_weight&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;model_number json:Array="true"&gt;
+&lt;value&gt;&lt;xsl:value-of select="q:Catalog/q:Attributes/q:Attribute[q:Code='MODELNBR']/q:Value/a:string[1]" /&gt;&lt;/value&gt;
+&lt;/model_number&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;ram_memory json:Array="true"&gt;
+&lt;installed_size json:Array="true"&gt;
+   &lt;value json:Type="Float"&gt;&lt;xsl:value-of select="q:Catalog/q:Attributes/q:Attribute[q:Code='RAMSIZE']/q:Value/a:string[1]" /&gt;&lt;/value&gt;&lt;unit&gt;GB&lt;/unit&gt;
+&lt;/installed_size&gt;
+&lt;technology json:Array="true"&gt; 
+
+&lt;value&gt;&lt;xsl:variable name='qram' select="q:Catalog/q:Attributes/q:Attribute[q:Code='RAMTYPE']/q:Value/a:string[1]" /&gt;
+
+&lt;xsl:choose&gt; 
+
+&lt;xsl:when test="$qram ='DDR4'"&gt;ddr4_sdram&lt;/xsl:when&gt;
+&lt;xsl:when test="$qram ='DDR3'"&gt;ddr3_sdram&lt;/xsl:when&gt;
+&lt;xsl:when test="$qram ='DDR2'"&gt;ddr2_sdram&lt;/xsl:when&gt;
+&lt;xsl:when test="$qram ='DDR5'"&gt;ddr5_ram&lt;/xsl:when&gt;
+&lt;xsl:when test="$qram ='DDR5'"&gt;ddr5_ram&lt;/xsl:when&gt;
+&lt;xsl:when test="$qram ='DDR'"&gt;ddr_dram&lt;/xsl:when&gt;
+
+&lt;xsl:otherwise&gt;
+    &lt;xsl:value-of select="$qram"/&gt;
+&lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;&lt;/value&gt;
+
+&lt;/technology&gt;
+
+
+&lt;maximum_size json:Array="true"&gt; 
+&lt;value&gt;&lt;xsl:value-of select="q:Catalog/q:Attributes/q:Attribute[q:Code='RAMSIZE']/q:Value/a:string[1]" /&gt;&lt;/value&gt;&lt;unit&gt;GB&lt;/unit&gt;
+&lt;/maximum_size&gt;
+
+
+&lt;/ram_memory&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;display json:Array="true"&gt;
+
+&lt;size json:Array="true"&gt;
+&lt;value json:Type="Float"&gt;&lt;xsl:value-of select="q:Catalog/q:Attributes/q:Attribute[q:Code='SCRNSIZE']/q:Value/a:string[1]" /&gt;&lt;/value&gt;
+&lt;unit&gt;inches&lt;/unit&gt;
+&lt;/size&gt;
+
+&lt;!-- anyOf,AMOLED,LCD,LED,OLED --&gt;
+&lt;technology json:Array="true"&gt;
+   &lt;value&gt;
+
+&lt;xsl:variable name="qMNTRDISPLAYTYPE" select="q:Catalog/q:Attributes/q:Attribute[q:Code='DSPLYTYPE']/q:Value/a:string[1]" /&gt;
+
+&lt;xsl:choose&gt;
+&lt;xsl:when test ="$qMNTRDISPLAYTYPE='IPS'"&gt;
+&lt;xsl:text&gt;LCD&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+&lt;xsl:when test ="$qMNTRDISPLAYTYPE='LED-backlit'"&gt;
+&lt;xsl:text&gt;LED&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;	
+&lt;xsl:when test ="$qMNTRDISPLAYTYPE='TN'"&gt;
+&lt;xsl:text&gt;LCD&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;	
+&lt;xsl:when test ="$qMNTRDISPLAYTYPE='Mini-LED'"&gt;
+&lt;xsl:text&gt;LED&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;	
+&lt;xsl:otherwise&gt;&lt;xsl:value-of select="$qMNTRDISPLAYTYPE" /&gt;&lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;	
+
+
+
+&lt;/value&gt;
+&lt;/technology&gt;
+
+&lt;resolution_maximum json:Array="true"&gt;
+&lt;value&gt;&lt;xsl:value-of select="q:Catalog/q:Attributes/q:Attribute[q:Code='MAXRES']/q:Value/a:string[1]" /&gt;&lt;/value&gt;
+&lt;unit&gt;pixels&lt;/unit&gt;
+&lt;/resolution_maximum&gt;
+
+
+&lt;!-- anyOf,AMOLED,LCD,LED,OLED --&gt;
+&lt;type json:Array="true"&gt;
+   &lt;value&gt;
+
+&lt;xsl:variable name="qMNTRDISPLAYTYPE" select="q:Catalog/q:Attributes/q:Attribute[q:Code='DSPLYTYPE']/q:Value/a:string[1]" /&gt;
+
+&lt;xsl:choose&gt;
+&lt;xsl:when test ="$qMNTRDISPLAYTYPE='IPS'"&gt;
+&lt;xsl:text&gt;LCD&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+&lt;xsl:when test ="$qMNTRDISPLAYTYPE='LED-backlit'"&gt;
+&lt;xsl:text&gt;LED&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;	
+&lt;xsl:when test ="$qMNTRDISPLAYTYPE='TN'"&gt;
+&lt;xsl:text&gt;LCD&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;	
+&lt;xsl:when test ="$qMNTRDISPLAYTYPE='Mini-LED'"&gt;
+&lt;xsl:text&gt;LED&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;	
+&lt;xsl:otherwise&gt;&lt;xsl:value-of select="$qMNTRDISPLAYTYPE" /&gt;&lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;	
+
+
+
+&lt;/value&gt;
+&lt;/type&gt;
+
+
+&lt;/display&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;xsl:variable name = "qHDSz" select="q:Catalog/q:Attributes/q:Attribute[q:Code='HDSIZE']/q:Value/a:string[1]" /&gt;
+&lt;xsl:variable name = "qspeed" select="q:Catalog/q:Attributes/q:Attribute[q:Code='HDSPEED']/q:Value/a:string[1]" /&gt;
+&lt;!-- anyOf,Hybrid Drive,Mechanical Hard Disk,Solid State Drive --&gt;
+&lt;xsl:variable name = "qtype" select="q:Catalog/q:Attributes/q:Attribute[q:Code='HDTYPEHWARE']/q:Value/a:string[1]" /&gt;
+
+
+&lt;hard_disk json:Array="true"&gt;
+&lt;description json:Array="true"&gt;
+&lt;value&gt;
+&lt;xsl:choose&gt;
+&lt;xsl:when test="$qtype='Hard Disk Drive (HDD)'"&gt;
+&lt;xsl:text&gt;HDD&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+&lt;xsl:when test="$qtype='Solid State Drive (SSD)'"&gt;
+&lt;xsl:text&gt;SSD&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+&lt;xsl:when test="$qtype='Hybrid Hard Disk Drive (H-HDD)'"&gt;
+&lt;xsl:text&gt;Hybrid Drive&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+&lt;xsl:when test="$qtype='eMMC'"&gt;
+&lt;xsl:text&gt;Emmc&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+&lt;xsl:otherwise&gt;&lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;
+&lt;/value&gt;
+&lt;/description&gt;
+  &lt;size json:Array="true"&gt;
+     &lt;value json:Type="Float"&gt;&lt;xsl:value-of select="$qHDSz"/&gt;&lt;/value&gt;
+&lt;unit&gt;GB&lt;/unit&gt;
+&lt;/size&gt;
+&lt;rotational_speed json:Array="true"&gt;
+&lt;value json:Type="Integer"&gt;
+&lt;xsl:value-of select="$qspeed"/&gt;
+&lt;/value&gt;&lt;unit&gt;rpm&lt;/unit&gt;
+&lt;/rotational_speed&gt;
+
+&lt;interface json:Array="true"&gt;
+&lt;value&gt;
+&lt;xsl:variable name="qhdinter" select="q:Catalog/q:Attributes/q:Attribute[q:Code='HDTYPE']/q:Value/a:string[1]" /&gt;
+&lt;xsl:choose&gt;
+    &lt;xsl:when test="$qhdinter = 'SATA'"&gt;
+        &lt;xsl:value-of select="'serial_ata'"/&gt;
+    &lt;/xsl:when&gt;
+     &lt;xsl:when test="$qhdinter = 'SSD'"&gt;
+        &lt;xsl:value-of select="'serial_ata'"/&gt;
+    &lt;/xsl:when&gt;
+    &lt;xsl:when test="$qhdinter = 'Solid State Drive (SSD)'"&gt;
+        &lt;xsl:value-of select="'serial_ata'"/&gt;
+    &lt;/xsl:when&gt;
+    &lt;xsl:when test="$qhdinter = 'SATA II'"&gt;
+        &lt;xsl:value-of select="'serial_ata300'"/&gt;
+    &lt;/xsl:when&gt;
+    &lt;xsl:when test="$qhdinter = 'SATA III'"&gt;
+        &lt;xsl:value-of select="'serial_ata600'"/&gt;
+    &lt;/xsl:when&gt;
+    &lt;xsl:when test="$qhdinter = 'IDE'"&gt;
+        &lt;xsl:value-of select="'ultra_ata'"/&gt;
+    &lt;/xsl:when&gt;
+    &lt;xsl:when test="$qhdinter = 'SCSI'"&gt;
+        &lt;xsl:value-of select="'scsi'"/&gt;
+    &lt;/xsl:when&gt;
+    &lt;xsl:when test="$qhdinter = 'Fibre Channel'"&gt;
+        &lt;xsl:value-of select="'fibre_channel'"/&gt;
+    &lt;/xsl:when&gt;
+    &lt;xsl:when test="$qhdinter = 'Micro SATA'"&gt;
+        &lt;xsl:value-of select="'serial_ata'"/&gt;
+    &lt;/xsl:when&gt;
+    &lt;xsl:when test="$qhdinter = 'Fibre Channel 4Gb/s'"&gt;
+        &lt;xsl:value-of select="'fibre_channel'"/&gt;
+    &lt;/xsl:when&gt;
+    &lt;xsl:when test="$qhdinter = 'IDE Ultra ATA100'"&gt;
+        &lt;xsl:value-of select="'ata100'"/&gt;
+    &lt;/xsl:when&gt;
+    &lt;xsl:when test="$qhdinter = 'IDE Ultra ATA33'"&gt;
+        &lt;xsl:value-of select="'ultra_ata'"/&gt;
+    &lt;/xsl:when&gt;
+    &lt;xsl:when test="$qhdinter = 'SAS 3Gb/s'"&gt;
+        &lt;xsl:value-of select="'serial_scsi'"/&gt;
+    &lt;/xsl:when&gt;
+    &lt;xsl:when test="$qhdinter = 'SAS 6Gb/s'"&gt;
+        &lt;xsl:value-of select="'serial_scsi'"/&gt;
+    &lt;/xsl:when&gt;
+    &lt;xsl:when test="$qhdinter = 'SCSI Ultra60 80pin'"&gt;
+        &lt;xsl:value-of select="'ultra_scsi'"/&gt;
+    &lt;/xsl:when&gt;
+    &lt;xsl:when test="$qhdinter = 'SCSI Ultra160 80pin'"&gt;
+        &lt;xsl:value-of select="'ultra_160_scsi'"/&gt;
+    &lt;/xsl:when&gt;
+    &lt;xsl:when test="$qhdinter = 'SCSI Ultra320 80pin'"&gt;
+        &lt;xsl:value-of select="'ultra_320_scsi'"/&gt;
+    &lt;/xsl:when&gt;
+    &lt;xsl:when test="$qhdinter = 'SAS 12Gb/s'"&gt;
+        &lt;xsl:value-of select="'serial_scsi'"/&gt;
+    &lt;/xsl:when&gt;
+    &lt;xsl:when test="$qhdinter = 'SCSI Wide Ultra80 80pin'"&gt;
+        &lt;xsl:value-of select="'ultra_wide_scsi'"/&gt;
+    &lt;/xsl:when&gt;
+    &lt;xsl:when test="$qhdinter = 'SCSI Wide Ultra160 80pin'"&gt;
+        &lt;xsl:value-of select="'ultra_160_scsi'"/&gt;
+    &lt;/xsl:when&gt;
+    &lt;xsl:when test="$qhdinter = 'SCSI Wide Ultra320 80pin'"&gt;
+        &lt;xsl:value-of select="'ultra_320_scsi'"/&gt;
+    &lt;/xsl:when&gt;
+    &lt;xsl:when test="$qhdinter = 'PCIe'"&gt;
+        &lt;xsl:value-of select="'pci_express_x16'"/&gt;
+    &lt;/xsl:when&gt;
+&lt;xsl:when test="$qhdinter = 'PCIe NVMe'"&gt;
+        &lt;xsl:value-of select="'pci_express_x16'"/&gt;
+    &lt;/xsl:when&gt;
+    &lt;xsl:when test="$qhdinter = 'PCIe x8'"&gt;
+        &lt;xsl:value-of select="'pci_express_x8'"/&gt;
+    &lt;/xsl:when&gt;
+    &lt;xsl:when test="$qhdinter = 'USB 2.0'"&gt;
+        &lt;xsl:value-of select="'usb_2.0'"/&gt;
+    &lt;/xsl:when&gt;
+    &lt;xsl:when test="$qhdinter = 'USB 3.0'"&gt;
+        &lt;xsl:value-of select="'usb_3.0'"/&gt;
+    &lt;/xsl:when&gt;
+    &lt;xsl:when test="$qhdinter = 'USB-C'"&gt;
+        &lt;xsl:value-of select="'usb_3.0'"/&gt;
+    &lt;/xsl:when&gt;
+    &lt;xsl:when test="$qhdinter = 'Dockcord'"&gt;
+        &lt;xsl:value-of select="''"/&gt; &lt;/xsl:when&gt;
+    &lt;xsl:when test="$qhdinter = 'SAS 24Gb/s'"&gt;
+        &lt;xsl:value-of select="'serial_scsi'"/&gt;
+    &lt;/xsl:when&gt;
+    &lt;xsl:otherwise&gt;
+        &lt;xsl:value-of select="''"/&gt;
+    &lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;
+
+
+&lt;/value&gt;
+&lt;/interface&gt;
+&lt;/hard_disk&gt;
+</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;connectivity_technology json:Array="true"&gt;
+&lt;value&gt;&lt;xsl:value-of select="q:Catalog/q:Attributes/q:Attribute[q:Code='HDTYPE']/q:Value/a:string[1]" /&gt;&lt;/value&gt;
+&lt;/connectivity_technology&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;!-- ddr_dram,ddr_sdram,ddr2_sdram,ddr3_sdram,ddr4_sdram,ddr5_ram,dimm,sdram,simm,sodimm --&gt;
+&lt;system_ram_type json:Array="true"&gt; 
+
+&lt;value&gt;&lt;xsl:variable name='qram' select="q:Catalog/q:Attributes/q:Attribute[q:Code='RAMTYPE']/q:Value/a:string[1]" /&gt;
+
+&lt;xsl:choose&gt; 
+
+&lt;xsl:when test="$qram ='DDR4'"&gt;ddr4_sdram&lt;/xsl:when&gt;
+&lt;xsl:when test="$qram ='Unified'"&gt;ddr5_ram&lt;/xsl:when&gt;
+&lt;xsl:when test="$qram ='DDR3'"&gt;ddr3_sdram&lt;/xsl:when&gt;
+&lt;xsl:when test="$qram ='LPDDR3'"&gt;ddr3_sdram&lt;/xsl:when&gt;
+&lt;xsl:when test="$qram ='DDR2'"&gt;ddr2_sdram&lt;/xsl:when&gt;
+&lt;xsl:when test="$qram ='DDR5'"&gt;ddr5_ram&lt;/xsl:when&gt;
+&lt;xsl:when test="$qram ='GDDR5'"&gt;ddr5_ram&lt;/xsl:when&gt;
+&lt;xsl:when test="$qram ='DDR5'"&gt;ddr5_ram&lt;/xsl:when&gt;
+&lt;xsl:when test="$qram ='DDR'"&gt;ddr_dram&lt;/xsl:when&gt;
+&lt;xsl:when test="$qram ='LPDDR4X'"&gt;ddr4_sdram&lt;/xsl:when&gt;
+&lt;xsl:when test="$qram ='LPDDR5X'"&gt;ddr5_ram&lt;/xsl:when&gt;
+&lt;xsl:when test="$qram ='LPDDR5'"&gt;ddr5_ram&lt;/xsl:when&gt;
+&lt;xsl:when test="$qram ='LPDDR4'"&gt;ddr4_sdram&lt;/xsl:when&gt;
+&lt;xsl:otherwise&gt;
+    &lt;xsl:value-of select="$qram"/&gt;
+&lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;&lt;/value&gt;
+
+&lt;/system_ram_type&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;cpu_model json:Array="true"&gt;
+
+
+&lt;xsl:variable name="uppercase" select="'ABCDEFGHIJKLMNOPQRSTUVWXYZ'" /&gt;
+&lt;xsl:variable name="lowercase" select="'abcdefghijklmnopqrstuvwxyz'" /&gt;
+&lt;family json:Array="true"&gt;
+    &lt;value&gt;
+        &lt;xsl:variable name="qcpunum" select="q:Catalog/q:Attributes/q:Attribute[q:Code='CPUNUM']/q:Value/a:string[1]" /&gt;
+
+
+&lt;xsl:choose&gt;
+                &lt;xsl:when test="$qcpunum = 'Intel Celeron N4120'"&gt;celeron_n4120&lt;/xsl:when&gt;
+                
+    &lt;xsl:when test="$qcpunum = 'Intel Celeron N4100'"&gt;celeron_n&lt;/xsl:when&gt;
+    
+    &lt;xsl:when test="$qcpunum = 'AMD A4-9120C'"&gt;amd_a4&lt;/xsl:when&gt;
+    &lt;xsl:when test="$qcpunum = 'Intel Core i5-10210U'"&gt;core_i5_10210u&lt;/xsl:when&gt;
+&lt;xsl:when test="$qcpunum = 'Apple M1 8-Core CPU'"&gt;apple_m1&lt;/xsl:when&gt;
+&lt;xsl:when test="$qcpunum = 'Apple M3 8 Core'"&gt;apple_m3&lt;/xsl:when&gt;
+&lt;xsl:when test="$qcpunum = 'AMD Ryzen 7 PRO 6850U'"&gt;amd_ryzen_7&lt;/xsl:when&gt;
+&lt;xsl:when test="$qcpunum = 'AMD Ryzen 7 Pro 7840U'"&gt;amd_ryzen_7&lt;/xsl:when&gt;
+                &lt;xsl:when test="$qcpunum = 'Apple M2 Pro 12-core'"&gt;apple_m2_pro&lt;/xsl:when&gt;
+				&lt;xsl:when test="$qcpunum = 'Apple M4 Pro'"&gt;apple_m4&lt;/xsl:when&gt;
+
+&lt;xsl:when test="$qcpunum = 'Intel Core i5-5350U'"&gt;core_i5_5350u&lt;/xsl:when&gt;
+                &lt;xsl:when test="$qcpunum = 'Intel Celeron N4020'"&gt;celeron_n4020&lt;/xsl:when&gt;
+                &lt;xsl:when test="$qcpunum = 'AMD Ryzen 5 Pro 5650U'"&gt;ryzen_5&lt;/xsl:when&gt;
+                &lt;xsl:when test="$qcpunum = 'intel Celeron N3450U'"&gt;celeron_n3450&lt;/xsl:when&gt;
+                &lt;xsl:when test="$qcpunum = 'Intel Celeron N3350'"&gt;celeron_n3350&lt;/xsl:when&gt;
+                &lt;xsl:when test="$qcpunum = 'Intel Celeron N4000'"&gt;celeron_n4000&lt;/xsl:when&gt;
+                &lt;xsl:when test="$qcpunum = 'Intel Core i7-11370H'"&gt;
+                    &lt;xsl:value-of select="'core_i7_11370h'" /&gt;
+                &lt;/xsl:when&gt;
+                &lt;xsl:when test="$qcpunum = 'Intel Core Ultra 7 155H'"&gt;
+                    &lt;xsl:value-of select="'core_i7'" /&gt;
+                &lt;/xsl:when&gt;
+                 &lt;xsl:when test="$qcpunum = 'Intel Core i5-1350P'"&gt;
+                    &lt;xsl:value-of select="'core_i5'" /&gt;
+                &lt;/xsl:when&gt;
+                &lt;xsl:when test="$qcpunum = 'AMD Ryzen R7 5800HS'"&gt;
+                    &lt;xsl:value-of select="'ryzen_7_5800h'" /&gt;
+                &lt;/xsl:when&gt;
+ &lt;xsl:when test="$qcpunum = 'Intel Core i5-9400H'"&gt;
+                    &lt;xsl:value-of select="'core_i5_9400'" /&gt;
+                &lt;/xsl:when&gt;
+                &lt;xsl:when test="$qcpunum = 'Intel Core Ultra 7 258V'"&gt;
+                    &lt;xsl:value-of select="'core_i7'" /&gt;
+                &lt;/xsl:when&gt;
+    &lt;xsl:when test="$qcpunum = 'Intel Core™ I7-10850H'"&gt;
+                    &lt;xsl:value-of select="'core_i7_10850h'" /&gt;
+                &lt;/xsl:when&gt;
+                &lt;xsl:when test="$qcpunum = 'AMD Ryzen 5 Pro 6650U'"&gt;
+                    &lt;xsl:value-of select="'ryzen_5'" /&gt;
+                &lt;/xsl:when&gt;
+                 &lt;xsl:when test="$qcpunum = '11th Gen Intel Core i7-1185G7'"&gt;
+                    &lt;xsl:value-of select="'Intel_core_i7_1185G7'" /&gt;
+                &lt;/xsl:when&gt;
+                   &lt;xsl:when test="$qcpunum = 'Intel Core™ I7-1185G7'"&gt;
+                    &lt;xsl:value-of select="'Intel_core_i7_1185G7'" /&gt;
+                &lt;/xsl:when&gt;
+                 &lt;xsl:when test="$qcpunum = 'Intel Core™ I7-1355U'"&gt;
+                    &lt;xsl:value-of select="'intel_core_i7_1355u'" /&gt;
+                &lt;/xsl:when&gt;
+                
+                
+                
+                 &lt;xsl:when test="$qcpunum = 'AMD Ryzen 5 7540U'"&gt;
+                    &lt;xsl:value-of select="'ryzen_5'" /&gt;
+                &lt;/xsl:when&gt;
+                 &lt;xsl:when test="$qcpunum = 'AMD Ryzen 5 Pro 6650H'"&gt;
+                    &lt;xsl:value-of select="'ryzen_5'" /&gt;
+                &lt;/xsl:when&gt;
+                &lt;xsl:when test="$qcpunum = 'AMD Ryzen 5 2500U'"&gt;
+                    &lt;xsl:value-of select="'ryzen_5'" /&gt;
+                &lt;/xsl:when&gt;
+                 &lt;xsl:when test="$qcpunum = 'Intel Core i5-1235U'"&gt;
+                    &lt;xsl:value-of select="'core_i5_1235u'" /&gt;
+                &lt;/xsl:when&gt;
+                   &lt;xsl:when test="$qcpunum = 'AMD Ryzen 5 8640HS'"&gt;
+                    &lt;xsl:value-of select="'ryzen_5'" /&gt;
+                &lt;/xsl:when&gt;
+                   &lt;xsl:when test="$qcpunum = 'Intel Core i7‑10610U'"&gt;
+                    &lt;xsl:value-of select="'core_i7_10610u'" /&gt;
+                &lt;/xsl:when&gt;
+                 &lt;xsl:when test="$qcpunum = 'Intel Core™ I7-12700H'"&gt;
+                    &lt;xsl:value-of select="'core_i7_12700h'" /&gt;
+                &lt;/xsl:when&gt;
+    &lt;xsl:when test="$qcpunum = 'Intel Core i7‑1185G7'"&gt;
+                    &lt;xsl:value-of select="'Intel_core_i7_1185G7'" /&gt;
+                &lt;/xsl:when&gt;
+                &lt;xsl:when test="$qcpunum = 'Intel Core i7-10850H'"&gt;
+                    &lt;xsl:value-of select="'core_i7_10850h'" /&gt;
+                &lt;/xsl:when&gt;
+                &lt;xsl:when test="$qcpunum = 'Intel Core i7-10750H'"&gt;
+                    &lt;xsl:value-of select="'corei7_10750h'" /&gt;
+                &lt;/xsl:when&gt;
+                &lt;xsl:when test="$qcpunum = 'Intel Core I7-1185G7'"&gt;
+                    &lt;xsl:value-of select="'Intel_core_i7_1185G7'" /&gt;
+                &lt;/xsl:when&gt;
+                 &lt;xsl:when test="$qcpunum = 'AMD Ryzen 7 6800H'"&gt;
+                    &lt;xsl:value-of select="'amd_ryzen_7'" /&gt;
+                &lt;/xsl:when&gt;
+                &lt;xsl:when test="$qcpunum = 'Intel Core i5-7600'"&gt;
+                    &lt;xsl:value-of select="'core_i5'" /&gt;
+                &lt;/xsl:when&gt;
+                &lt;xsl:when test="$qcpunum = 'Intel Core i5-8210Y'"&gt;
+                    &lt;xsl:value-of select="'core_i5'" /&gt;
+                &lt;/xsl:when&gt;
+                 &lt;xsl:when test="$qcpunum = 'Intel Core i7-1165G7'"&gt;
+                    &lt;xsl:value-of select="'Intel_core_i7_1185G7'" /&gt;
+                &lt;/xsl:when&gt;
+    &lt;xsl:when test="$qcpunum = 'Intel Core i7 1185G7'"&gt;
+                    &lt;xsl:value-of select="'Intel_core_i7_1185G7'" /&gt;
+                &lt;/xsl:when&gt;
+                
+                 &lt;xsl:when test="$qcpunum = 'intel Core i7-10850H'"&gt;
+                    &lt;xsl:value-of select="'core_i7_10850h'" /&gt;
+                &lt;/xsl:when&gt;
+   &lt;xsl:when test="$qcpunum = 'Intel Core Ultra 9 185H'"&gt;
+                    &lt;xsl:value-of select="'intel_core_ultra_9'" /&gt;
+                &lt;/xsl:when&gt;
+ &lt;xsl:when test="$qcpunum = 'Intel Core Ultra 7 155H'"&gt;
+                    &lt;xsl:value-of select="'intel_core_ultra_7'" /&gt;
+                &lt;/xsl:when&gt;
+   &lt;xsl:when test="$qcpunum = 'Qualcomm Snapdragon X Elite'"&gt;
+                    &lt;xsl:value-of select="'snapdragon_x_elite'" /&gt;
+                &lt;/xsl:when&gt;
+
+  &lt;xsl:when test="$qcpunum = 'Intel Core Ultra 7 155H'"&gt;
+                    &lt;xsl:value-of select="'intel_core_ultra_7'" /&gt;
+                &lt;/xsl:when&gt;
+                
+                &lt;xsl:when test="$qcpunum = 'Intel Core i5-10210U'"&gt;
+                    &lt;xsl:value-of select="'core_i5_10210u'" /&gt;
+                &lt;/xsl:when&gt;
+                
+
+  &lt;xsl:when test="$qcpunum = 'Intel Core i7-4770S'"&gt;
+                    &lt;xsl:value-of select="'Core_i7_4770S'" /&gt;
+                &lt;/xsl:when&gt;
+
+  &lt;xsl:when test="$qcpunum = 'AMD Ryzen 5 5625U'"&gt;
+                    &lt;xsl:value-of select="'ryzen_5'" /&gt;
+                &lt;/xsl:when&gt;
+                
+                 &lt;xsl:when test="$qcpunum = 'AMD Ryzen 5 5625U'"&gt;
+                    &lt;xsl:value-of select="'ryzen_3_3250u'" /&gt;
+                &lt;/xsl:when&gt;
+                
+                 &lt;xsl:when test="$qcpunum = 'AMD Ryzen 3 3250U'"&gt;
+                    &lt;xsl:value-of select="'ryzen_5'" /&gt;
+                &lt;/xsl:when&gt;
+
+    &lt;xsl:when test="$qcpunum = 'Intel Core i5-10310U'"&gt;
+                    &lt;xsl:value-of select="'core_i5_10310u'" /&gt;
+                &lt;/xsl:when&gt;
+
+   &lt;xsl:when test="$qcpunum = 'AMD Ryzen 5 7530U'"&gt;
+                    &lt;xsl:value-of select="'ryzen_5'" /&gt;
+                &lt;/xsl:when&gt;
+   &lt;xsl:when test="$qcpunum = 'Ryzen 5 7530U'"&gt;
+                    &lt;xsl:value-of select="'ryzen_5'" /&gt;
+                &lt;/xsl:when&gt;
+ &lt;xsl:when test="$qcpunum = 'AMD Ryzen 5 PRO 5650U'"&gt;
+                    &lt;xsl:value-of select="'ryzen_5'" /&gt;
+                &lt;/xsl:when&gt;
+
+ &lt;xsl:when test="$qcpunum = 'AMD Ryzen 7 Pro 5850U'"&gt;
+                    &lt;xsl:value-of select="'amd_ryzen_7'" /&gt;
+                &lt;/xsl:when&gt;
+
+  &lt;xsl:when test="$qcpunum = 'AMD Ryzen 5 7535HS'"&gt;
+                    &lt;xsl:value-of select="'ryzen_5'" /&gt;
+                &lt;/xsl:when&gt;
+
+   &lt;xsl:when test="$qcpunum = 'AMD Ryzen 5 7430U'"&gt;
+                    &lt;xsl:value-of select="'ryzen_5'" /&gt;
+                &lt;/xsl:when&gt;
+
+   &lt;xsl:when test="$qcpunum = 'Intel Core i7-10750H'"&gt;
+                    &lt;xsl:value-of select="'corei7_10750h'" /&gt;
+                &lt;/xsl:when&gt;
+
+
+   &lt;xsl:when test="$qcpunum = 'Intel Core Ultra 5 125H'"&gt;
+                    &lt;xsl:value-of select="'intel_core_ultra_5'" /&gt;
+                &lt;/xsl:when&gt;
+
+
+&lt;xsl:when test="$qcpunum = 'Intel Xeon W-10855M'"&gt;
+                    &lt;xsl:value-of select="'intel_xeon'" /&gt;
+                &lt;/xsl:when&gt;
+
+&lt;xsl:when test="$qcpunum = 'AMD Ryzen 3 Pro 4450U'"&gt;
+                    &lt;xsl:value-of select="'ryzen_3'" /&gt;
+                &lt;/xsl:when&gt;
+
+&lt;xsl:when test="$qcpunum = 'AMD Ryzen 5 Microsoft Surface Edition'"&gt;
+                    &lt;xsl:value-of select="'ryzen_5'" /&gt;
+                &lt;/xsl:when&gt;
+
+&lt;xsl:when test="$qcpunum = 'AMD Ryzen 5 3500U'"&gt;
+                    &lt;xsl:value-of select="'ryzen_5_3500u'" /&gt;
+                &lt;/xsl:when&gt;
+
+
+&lt;xsl:when test="$qcpunum = 'AMD Ryzen 7 Pro 3700U'"&gt;
+                    &lt;xsl:value-of select="'ryzen_7_3700u'" /&gt;
+                &lt;/xsl:when&gt;
+
+&lt;xsl:when test="$qcpunum = 'AMD Ryzen 7 3700U'"&gt;
+                    &lt;xsl:value-of select="'ryzen_7_3700u'" /&gt;
+                &lt;/xsl:when&gt;
+
+
+&lt;xsl:when test="$qcpunum = 'Apple M1 Pro'"&gt;
+                    &lt;xsl:value-of select="'apple_m1'" /&gt;
+                &lt;/xsl:when&gt;
+
+       &lt;xsl:when test="$qcpunum = 'Intel Celeron 3855U'"&gt;
+                    &lt;xsl:value-of select="'celeron_3855u'" /&gt;
+                &lt;/xsl:when&gt;
+
+       &lt;xsl:when test="$qcpunum = 'Intel Core i5-10310U'"&gt;
+                    &lt;xsl:value-of select="'core_i5_10310u'" /&gt;
+                &lt;/xsl:when&gt;
+&lt;xsl:when test="$qcpunum = 'Intel Core i5-1334U'"&gt;
+                    &lt;xsl:value-of select="'core_i5'" /&gt;
+                &lt;/xsl:when&gt;
+                &lt;xsl:when test="$qcpunum = 'Intel Core i7-4750HQ'"&gt;Core_i7_4750HQ&lt;/xsl:when&gt;
+&lt;xsl:when test="$qcpunum = 'Intel Core i7-10750H'"&gt;core_i7_10750h&lt;/xsl:when&gt;
+
+                &lt;xsl:when test="$qcpunum = 'AMD Ryzen 7 Pro 4750U'"&gt;amd_ryzen_7&lt;/xsl:when&gt;
+
+                &lt;xsl:when test="$qcpunum = '11th Gen Intel Core i7-1185G7'"&gt;
+                    &lt;xsl:value-of select="'Intel_core_i7_1185G7'" /&gt;
+                &lt;/xsl:when&gt;
+          &lt;xsl:when test="$qcpunum = 'INTEL(R) CORE(TM) I7-10875H CPU @ 2.30GHZ'"&gt;
+                    &lt;xsl:value-of select="'corei7_10875h'" /&gt;
+                &lt;/xsl:when&gt;
+ &lt;xsl:when test="$qcpunum = 'Intel Core i7-10875H'"&gt;
+                    &lt;xsl:value-of select="'corei7_10875h'" /&gt;
+                &lt;/xsl:when&gt;
+ &lt;xsl:when test="$qcpunum = 'AMD Ryzen 7 3780U'"&gt;
+                    &lt;xsl:value-of select="'ryzen_7'" /&gt;
+                &lt;/xsl:when&gt;
+ &lt;xsl:when test="$qcpunum = 'AMD Ryzen 7 4700U'"&gt;
+                    &lt;xsl:value-of select="'ryzen_7_4700u'" /&gt;
+                &lt;/xsl:when&gt;
+ &lt;xsl:when test="$qcpunum = 'AMD Ryzen 7 7735U'"&gt;
+                    &lt;xsl:value-of select="'ryzen_7'" /&gt;
+                &lt;/xsl:when&gt;
+ &lt;xsl:when test="$qcpunum = 'AMD Ryzen 7 7730U'"&gt;
+                    &lt;xsl:value-of select="'ryzen_7'" /&gt;
+                &lt;/xsl:when&gt;
+
+ &lt;xsl:when test="$qcpunum = 'AMD Ryzen 3 5300U'"&gt;
+                    &lt;xsl:value-of select="'ryzen_3_5300u'" /&gt;
+                &lt;/xsl:when&gt;
+ &lt;xsl:when test="$qcpunum = 'AMD Ryzen 5 7520U'"&gt;
+                    &lt;xsl:value-of select="'ryzen_5'" /&gt;
+                &lt;/xsl:when&gt;
+				 &lt;xsl:when test="$qcpunum = 'AMD Ryzen 5 Pro 4650G'"&gt;
+                    &lt;xsl:value-of select="'ryzen_5'" /&gt;
+                &lt;/xsl:when&gt;
+
+ &lt;xsl:when test="$qcpunum = 'Intel Core i5-1335U'"&gt;
+                    &lt;xsl:value-of select="'intel_core_i5_1335u'" /&gt;
+                &lt;/xsl:when&gt;
+
+&lt;xsl:when test="$qcpunum = 'Qualcomm Snapdragon X Plus'"&gt;
+                    &lt;xsl:value-of select="'snapdragon_x_plus'" /&gt;
+                &lt;/xsl:when&gt;
+                &lt;xsl:when test="$qcpunum = 'AMD Ryzen 5 4680U'"&gt;
+                    &lt;xsl:value-of select="'Ryzen_5_4680U'" /&gt;
+                &lt;/xsl:when&gt;
+  &lt;xsl:when test="$qcpunum = 'AMD Ryzen 5 Pro 4650U'"&gt;
+                    &lt;xsl:value-of select="'ryzen_5'" /&gt;
+                &lt;/xsl:when&gt;
+&lt;xsl:when test="$qcpunum = 'Intel Core Ultra 7 165H'"&gt;
+                    &lt;xsl:value-of select="'intel_core_ultra_7'" /&gt;
+                &lt;/xsl:when&gt;
+				
+				&lt;xsl:when test="$qcpunum = 'Intel Core i7-10810U'"&gt;
+                    &lt;xsl:value-of select="'core_i7_10810u'" /&gt;
+                &lt;/xsl:when&gt;
+				
+				&lt;xsl:when test="$qcpunum = 'Intel Core Ultra 7 256V'"&gt;
+                    &lt;xsl:value-of select="'intel_core_ultra_7'" /&gt;
+                &lt;/xsl:when&gt;
+				
+                &lt;xsl:when test="$qcpunum = 'AMD Ryzen 5 3580U'"&gt;
+                    &lt;xsl:value-of select="'ryzen_5'" /&gt;
+                &lt;/xsl:when&gt;
+  &lt;xsl:when test="$qcpunum = 'AMD Ryzen 5 Pro 3500U'"&gt;
+                    &lt;xsl:value-of select="'ryzen_5_3500u'" /&gt;
+                &lt;/xsl:when&gt;
+				  &lt;xsl:when test="$qcpunum = 'INtel Core I7-12645U'"&gt;
+                    &lt;xsl:value-of select="'core_i7'" /&gt;
+                &lt;/xsl:when&gt;
+
+  &lt;xsl:when test="$qcpunum = 'AMD Ryzen 5 Pro 3400G'"&gt;
+                    &lt;xsl:value-of select="'ryzen_5_3400g'" /&gt;
+                &lt;/xsl:when&gt;
+
+&lt;xsl:when test="$qcpunum = 'AMD Ryzen 5 7520U with Radeon Graphics'"&gt;
+                    &lt;xsl:value-of select="'ryzen_5'" /&gt;
+                &lt;/xsl:when&gt;
+                &lt;xsl:when test="$qcpunum = 'Intel Core i5-8250U'"&gt;
+                    &lt;xsl:value-of select="'core_i5_8250u'" /&gt;
+                &lt;/xsl:when&gt;
+				   &lt;xsl:when test="$qcpunum = 'AMD Ryzen 9 6900HS'"&gt;
+                    &lt;xsl:value-of select="'ryzen_9'" /&gt;
+                &lt;/xsl:when&gt;
+                &lt;xsl:when test="$qcpunum = 'Intel Core i7-1065G7'"&gt;
+                    &lt;xsl:value-of select="'core_i7_1065g7'" /&gt;
+                &lt;/xsl:when&gt;
+ &lt;xsl:when test="$qcpunum = 'Intel Core i7-1165G7'"&gt;
+                    &lt;xsl:value-of select="'intel_core_i7_1165g7'" /&gt;
+                &lt;/xsl:when&gt;
+
+ &lt;xsl:when test="$qcpunum = 'Intel Core i7 1185G7'"&gt;
+                    &lt;xsl:value-of select="'Intel_core_i7_1185G7'" /&gt;
+                &lt;/xsl:when&gt;
+
+
+ &lt;xsl:when test="$qcpunum = 'Intel Core i5-1030NG7'"&gt;
+                    &lt;xsl:value-of select="'core_i5'" /&gt;
+                &lt;/xsl:when&gt;
+ &lt;xsl:when test="$qcpunum = 'Intel Core I5-13420H'"&gt;
+                    &lt;xsl:value-of select="'core_i5'" /&gt;
+                &lt;/xsl:when&gt;
+
+ &lt;xsl:when test="$qcpunum = 'Intel Core i5-1340P'"&gt;
+                    &lt;xsl:value-of select="'core_i5'" /&gt;
+                &lt;/xsl:when&gt;
+
+ &lt;xsl:when test="$qcpunum = 'Intel Core i7-1360P'"&gt;
+                    &lt;xsl:value-of select="'core_i7'" /&gt;
+                &lt;/xsl:when&gt;
+
+ &lt;xsl:when test="$qcpunum = 'Intel Core i7-10750H'"&gt;
+                    &lt;xsl:value-of select="'core_i7_10750h'" /&gt;
+                &lt;/xsl:when&gt;
+
+ &lt;xsl:when test="$qcpunum = 'Intel Core i7-13700H'"&gt;
+                    &lt;xsl:value-of select="'core_i7'" /&gt;
+                &lt;/xsl:when&gt;
+                
+                 &lt;xsl:when test="$qcpunum = 'Intel Core 5 120U'"&gt;
+                    &lt;xsl:value-of select="'core_i5'" /&gt;
+                &lt;/xsl:when&gt;
+						
+                &lt;xsl:when test="$qcpunum = 'Intel Core i7-1185G7'"&gt;
+                    &lt;xsl:value-of select="'Intel_core_i7_1185G7'" /&gt;
+                &lt;/xsl:when&gt;
+               &lt;xsl:when test="$qcpunum = 'Intel Core i5-1135G7'"&gt;
+                    &lt;xsl:value-of select="'intel_core_i5_1135g7'" /&gt;
+                &lt;/xsl:when&gt;
+                &lt;xsl:when test="$qcpunum = 'AMD Ryzen 7 4980U'"&gt;
+                    &lt;xsl:value-of select="'Ryzen_7_4980U'" /&gt;
+                &lt;/xsl:when&gt;
+                &lt;xsl:when test="$qcpunum = 'Intel Core i5-1035G7'"&gt;
+                    &lt;xsl:value-of select="'core_i5_1035g7'" /&gt;
+                &lt;/xsl:when&gt;
+   &lt;xsl:when test="$qcpunum = 'Intel Core i5- 7300U'"&gt;
+                    &lt;xsl:value-of select="'core_i5_7300u'" /&gt;
+                &lt;/xsl:when&gt;
+               &lt;xsl:when test="$qcpunum = 'Intel Core i5-1145G7'"&gt;
+                    &lt;xsl:value-of select="'intel_core_i5_1145G7'" /&gt;
+                &lt;/xsl:when&gt;
+     &lt;xsl:when test="$qcpunum = 'Intel Core i5-1145G7e'"&gt;
+                    &lt;xsl:value-of select="'core_i5_1145g7e'" /&gt;
+                &lt;/xsl:when&gt;
+   &lt;xsl:when test="$qcpunum = 'Intel Core I5-1345U'"&gt;
+                    &lt;xsl:value-of select="'core_i5'" /&gt;
+                &lt;/xsl:when&gt;
+   &lt;xsl:when test="$qcpunum = 'Intel Core I5-1350P'"&gt;
+                    &lt;xsl:value-of select="'core_i5'" /&gt;
+                &lt;/xsl:when&gt;
+   &lt;xsl:when test="$qcpunum = 'Intel Core i7-1370P'"&gt;
+                    &lt;xsl:value-of select="'core_i7'" /&gt;
+                &lt;/xsl:when&gt;
+&lt;xsl:when test="$qcpunum = 'Intel Core i7-13800H'"&gt;
+                    &lt;xsl:value-of select="'core_i7'" /&gt;
+                &lt;/xsl:when&gt;
+   &lt;xsl:when test="$qcpunum = 'Apple M1 Max'"&gt;
+                    &lt;xsl:value-of select="'apple_m1'" /&gt;
+                &lt;/xsl:when&gt;
+
+   &lt;xsl:when test="$qcpunum = 'AMD Ryzen 3 2200U'"&gt;
+                    &lt;xsl:value-of select="'ryzen_3_2200u'" /&gt;
+                &lt;/xsl:when&gt;
+
+ &lt;xsl:when test="$qcpunum = 'Intel Core Ultra 5 125U'"&gt;
+                    &lt;xsl:value-of select="'intel_core_ultra_5'" /&gt;
+                &lt;/xsl:when&gt;
+ &lt;xsl:when test="$qcpunum = 'AMD Ryzen 7 8840HS'"&gt;
+                    &lt;xsl:value-of select="'amd_ryzen_7'" /&gt;
+                &lt;/xsl:when&gt;
+ &lt;xsl:when test="$qcpunum = 'Intel Core I7-13620H'"&gt;
+                    &lt;xsl:value-of select="'core_i7'" /&gt;
+                &lt;/xsl:when&gt;
+ &lt;xsl:when test="$qcpunum = 'Intel Core 7 150U'"&gt;
+                    &lt;xsl:value-of select="'core_i7'" /&gt;
+                &lt;/xsl:when&gt;
+ &lt;xsl:when test="$qcpunum = 'Intel Core i9-9980H'"&gt;
+                    &lt;xsl:value-of select="'core_i9'" /&gt;
+                &lt;/xsl:when&gt;
+ &lt;xsl:when test="$qcpunum = 'Apple M1 Max'"&gt;
+                    &lt;xsl:value-of select="'apple_m1'" /&gt;
+                &lt;/xsl:when&gt;
+ &lt;xsl:when test="$qcpunum = 'Intel Core Ultra 7 165U'"&gt;
+                    &lt;xsl:value-of select="'intel_core_ultra_7'" /&gt;
+                &lt;/xsl:when&gt;
+ &lt;xsl:when test="$qcpunum = 'Intel Core i7‑10610U'"&gt;
+                    &lt;xsl:value-of select="'core_i7_10610u'" /&gt;
+                &lt;/xsl:when&gt;
+ &lt;xsl:when test="$qcpunum = 'Intel Core i7-1365U'"&gt;
+                    &lt;xsl:value-of select="'intel_core_7'" /&gt;
+                &lt;/xsl:when&gt;
+                 &lt;xsl:when test="$qcpunum = 'Intel Core i7-1365U'"&gt;
+                    &lt;xsl:value-of select="'intel_core_7'" /&gt;
+                &lt;/xsl:when&gt;
+ &lt;xsl:when test="$qcpunum = 'Intel Core i7-1355U'"&gt;
+                    &lt;xsl:value-of select="'intel_core_i7_1355u'" /&gt;
+                &lt;/xsl:when&gt;
+ &lt;xsl:when test="$qcpunum = 'Intel Core i5‑11500H'"&gt;
+                    &lt;xsl:value-of select="'core_i5_11500h'" /&gt;
+                &lt;/xsl:when&gt;
+                 &lt;xsl:when test="$qcpunum = 'Intel Core i7-11850H'"&gt;
+                    &lt;xsl:value-of select="'core_i7_11850h'" /&gt;
+                &lt;/xsl:when&gt;
+				 &lt;xsl:when test="$qcpunum = 'Intel Core i9-13900H'"&gt;
+                    &lt;xsl:value-of select="'core_i9'" /&gt;
+                &lt;/xsl:when&gt;
+				 &lt;xsl:when test="$qcpunum = 'Mediatek MT8183'"&gt;
+                    &lt;xsl:value-of select="'mediatek_mt8183'" /&gt;
+                &lt;/xsl:when&gt;
+                	 &lt;xsl:when test="$qcpunum = 'Intel Core Ultra 7 165H'"&gt;
+                    &lt;xsl:value-of select="'intel_core_ultra_7'" /&gt;
+                &lt;/xsl:when&gt;
+                 &lt;xsl:when test="$qcpunum = 'AMD Ryzen 7 5700U'"&gt;
+                    &lt;xsl:value-of select="'ryzen_7_5700u'" /&gt;
+                &lt;/xsl:when&gt;
+                 &lt;xsl:when test="$qcpunum = 'Intel Core i7‑10510U'"&gt;
+                    &lt;xsl:value-of select="'core_i7_10510u'" /&gt;
+                &lt;/xsl:when&gt;
+                 &lt;xsl:when test="$qcpunum = 'AMD Ryzen 3 7320C'"&gt;
+                    &lt;xsl:value-of select="'ryzen_3'" /&gt;
+                &lt;/xsl:when&gt;
+                    &lt;xsl:when test="$qcpunum = 'Intel Celeron N4500'"&gt;
+                    &lt;xsl:value-of select="'celeron'" /&gt;
+                &lt;/xsl:when&gt;
+                      &lt;xsl:when test="$qcpunum = 'Intel Processor N200'"&gt;
+                    &lt;xsl:value-of select="'celeron'" /&gt;
+                &lt;/xsl:when&gt;
+                 &lt;xsl:when test="$qcpunum = 'AMD Ryzen 7 7739U'"&gt;
+                    &lt;xsl:value-of select="'amd_ryzen_7'" /&gt;
+                &lt;/xsl:when&gt;
+				&lt;xsl:when test="$qcpunum = 'Intel Core i7-12800H'"&gt;
+                    &lt;xsl:value-of select="'Intel_core_i7_12800H'" /&gt;
+                &lt;/xsl:when&gt;
+				&lt;xsl:when test="$qcpunum = 'AMD Ryzen AI 7 350'"&gt;
+                    &lt;xsl:value-of select="'amd_ryzen_7'" /&gt;
+                &lt;/xsl:when&gt;
+				&lt;xsl:when test="$qcpunum = 'Intel Core Ultra 7 155U'"&gt;
+                    &lt;xsl:value-of select="'intel_core_ultra_7'" /&gt;
+                &lt;/xsl:when&gt;
+			&lt;xsl:when test="$qcpunum = 'AMD Ryzen 5 5600H'"&gt;
+                    &lt;xsl:value-of select="'ryzen_5_5600h'" /&gt;
+                &lt;/xsl:when&gt;
+				&lt;xsl:when test="$qcpunum = 'Intel Core i3-8145U'"&gt;
+                    &lt;xsl:value-of select="'core_i3'" /&gt;
+                &lt;/xsl:when&gt;
+					&lt;xsl:when test="$qcpunum = 'AMD Ryzen 7 7739U'"&gt;
+                    &lt;xsl:value-of select="'amd_ryzen_7'" /&gt;
+                &lt;/xsl:when&gt;
+					&lt;xsl:when test="$qcpunum = 'Intel Core i3-8145U'"&gt;
+                    &lt;xsl:value-of select="'core_i3'" /&gt;
+                &lt;/xsl:when&gt;
+					&lt;xsl:when test="$qcpunum = 'AMD Ryzen 3 3200U'"&gt;
+                    &lt;xsl:value-of select="'ryzen_3_3200u'" /&gt;
+                &lt;/xsl:when&gt;
+				&lt;xsl:when test="$qcpunum = 'AMD Ryzen 5 6600H'"&gt;
+                    &lt;xsl:value-of select="'ryzen_5'" /&gt;
+                &lt;/xsl:when&gt;
+				&lt;xsl:when test="$qcpunum = 'AMD Ryzen 7 6800HS'"&gt;
+                    &lt;xsl:value-of select="'amd_ryzen_7'" /&gt;
+                &lt;/xsl:when&gt;
+				&lt;xsl:when test="$qcpunum = 'Intel Core i9-13980HX'"&gt;
+                    &lt;xsl:value-of select="'core_i9'" /&gt;
+                &lt;/xsl:when&gt;
+					&lt;xsl:when test="$qcpunum = 'AMD RYZEN 7 PRO 8700G'"&gt;
+                    &lt;xsl:value-of select="'amd_ryzen_7'" /&gt;
+                &lt;/xsl:when&gt;
+				&lt;xsl:when test="$qcpunum = 'Intel Core i7‑1355U'"&gt;
+                    &lt;xsl:value-of select="'intel_core_i7_1355u'" /&gt;
+                &lt;/xsl:when&gt;
+                
+                &lt;xsl:otherwise&gt;
+               &lt;xsl:variable name="temp-without-intel"&gt;
+    &lt;xsl:choose&gt;
+        &lt;xsl:when test="starts-with($qcpunum, 'Intel ')"&gt;
+            &lt;xsl:value-of select="normalize-space(substring-after($qcpunum, 'Intel '))" /&gt;
+        &lt;/xsl:when&gt;
+        &lt;xsl:otherwise&gt;
+            &lt;xsl:value-of select="normalize-space($qcpunum)" /&gt;
+        &lt;/xsl:otherwise&gt;
+    &lt;/xsl:choose&gt;
+&lt;/xsl:variable&gt;
+
+&lt;xsl:variable name="temp-transformed-cpunum" select="translate(translate($temp-without-intel, ' ', '_'), '-', '_')" /&gt;
+
+&lt;xsl:variable name="final-transformed-cpunum" select="translate($temp-transformed-cpunum, $uppercase, $lowercase)" /&gt;
+
+&lt;xsl:choose&gt;
+    &lt;xsl:when test="starts-with($qcpunum, 'Intel ') and not(starts-with($final-transformed-cpunum, 'core'))"&gt;
+        &lt;xsl:value-of select="concat('intel_', $final-transformed-cpunum)" /&gt;
+    &lt;/xsl:when&gt;
+    &lt;xsl:otherwise&gt;
+        &lt;xsl:value-of select="$final-transformed-cpunum" /&gt;
+    &lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;
+            &lt;/xsl:otherwise&gt;
+        &lt;/xsl:choose&gt;
+               
+    &lt;/value&gt;
+&lt;/family&gt;
+
+
+&lt;manufacturer json:Array="true"&gt;
+&lt;value&gt;
+&lt;xsl:variable name="qcpunum" select="q:Catalog/q:Attributes/q:Attribute[q:Code='CPUNUM']/q:Value/a:string[1]" /&gt;
+
+&lt;xsl:choose&gt; 
+
+&lt;xsl:when test="contains($qcpunum,'i7')"&gt;
+&lt;xsl:text&gt;Intel&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+
+&lt;xsl:when test="contains($qcpunum,'i3')"&gt;
+&lt;xsl:text&gt;Intel&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+
+&lt;xsl:when test="contains($qcpunum,'i5')"&gt;
+&lt;xsl:text&gt;Intel&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+
+&lt;xsl:when test="contains($qcpunum,'4260U')"&gt;
+&lt;xsl:text&gt;Intel&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+
+
+
+&lt;xsl:when test="contains($qcpunum,'6600')"&gt;
+&lt;xsl:text&gt;Intel&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+
+
+&lt;xsl:when test="$qcpunum='intel Core Duo E8135'"&gt;
+&lt;xsl:text&gt;Intel&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+
+&lt;xsl:when test="contains($qcpunum,'Intel')"&gt;
+&lt;xsl:text&gt;Intel&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+
+&lt;xsl:when test="contains($qcpunum,'AMD')"&gt;
+&lt;xsl:text&gt;AMD&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+
+&lt;xsl:when test="contains($qcpunum,'ARM')"&gt;
+&lt;xsl:text&gt;ARM&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+
+&lt;xsl:when test="contains($qcpunum,'Apple')"&gt;
+&lt;xsl:text&gt;Apple&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+
+&lt;xsl:when test="contains($qcpunum,'IBM')"&gt;
+&lt;xsl:text&gt;IBM&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+
+&lt;xsl:when test="contains($qcpunum,'Qualcomm')"&gt;
+&lt;xsl:text&gt;Qualcomm&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+
+&lt;xsl:when test="contains($qcpunum,'Motorola')"&gt;
+&lt;xsl:text&gt;Motorola&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+
+&lt;xsl:when test="contains($qcpunum,'NVIDIA')"&gt;
+&lt;xsl:text&gt;NVIDIA&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+
+&lt;xsl:when test="contains($qcpunum,'VIA')"&gt;
+&lt;xsl:text&gt;VIA&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+
+&lt;xsl:when test="contains($qcpunum,'MediaTek')"&gt;
+&lt;xsl:text&gt;MediaTek&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+
+&lt;/xsl:choose&gt;
+
+&lt;/value&gt;
+&lt;/manufacturer&gt;
+
+
+
+&lt;l3_cache_size json:Array="true"&gt;
+&lt;value&gt;&lt;xsl:value-of select="q:Catalog/q:Attributes/q:Attribute[q:Code='CPUCACHE']/q:Value/a:string[1]" /&gt;&lt;/value&gt;
+&lt;unit&gt;GB&lt;/unit&gt;
+&lt;/l3_cache_size&gt;
+&lt;model_number json:Array="true"&gt;
+&lt;value&gt;&lt;xsl:value-of select="q:Catalog/q:Attributes/q:Attribute[q:Code='CPUNUM']/q:Value/a:string[1]" /&gt;&lt;/value&gt;
+&lt;/model_number&gt;
+&lt;speed json:Array="true"&gt;
+&lt;value&gt;&lt;xsl:value-of select="q:Catalog/q:Attributes/q:Attribute[q:Code='CPUSPEED']/q:Value/a:string[1]" /&gt;&lt;/value&gt;
+&lt;unit&gt;GHz&lt;/unit&gt;
+&lt;/speed&gt; 
+&lt;/cpu_model&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;!-- anyOf,Chrome OS,DOS,Linux,Mac OS,Mac OS 9,Mac OS X 10.0 Cheetah,Mac OS X 10.1 Puma,Mac OS X 10.2 Jaguar,Mac OS X 10.3 Panther,Mac OS X 10.4 Tiger,Mac OS X 10.5 Leopard,Mac OS X 10.6 Snow Leopard,macOS 10.12 Sierra,macOS 10.13 High Sierra,macOS 10.14 Mojave,macOS 10.15 Catalina,macOS 11 Big Sur,macOS 12 Monterey,OS X 10.10 Yosemite,OS X 10.11 El Capitan,OS X 10.7 Lion,OS X 10.8 Mountain Lion,OS X 10.9 Mavericks,Windows,Windows 10,Windows 10 Home,Windows 10 Pro,Windows 10 S,Windows 11,Windows 11 Home,Windows 11 Pro,Windows 11 S,Windows 11 SE,Windows 7,Windows 7 Home Basic,Windows 7 Home Premium,Windows 7 Professional,Windows 7 Starter,Windows 7 Ultimate,Windows 8,Windows 8 Pro,Windows 8.1,Windows 8.1 Pro,Windows RT,Windows Vista Home Basic,Windows Vista Home Premium,Windows XP Home,Windows XP Professional --&gt;
+
+
+&lt;operating_system json:Array="true"&gt;
+    &lt;value&gt;
+        &lt;xsl:variable name="q-os" select="q:Catalog/q:Attributes/q:Attribute[q:Code='DESKTOPOS']/q:Value/a:string[1]" /&gt;
+        &lt;xsl:variable name="q-edition" select="q:Catalog/q:Attributes/q:Attribute[q:Code='DESKTOPOSEDITION']/q:Value/a:string[1]" /&gt;
+        &lt;xsl:variable name="q-os-code"&gt;
+            &lt;xsl:value-of select="$q-os"/&gt;
+            &lt;xsl:if test="$q-edition != '' and $q-edition != 'Not Applicable'"&gt;
+                &lt;xsl:text&gt; &lt;/xsl:text&gt;  &lt;xsl:value-of select="$q-edition"/&gt;
+            &lt;/xsl:if&gt;
+        &lt;/xsl:variable&gt;
+        &lt;xsl:variable name="q-os-fragment"&gt;
+            &lt;item os="Microsoft Windows 8"&gt;Windows 8&lt;/item&gt;
+            &lt;item os="Microsoft Windows 8Home"&gt;Windows 8&lt;/item&gt;
+            &lt;item os="Microsoft Windows 8Home Premium"&gt;Windows 8&lt;/item&gt;
+            &lt;item os="Microsoft Windows 8Professional"&gt;Windows 8 Pro&lt;/item&gt;
+            &lt;item os="Microsoft Windows 7"&gt;Windows 7 Home Premium&lt;/item&gt;
+            &lt;item os="Microsoft Windows 7Home"&gt;Windows 7 Home Premium&lt;/item&gt;
+            &lt;item os="Microsoft Windows 7Home Premium"&gt;Windows 7 Home Premium&lt;/item&gt;
+            &lt;item os="Microsoft Windows 7Professional"&gt;Windows 7 Professional&lt;/item&gt;
+            &lt;item os="Microsoft Windows 7Ultimate"&gt;Windows 7 Ultimate&lt;/item&gt;
+            &lt;item os="Microsoft Windows 8.1"&gt;Windows 8&lt;/item&gt;
+            &lt;item os="Microsoft Windows 8.1Home"&gt;Windows 8&lt;/item&gt;
+            &lt;item os="Microsoft Windows 8.1Home Premium"&gt;Windows 8&lt;/item&gt;
+            &lt;item os="Microsoft Windows 8.1Professional"&gt;Windows 8 Pro&lt;/item&gt;
+            &lt;item os="Microsoft Windows 10"&gt;Windows 10&lt;/item&gt;
+            &lt;item os="Microsoft Windows 10Home"&gt;Windows 10&lt;/item&gt;
+            &lt;item os="Microsoft Windows 10Home Premium"&gt;Windows 10&lt;/item&gt;
+            &lt;item os="Microsoft Windows 10Professional"&gt;Windows 10 Pro&lt;/item&gt; &lt;item os="Microsoft Windows 10Enterprise"&gt;Windows 10&lt;/item&gt;
+            &lt;item os="Microsoft Windows 10IoT Enterprise"&gt;Windows 10&lt;/item&gt;
+            &lt;item os="Microsoft Windows 10IoT"&gt;Windows 10&lt;/item&gt;
+            &lt;item os="Microsoft Windows 10S"&gt;Windows 10 S&lt;/item&gt; &lt;item os="Microsoft Windows 10Education"&gt;Windows 10&lt;/item&gt;
+            
+            &lt;item os="Microsoft Windows 11"&gt;Windows 11&lt;/item&gt;
+            &lt;item os="Microsoft Windows 11 Professional"&gt;Windows 11 Pro&lt;/item&gt;
+            &lt;item os="Windows 11"&gt;Windows 11&lt;/item&gt;
+            &lt;item os="Mac OS 26"&gt;Mac OS&lt;/item&gt;
+            &lt;item os="Windows 11 Professional"&gt;Windows 11 Pro&lt;/item&gt; &lt;item os="Microsoft Windows 11Home"&gt;Windows 11 Home&lt;/item&gt; &lt;item os="Microsoft Windows 11Home Premium"&gt;Windows 11 Home&lt;/item&gt; &lt;item os="Microsoft Windows 11Professional"&gt;Windows 11 Pro&lt;/item&gt; &lt;item os="Microsoft Windows 11Enterprise"&gt;Windows 11&lt;/item&gt;
+            &lt;item os="Microsoft Windows 11IoT Enterprise"&gt;Windows 11&lt;/item&gt;
+            &lt;item os="Microsoft Windows 11IoT"&gt;Windows 11&lt;/item&gt;
+            &lt;item os="Microsoft Windows 11 S"&gt;Windows 11 S&lt;/item&gt; &lt;item os="Microsoft Windows 11Education"&gt;Windows 11&lt;/item&gt;
+
+            &lt;item os="Microsoft Windows Vista"&gt;Windows Vista&lt;/item&gt;
+            &lt;item os="Microsoft Windows VistaStarter"&gt;Windows Vista&lt;/item&gt;
+            &lt;item os="Microsoft Windows VistaHome"&gt;Windows Vista Home Basic&lt;/item&gt; &lt;item os="Microsoft Windows VistaHome Premium"&gt;Windows Vista Home Premium&lt;/item&gt;
+            &lt;item os="Microsoft Windows VistaBusiness"&gt;Windows Vista&lt;/item&gt;
+            &lt;item os="Microsoft Windows XP"&gt;Windows XP Home&lt;/item&gt; &lt;item os="Microsoft Windows XPHome"&gt;Windows XP Home&lt;/item&gt;
+            &lt;item os="Microsoft Windows XPProfessional"&gt;Windows XP Professional&lt;/item&gt; &lt;item os="Apple Mac OS X 10.5"&gt;Mac OS X 10.5 Leopard&lt;/item&gt; &lt;item os="Apple Mac OS X 10.6"&gt;Mac OS X 10.6 Snow Leopard&lt;/item&gt; &lt;item os="Apple Mac OS X 10.7"&gt;OS X 10.7 Lion&lt;/item&gt; &lt;item os="Apple Mac OS X 10.8"&gt;OS X 10.8 Mountain Lion&lt;/item&gt; &lt;item os="Apple Mac OS X 10.9"&gt;OS X 10.9 Mavericks&lt;/item&gt; &lt;item os="Chrome OS"&gt;Chrome OS&lt;/item&gt;
+            &lt;item os="None"&gt;None&lt;/item&gt;
+            &lt;item os="Apple Mac OS X 10.4"&gt;Mac OS X 10.4 Tiger&lt;/item&gt;
+            &lt;item os="Ubuntu Linux"&gt;Linux&lt;/item&gt;
+            &lt;item os="LeTOS"&gt;Linux&lt;/item&gt;
+            &lt;item os="LeTOSv1"&gt;Linux&lt;/item&gt;
+            &lt;item os="LeTOSv2"&gt;Linux&lt;/item&gt;
+            &lt;item os="FreeDOS"&gt;DOS&lt;/item&gt;
+            &lt;item os="Wyse OS"&gt;Linux&lt;/item&gt;
+            &lt;item os="HP ThinPro"&gt;Linux&lt;/item&gt;
+            &lt;item os="Apple Mac OS X 10.10"&gt;OS X 10.10 Yosemite&lt;/item&gt; &lt;item os="Apple Mac OS X 10.11"&gt;OS X 10.11 El Capitan&lt;/item&gt; &lt;item os="Apple Mac OS 10.15"&gt;macOS 10.15 Catalina&lt;/item&gt; &lt;item os="macOS 10.12"&gt;macOS 10.12 Sierra&lt;/item&gt; &lt;item os="macOS 10.13"&gt;macOS 10.13 High Sierra&lt;/item&gt; &lt;item os="macOS 10.14"&gt;macOS 10.14 Mojave&lt;/item&gt; &lt;item os="macOS 10.15"&gt;macOS 10.15 Catalina&lt;/item&gt;
+            &lt;item os="macOS 11"&gt;macOS 11 Big Sur&lt;/item&gt; &lt;item os="Apple Mac OS 11"&gt;macOS 11 Big Sur&lt;/item&gt;
+            &lt;item os="Apple Mac OS 10.14"&gt;macOS 10.14 Mojave&lt;/item&gt;
+            &lt;item os="Apple Mac OS 14"&gt;Mac OS X&lt;/item&gt; &lt;item os="Apple Mac OS 15"&gt;Mac OS X&lt;/item&gt;
+            &lt;item os="Windows 11"&gt;Windows 11&lt;/item&gt;
+            &lt;item os="Windows 11 Home"&gt;Windows 11 Home&lt;/item&gt;
+            &lt;item os="Microsoft Windows 11 Home"&gt;Windows 11 Home&lt;/item&gt;
+        &lt;/xsl:variable&gt;
+
+        &lt;xsl:value-of select="msxsl:node-set($q-os-fragment)/item[@os = $q-os-code]"/&gt;
+    &lt;/value&gt;
+&lt;/operating_system&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;specific_uses_for_product json:Array="true"&gt; 
+&lt;value&gt;&lt;xsl:value-of select="q:Catalog/q:Attributes/q:Attribute[q:Code='LIFESTYLE']/q:Value/a:string[1]" /&gt;&lt;/value&gt;
+&lt;/specific_uses_for_product&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;model_name json:Array="true"&gt; 
+&lt;value&gt;&lt;xsl:value-of select="q:Catalog/q:Attributes/q:Attribute[q:Code='MODELNBR']/q:Value/a:string[1]" /&gt;&lt;/value&gt;
+&lt;/model_name&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;!-- anyOf,Keyboard,Monitor,Mouse,RGB Lighting,Speakers,Water Cooling,Webcam --&gt;
+
+&lt;xsl:for-each select="q:Catalog/q:InBox/a:string"&gt;
+
+   &lt;included_components json:Array="true"&gt; 
+      &lt;value&gt;&lt;xsl:value-of select="."/&gt;&lt;/value&gt;
+   &lt;/included_components&gt;
+
+&lt;/xsl:for-each&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;version_for_country json:Array="true"&gt; 
+&lt;value&gt;US&lt;/value&gt;
+&lt;/version_for_country&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;total_usb_2_0_ports json:Array="true"&gt;
+&lt;value&gt;&lt;xsl:value-of select="q:Catalog/q:Attributes/q:Attribute[q:Code='USBPRT']/q:Value/a:string[1]" /&gt;&lt;/value&gt;
+&lt;/total_usb_2_0_ports&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;total_usb_3_0_ports json:Array="true"&gt;
+&lt;value&gt;&lt;xsl:value-of select="q:Catalog/q:Attributes/q:Attribute[q:Code='USBPWR']/q:Value/a:string[1]" /&gt;&lt;/value&gt;
+&lt;/total_usb_3_0_ports&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;optical_storage json:Array="true"&gt;
+&lt;device_description json:Array="true"&gt;
+   &lt;value&gt;&lt;xsl:value-of select="q:Catalog/q:Attributes/q:Attribute[q:Code='OPTDR1']/q:Value/a:string[1]" /&gt;&lt;/value&gt;
+&lt;/device_description&gt;
+&lt;/optical_storage&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;graphics_description json:Array="true"&gt;
+&lt;value&gt;&lt;xsl:value-of select="q:Catalog/q:Attributes/q:Attribute[q:Code='GPUMODEL']/q:Value/a:string[1]" /&gt;&lt;/value&gt;
+&lt;/graphics_description&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;!-- agp,integrated,pci_e --&gt;
+&lt;graphics_card_interface json:Array="true"&gt;
+&lt;value&gt;&lt;xsl:variable name='qGPUmodel' select="q:Catalog/q:Attributes/q:Attribute[q:Code='GPUTYPE']/q:Value/a:string[1]" /&gt;
+
+&lt;xsl:choose&gt; 
+
+&lt;xsl:when test="$qGPUmodel ='Integrated'"&gt;integrated&lt;/xsl:when&gt;
+&lt;xsl:when test="$qGPUmodel ='Dedicated'"&gt;pci_e&lt;/xsl:when&gt;
+&lt;xsl:when test="$qGPUmodel ='Hybrid'"&gt;pci_e&lt;/xsl:when&gt;
+
+&lt;/xsl:choose&gt;&lt;/value&gt;
+&lt;/graphics_card_interface&gt;
+</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;processor_count json:Array="true"&gt;
+&lt;value&gt;&lt;xsl:value-of select="q:Catalog/q:Attributes/q:Attribute[q:Code='CPUCORE']/q:Value/a:string[1]" /&gt;&lt;/value&gt;
+&lt;/processor_count&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;!-- anyOf,AMD,Apple,ARM,Intel,MediaTek,NVIDIA,PowerVR,Qualcomm,VIA --&gt;
+&lt;graphics_processor_manufacturer json:Array="true"&gt;
+&lt;value&gt;
+
+&lt;xsl:variable name="qcpunum" select="q:Catalog/q:Attributes/q:Attribute[q:Code='CPUNUM']/q:Value/a:string[1]" /&gt;
+
+&lt;xsl:choose&gt; 
+
+&lt;xsl:when test="contains($qcpunum,'intel')"&gt;
+&lt;xsl:text&gt;Intel&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+
+&lt;xsl:when test="contains($qcpunum,'Intel')"&gt;
+&lt;xsl:text&gt;Intel&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+
+&lt;xsl:when test="contains($qcpunum,'AMD')"&gt;
+&lt;xsl:text&gt;AMD&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+
+&lt;xsl:when test="contains($qcpunum,'ARM')"&gt;
+&lt;xsl:text&gt;ARM&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+
+&lt;xsl:when test="contains($qcpunum,'Apple')"&gt;
+&lt;xsl:text&gt;Apple&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+
+&lt;xsl:when test="contains($qcpunum,'IBM')"&gt;
+&lt;xsl:text&gt;IBM&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+
+&lt;xsl:when test="contains($qcpunum,'Qualcomm')"&gt;
+&lt;xsl:text&gt;Qualcomm&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+
+&lt;xsl:when test="contains($qcpunum,'Motorola')"&gt;
+&lt;xsl:text&gt;Motorola&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+
+&lt;xsl:when test="contains($qcpunum,'NVIDIA')"&gt;
+&lt;xsl:text&gt;NVIDIA&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+
+&lt;xsl:when test="contains($qcpunum,'VIA')"&gt;
+&lt;xsl:text&gt;VIA&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+
+&lt;xsl:when test="contains($qcpunum,'MediaTek')"&gt;
+&lt;xsl:text&gt;MediaTek&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+
+&lt;/xsl:choose&gt;
+
+
+&lt;/value&gt;
+&lt;/graphics_processor_manufacturer&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;xsl:variable name = "qweight" select="q:Catalog/q:Attributes/q:Attribute[q:Code='ITEMWEIGHT']/q:Value/a:string[1]" /&gt;
+
+&lt;item_display_weight json:Array="true"&gt;
+&lt;value&gt;
+&lt;xsl:value-of select="format-number($qweight, '0.0')"/&gt;
+&lt;/value&gt;&lt;unit&gt;pounds&lt;/unit&gt;
+&lt;/item_display_weight&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;number_of_items json:Array="true"&gt;
+&lt;value json:Type="Integer"&gt;1&lt;/value&gt;
+&lt;/number_of_items&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;model_year json:Array="true"&gt;
+&lt;value&gt;&lt;xsl:value-of select="q:Catalog/q:Attributes/q:Attribute[q:Code='RELEASEYEAR']/q:Value/a:string[1]" /&gt;&lt;/value&gt;
+&lt;/model_year&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;target_region json:Array="true"&gt;
+&lt;value &gt;Global&lt;/value&gt;
+&lt;/target_region&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;flash_memory json:Array="true"&gt;
+&lt;installed_size json:Array="true"&gt;
+   &lt;value json:Type="Float"&gt;&lt;xsl:value-of select="q:Catalog/q:Attributes/q:Attribute[q:Code='HDSIZE']/q:Value/a:string[1]" /&gt;&lt;/value&gt;&lt;unit&gt;GB&lt;/unit&gt;
+&lt;/installed_size&gt;
+
+&lt;/flash_memory&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;xsl:variable name="qGPU" select="q:Catalog/q:Attributes/q:Attribute[q:Code='GPUTYPE']/q:Value/a:string[1]" /&gt;
+&lt;xsl:variable name='qGPUsize' select="q:Catalog/q:Attributes/q:Attribute[q:Code='GPUSIZE']/q:Value/a:string[1]" /&gt;
+
+&lt;graphics_ram json:Array="true"&gt;
+   
+&lt;size json:Array="true"&gt;
+        &lt;value&gt;
+            &lt;xsl:choose&gt;
+                &lt;xsl:when test="$qGPU ='Integrated'"&gt;0&lt;/xsl:when&gt;
+                &lt;xsl:when test="number($qGPUsize) &amp;gt; 5000"&gt;
+                    &lt;xsl:value-of select="format-number(number($qGPUsize) div 1024, '#')" /&gt;
+                &lt;/xsl:when&gt;
+                &lt;xsl:otherwise&gt;
+                    &lt;xsl:value-of select="$qGPUsize"/&gt;
+                &lt;/xsl:otherwise&gt;
+            &lt;/xsl:choose&gt;
+        &lt;/value&gt;
+        &lt;unit&gt;
+            &lt;xsl:choose&gt;
+                &lt;xsl:when test="number($qGPUsize) &amp;gt; 5000"&gt;GB&lt;/xsl:when&gt;
+                &lt;xsl:otherwise&gt;MB&lt;/xsl:otherwise&gt;
+            &lt;/xsl:choose&gt;
+        &lt;/unit&gt;
+    &lt;/size&gt;
+
+
+&lt;type json:Array="true"&gt;
+   &lt;value&gt;	
+      &lt;xsl:variable name="sourceRamType"&gt;
+         &lt;xsl:choose&gt;
+            &lt;xsl:when test="$qGPU ='Integrated'"&gt;
+               &lt;xsl:value-of select="q:Catalog/q:Attributes/q:Attribute[q:Code='RAMTYPE']/q:Value/a:string[1]" /&gt;
+	    &lt;/xsl:when&gt;
+            &lt;xsl:otherwise&gt;
+               &lt;xsl:value-of select="q:Catalog/q:Attributes/q:Attribute[q:Code='GPURAMTYPE']/q:Value/a:string[1]" /&gt;      
+            &lt;/xsl:otherwise&gt;
+         &lt;/xsl:choose&gt;
+      &lt;/xsl:variable&gt;
+         &lt;xsl:choose&gt;
+            &lt;xsl:when test="$sourceRamType = 'DDR'"&gt;ddr_sdram&lt;/xsl:when&gt;
+            &lt;xsl:when test="$sourceRamType = 'DDR2'"&gt;ddr2_sdram&lt;/xsl:when&gt;
+            &lt;xsl:when test="$sourceRamType = 'DDR3'"&gt;ddr3_sdram&lt;/xsl:when&gt;
+            &lt;xsl:when test="$sourceRamType = 'SDRAM'"&gt;sdram&lt;/xsl:when&gt;
+            &lt;xsl:when test="$sourceRamType = 'RDRAM'"&gt;rdram&lt;/xsl:when&gt;
+            &lt;xsl:when test="$sourceRamType = 'EDO'"&gt;edo_dram&lt;/xsl:when&gt;
+            &lt;xsl:when test="$sourceRamType = 'VRAM'"&gt;vram&lt;/xsl:when&gt;
+            &lt;xsl:when test="$sourceRamType = 'DDR4'"&gt;ddr4_sdram&lt;/xsl:when&gt;
+            &lt;xsl:when test="$sourceRamType = 'DDR5'"&gt;ddr5_sdram&lt;/xsl:when&gt;
+            &lt;xsl:when test="$sourceRamType = 'LPDDR5'"&gt;ddr5_sdram&lt;/xsl:when&gt;
+            &lt;xsl:when test="$sourceRamType = 'LPDDR4X'"&gt;ddr4_sdram&lt;/xsl:when&gt;
+            &lt;xsl:when test="$sourceRamType = 'LPDDR4'"&gt;ddr4_sdram&lt;/xsl:when&gt;
+            &lt;xsl:when test="$sourceRamType = 'LPDDR5X'"&gt;ddr5_sdram&lt;/xsl:when&gt;
+            &lt;xsl:when test="$sourceRamType = 'GDDR3'"&gt;gddr3&lt;/xsl:when&gt;
+            &lt;xsl:when test="$sourceRamType = 'GDDR4'"&gt;gddr4&lt;/xsl:when&gt;
+            &lt;xsl:when test="$sourceRamType = 'GDDR5'"&gt;gddr5&lt;/xsl:when&gt;
+            &lt;xsl:when test="$sourceRamType = 'GDDR5X'"&gt;gddr5x&lt;/xsl:when&gt;
+            &lt;xsl:when test="$sourceRamType = 'GDDR6'"&gt;gddr6&lt;/xsl:when&gt;
+            &lt;xsl:when test="$sourceRamType = 'GDDR6X'"&gt;gddr6x&lt;/xsl:when&gt;
+	    &lt;xsl:when test="$sourceRamType = 'Not Applicable'"&gt;shared&lt;/xsl:when&gt;
+            &lt;xsl:when test="$sourceRamType = 'Unified'"&gt;shared&lt;/xsl:when&gt;
+            &lt;xsl:when test="$sourceRamType = 'HBM2'"&gt;shared&lt;/xsl:when&gt;
+            &lt;xsl:otherwise&gt;
+               &lt;xsl:text&gt;dram&lt;/xsl:text&gt;
+            &lt;/xsl:otherwise&gt;
+        &lt;/xsl:choose&gt;
+   &lt;/value&gt;
+&lt;/type&gt;
+&lt;/graphics_ram&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>&lt;memory_storage_capacity json:Array="true"&gt;
+
+ &lt;value&gt;&lt;xsl:value-of select="q:Catalog/q:Attributes/q:Attribute[q:Code='RAMSIZE']/q:Value/a:string[1]" /&gt;&lt;/value&gt;&lt;unit&gt;GB&lt;/unit&gt;
+
+
+&lt;/memory_storage_capacity&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+    <CatalogTemplateRequest.Attribute>
+      <Properties>
+        <CatalogTemplateRequest.Property>
+          <Key>Name</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Code</Key>
+          <Value></Value>
+        </CatalogTemplateRequest.Property>
+        <CatalogTemplateRequest.Property>
+          <Key>Value</Key>
+          <Value>
+	&lt;modified_product json:Array="true"&gt;
+
+ &lt;value&gt;&lt;xsl:variable name='qcondition' select="q:Catalog/q:Condition/q:Name" /&gt;
+
+	&lt;xsl:choose&gt;
+	
+		&lt;xsl:when test='$qcondition="New"'&gt;
+		&lt;xsl:text&gt;False&lt;/xsl:text&gt;
+		&lt;/xsl:when&gt;
+
+		&lt;xsl:when test='$qcondition="New Open Box"'&gt;
+		&lt;xsl:text&gt;False&lt;/xsl:text&gt;
+		&lt;/xsl:when&gt;
+
+	&lt;xsl:otherwise&gt;True&lt;/xsl:otherwise&gt;
+
+	&lt;/xsl:choose&gt;
+	&lt;/value&gt;
+
+
+&lt;/modified_product&gt;</Value>
+        </CatalogTemplateRequest.Property>
+      </Properties>
+      <Type>Default</Type>
+    </CatalogTemplateRequest.Attribute>
+  </Attributes>
+  <Global>
+    <CatalogTemplateRequest.Property>
+      <Key>TemplateType</Key>
+      <Value></Value>
+    </CatalogTemplateRequest.Property>
+    <CatalogTemplateRequest.Property>
+      <Key>Version</Key>
+      <Value></Value>
+    </CatalogTemplateRequest.Property>
+    <CatalogTemplateRequest.Property>
+      <Key>ItemType</Key>
+      <Value>standard-laptop-computers</Value>
+    </CatalogTemplateRequest.Property>
+    <CatalogTemplateRequest.Property>
+      <Key>Filter</Key>
+      <Value></Value>
+    </CatalogTemplateRequest.Property>
+    <CatalogTemplateRequest.Property>
+      <Key>bullet_point1</Key>
+      <Value></Value>
+    </CatalogTemplateRequest.Property>
+    <CatalogTemplateRequest.Property>
+      <Key>bullet_point2</Key>
+      <Value></Value>
+    </CatalogTemplateRequest.Property>
+    <CatalogTemplateRequest.Property>
+      <Key>bullet_point3</Key>
+      <Value></Value>
+    </CatalogTemplateRequest.Property>
+    <CatalogTemplateRequest.Property>
+      <Key>bullet_point4</Key>
+      <Value></Value>
+    </CatalogTemplateRequest.Property>
+    <CatalogTemplateRequest.Property>
+      <Key>bullet_point5</Key>
+      <Value></Value>
+    </CatalogTemplateRequest.Property>
+    <CatalogTemplateRequest.Property>
+      <Key>special_features</Key>
+      <Value></Value>
+    </CatalogTemplateRequest.Property>
+    <CatalogTemplateRequest.Property>
+      <Key>version</Key>
+      <Value>Json</Value>
+    </CatalogTemplateRequest.Property>
+    <CatalogTemplateRequest.Property>
+      <Key>ProductType</Key>
+      <Value>&lt;xsl:text&gt;NOTEBOOK_COMPUTER&lt;/xsl:text&gt;</Value>
+    </CatalogTemplateRequest.Property>
+    <CatalogTemplateRequest.Property>
+      <Key>language_tag</Key>
+      <Value>en_US</Value>
+    </CatalogTemplateRequest.Property>
+  </Global>
+  <HasVariantManager>false</HasVariantManager>
+  <Variants />
+</CatalogTemplateRequest.BuilderDetails>

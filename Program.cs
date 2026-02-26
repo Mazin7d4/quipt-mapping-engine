@@ -1,10 +1,15 @@
+using QuiptMappingEngine.Member4TestHarness;
 using QuiptMappingEngine.Services;
-
 
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
 app.UseHttpsRedirection();
+
+if (args.Contains("--member4test"))
+{
+    Member4QuickTest.Run();
+}
 
 //creating a browser endpoint
 app.MapGet("/", () =>
@@ -29,7 +34,7 @@ app.MapGet("/", () =>
             result += $"Path: {f.Path}\n";
             result += $"Type: {f.DataType}\n";
             result += $"Required: {f.IsRequired}\n";
-            result += "-------------------------\n";
+            result += "------------------------------\n";
         }
 
         return Results.Text(result);
