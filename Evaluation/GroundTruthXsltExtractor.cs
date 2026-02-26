@@ -1,39 +1,47 @@
-using System.Text.RegularExpressions;
+using System.Xml.Linq;
 
 namespace QuiptMappingEngine.Evaluation;
 
 public static class GroundTruthXsltExtractor
 {
     // Extracts: amazonTagName -> quiptXPath
-    // Looks for patterns like:
-    // <brand>
-    //   <xsl:value-of select="q:Catalog/q:Brand/q:Name"/>
-    // </brand>
+    // We look for <xsl:value-of select="..."> and use the closest non-xsl parent element name as the Amazon tag.
     public static Dictionary<string, string> ExtractFromFile(string xsltPath)
     {
         if (!File.Exists(xsltPath))
             throw new FileNotFoundException($"XSLT not found: {xsltPath}");
 
-        var text = File.ReadAllText(xsltPath);
+        var doc = XDocument.Load(xsltPath);
 
-        // Matches:
-        // <tagName> ... <xsl:value-of select="SOMEPATH" .../> ... </tagName>
-        // Non-greedy between tag and value-of, and between value-of and closing tag.
-        var pattern =
-            @"<(?<tag>[a-zA-Z0-9_\-]+)\b[^>]*>\s*.*?<xsl:value-of\s+[^>]*select\s*=\s*""(?<path>[^""]+)""[^>]*/>\s*.*?</\k<tag>>";
-
-        var matches = Regex.Matches(text, pattern, RegexOptions.Singleline);
+        XNamespace xsl = "http://www.w3.org/1999/XSL/Transform";
 
         var dict = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
 
-        foreach (Match m in matches)
-        {
-            var tag = m.Groups["tag"].Value.Trim();
-            var path = m.Groups["path"].Value.Trim();
+        // Find all <xsl:value-of .../>
+        var valueOfNodes = doc.Descendants(xsl + "value-of");
 
-            // Keep first mapping if duplicates appear (can adjust later)
-            if (!dict.ContainsKey(tag))
-                dict[tag] = path;
+        foreach (var valueOf in valueOfNodes)
+        {
+            var selectAttr = valueOf.Attribute("select")?.Value?.Trim();
+            if (string.IsNullOrWhiteSpace(selectAttr))
+                continue;
+
+            // Find the nearest ancestor that is NOT an xsl element.
+            // That ancestor's name is the Amazon output tag.
+            var amazonTag = valueOf
+                .Ancestors()
+                .FirstOrDefault(a => a.Name.Namespace != xsl);
+
+            if (amazonTag == null)
+                continue;
+
+            var tagName = amazonTag.Name.LocalName.Trim();
+            if (string.IsNullOrWhiteSpace(tagName))
+                continue;
+
+            // Keep first mapping if duplicates exist
+            if (!dict.ContainsKey(tagName))
+                dict[tagName] = selectAttr;
         }
 
         return dict;

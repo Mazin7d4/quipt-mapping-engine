@@ -1,3 +1,13 @@
 bin/ 
 obj/ 
 .vs/ 
+
+# macOS junk
+.DS_Store
+
+# local IDE / user files
+*.user
+*.suo
+
+# optional: local solution files if not needed
+quipt-mapping-engine.sln
