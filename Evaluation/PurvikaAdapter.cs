@@ -9,10 +9,9 @@ public static class PurvikaAdapter
 
         foreach (var r in purvikaResults)
         {
-            // ✅ You will adjust these 3 lines to match Purvika’s property names
-            string amazonName = r.AmazonFieldName;      // OR r.AmazonField.Name
-            bool isRequired   = r.IsRequired;          // OR r.AmazonField.IsRequired
-            string? quiptPath = r.MatchedQuiptXPath;   // OR r.QuiptField?.Path
+            string amazonName = r.AmazonField;
+            bool isRequired = r.IsRequired;
+            string? quiptPath = r.MatchedQuiptPath;  
 
             list.Add(new EvaluatedMapping
             {
