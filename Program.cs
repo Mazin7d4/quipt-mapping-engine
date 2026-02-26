@@ -1,48 +1,26 @@
-using QuiptMappingEngine.Member4TestHarness;
-using QuiptMappingEngine.Services;
+﻿using System;
+using System.Collections.Generic;
 
-var builder = WebApplication.CreateBuilder(args);
-var app = builder.Build();
-
-app.UseHttpsRedirection();
-
-if (args.Contains("--member4test"))
+class Program
 {
-    Member4QuickTest.Run();
-}
-
-//creating a browser endpoint
-app.MapGet("/", () =>
-{
-    var parser = new AmazonFieldParser();
-    var filePath = "AmazonTaxonomy/amazon-laptops-attributes.json";
-
-    if (!File.Exists(filePath))
+    static void Main()
     {
-        return Results.Text($"File NOT found at: {filePath}");
-    }
+        // Load real parsed fields 
+        var quiptFields = QuiptFields_Laptops.GetFields();
+        var amazonFields = AmazonFields_Laptops.Get();
 
-    try
-    {
-        var fields = parser.Parse(filePath);
+        var engine = new MatchingEngine();
+        var results = engine.Match(quiptFields, amazonFields);
 
-        var result = "";
-
-        foreach (var f in fields)
+        Console.WriteLine("=== REAL MATCHING RESULTS (Laptops) ===");
+        foreach (var r in results)
         {
-            result += $"Name: {f.Name}\n";
-            result += $"Path: {f.Path}\n";
-            result += $"Type: {f.DataType}\n";
-            result += $"Required: {f.IsRequired}\n";
-            result += "------------------------------\n";
+            Console.WriteLine($"Amazon: {r.AmazonField}");
+            Console.WriteLine($"Required: {r.IsRequired}");
+            Console.WriteLine($"Matched Quipt: {r.QuiptField ?? "NULL"}");
+            Console.WriteLine($"Score: {r.Score:F3}");
+            Console.WriteLine($"Unmatched: {r.IsUnmatched}");
+            Console.WriteLine("----------------------------");
         }
-
-        return Results.Text(result);
     }
-    catch (Exception ex)
-    {
-        return Results.Text($"ERROR:\n{ex.Message}");
-    }
-});
-
-app.Run();
+}
