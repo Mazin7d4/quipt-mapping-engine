@@ -43,12 +43,12 @@ app.MapGet("/weatherforecast", () =>
 app.MapGet("/quipt-schema", () =>
 {
     var parser = new QuiptSchemaParser();
+
+    // Change filename to Desktops.xml / Monitors.xml when needed
     var filePath = @"QuiptData\Laptops.xml";
 
     if (!File.Exists(filePath))
-    {
         return Results.Text($"File NOT found at: {filePath}");
-    }
 
     try
     {
@@ -56,17 +56,20 @@ app.MapGet("/quipt-schema", () =>
 
         var result = "";
 
-        foreach (var f in fields)
+        foreach (var f in fields.OrderBy(x => x.Path))
         {
             result += $"Name: {f.Name}\n";
-            result += $"Path: {f.Path}\n";
+            result += $"Path: {f.Path}\n";           // Path = XPath-like string
             result += $"Type: {f.DataType}\n";
             result += $"Required: {f.IsRequired}\n";
+
+            if (f.EnumValues != null && f.EnumValues.Count > 0)
+                result += $"EnumValues: {string.Join(", ", f.EnumValues)}\n";
+
             result += "-------------------------\n";
         }
 
         result += $"\nTotal Fields: {fields.Count}\n";
-
         return Results.Text(result);
     }
     catch (Exception ex)
@@ -74,7 +77,6 @@ app.MapGet("/quipt-schema", () =>
         return Results.Text($"ERROR:\n{ex.Message}");
     }
 });
-
 
 app.Run();
 
