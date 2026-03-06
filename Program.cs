@@ -1,75 +1,51 @@
-using System.Linq;
+using QuiptMappingEngine.Member4TestHarness;
 using QuiptMappingEngine.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
+// Enable controllers (GenerateController)
+builder.Services.AddControllers();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+/*
+    MEMBER 4 TEST HARNESS
+    Run using:
+    dotnet run -- --member4test
+*/
+if (args.Contains("--member4test"))
 {
-    app.MapOpenApi();
+    Member4QuickTest.Run();
+    return; // Stop app after harness runs
 }
 
-app.UseHttpsRedirection();
-
-var summaries = new[]
+/*
+    TEMP DEMO ENDPOINT (Amazon parser test)
+    GET http://localhost:5253/
+*/
+app.MapGet("/", () =>
 {
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
-
-app.MapGet("/weatherforecast", () =>
-{
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast");
-
-
-// ===============================
-// Quipt Schema Parser
-// ===============================
-
-app.MapGet("/quipt-schema", () =>
-{
-    var parser = new QuiptSchemaParser();
-
-    // Change filename to Desktops.xml / Monitors.xml when needed
-    var filePath = @"QuiptData\Laptops.xml";
+    var parser = new AmazonFieldParser();
+    var filePath = "AmazonTaxonomy/amazon-laptops-attributes.json";
 
     if (!File.Exists(filePath))
         return Results.Text($"File NOT found at: {filePath}");
 
     try
     {
-        var fields = parser.ParseFields(filePath);
+        var fields = parser.Parse(filePath);
 
         var result = "";
 
-        foreach (var f in fields.OrderBy(x => x.Path))
+        foreach (var f in fields)
         {
             result += $"Name: {f.Name}\n";
-            result += $"Path: {f.Path}\n";           // Path = XPath-like string
+            result += $"Path: {f.Path}\n";
             result += $"Type: {f.DataType}\n";
             result += $"Required: {f.IsRequired}\n";
-
-            if (f.EnumValues != null && f.EnumValues.Count > 0)
-                result += $"EnumValues: {string.Join(", ", f.EnumValues)}\n";
-
-            result += "-------------------------\n";
+            result += "------------------------------\n";
         }
 
-        result += $"\nTotal Fields: {fields.Count}\n";
         return Results.Text(result);
     }
     catch (Exception ex)
@@ -78,9 +54,8 @@ app.MapGet("/quipt-schema", () =>
     }
 });
 
-app.Run();
+// Enable your /generate controller route
+app.MapControllers();
 
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
+app.MapGet("/ping", () => "pong");
+app.Run();
