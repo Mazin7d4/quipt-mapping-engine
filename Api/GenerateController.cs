@@ -29,10 +29,22 @@ namespace QuiptMappingEngine.Api
                 return BadRequest($"Amazon parse failed: {ex.Message}");
             }
 
-            // 2) Quipt parser (Srushti module) - will plug in when ready
-            // TODO: var quiptParser = new QuiptFieldParser();
-            // TODO: var quiptFields = quiptParser.Parse($"QuiptData/{request.Category}.xml");
-            var quiptFields = new List<Field>(); // placeholder until Srushti PR merges
+            // 2) Quipt parser (Srushti module)
+            var quiptParser = new QuiptSchemaParser();
+
+            var quiptPath = $"QuiptData/{request.Category}.xml";
+            if (!System.IO.File.Exists(quiptPath))
+                return BadRequest($"Quipt XML not found: {quiptPath}");
+
+            List<Field> quiptFields;
+            try
+            {
+                quiptFields = quiptParser.ParseFields(quiptPath);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"Quipt parse failed: {ex.Message}");
+            }
 
             // 3) Matching engine (Purvika module) - will plug in when ready
             // TODO: var matcher = new MatchingEngine();
