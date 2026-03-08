@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using QuiptMappingEngine.Models;
 using QuiptMappingEngine.Services;
 using QuiptMappingEngine.Xslt;
+using QuiptMappingEngine.Evaluation;
 
 namespace QuiptMappingEngine.Api
 {
@@ -47,15 +48,26 @@ namespace QuiptMappingEngine.Api
             }
 
             // 3) Matching engine (Purvika module) - will plug in when ready
-            // TODO: var matcher = new MatchingEngine();
-            // TODO: var mappings = matcher.Match(amazonFields, quiptFields);
-            var mappings = new List<MappingResult>(); // placeholder until Purvika PR merges
+            var matcher = new MatchingEngine();
+            var mappings = matcher.Match(quiptFields, amazonFields);
 
             // 4) Evaluation (Lamiya module) - will plug in when ready
-            // TODO: var evaluator = new Evaluator();
-            // TODO: var eval = evaluator.Evaluate(mappings, request.Category);
-            var accuracy = 0.0;
-            var requiredCoverage = 0.0;
+            var groundTruth = new Dictionary<string, string>();
+            var evaluatedMappings = mappings.Select(m => new EvaluatedMapping
+            {
+                AmazonFieldName = m.AmazonField,
+                MatchedQuiptXPath = m.QuiptPath,
+                IsRequired = m.IsRequired
+            }).ToList();
+
+            var report = EvaluationService.Evaluate(
+                request.Category,
+                evaluatedMappings,
+                groundTruth
+            );
+
+            var accuracy = report.AccuracyPercent;
+            var requiredCoverage = report.RequiredCoveragePercent;
 
             // 5) XSLT generation (your module) - will plug in when you implement
             var xsltBuilder = new XsltBuilder();
