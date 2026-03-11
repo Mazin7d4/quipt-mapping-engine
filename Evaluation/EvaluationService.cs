@@ -73,6 +73,34 @@ public static class EvaluationService
         return string.Join("", tokens); // "itemweight"
     }
 
-    private static bool PathsEqual(string a, string b)
-        => string.Equals(a.Trim(), b.Trim(), StringComparison.OrdinalIgnoreCase);
+    /// <summary>
+    /// Compares paths flexibly:
+    /// - Ground truth may be abbreviated (e.g. "q:Catalog/q:Brand/q:Name")
+    ///   while auto-matched paths are fully qualified.
+    /// - Ground truth may have XPath index predicates like [1] that auto paths don't.
+    /// Returns true if either path ends with the other after stripping index predicates.
+    /// </summary>
+    public static bool PathsEqual(string a, string b)
+    {
+        a = NormalizePath(a);
+        b = NormalizePath(b);
+
+        if (string.Equals(a, b, StringComparison.OrdinalIgnoreCase))
+            return true;
+
+        // Check if one ends with the other (handles prefix differences)
+        return a.EndsWith(b, StringComparison.OrdinalIgnoreCase)
+            || b.EndsWith(a, StringComparison.OrdinalIgnoreCase);
+    }
+
+    /// <summary>
+    /// Strips trailing index predicates like [1] from path segments.
+    /// e.g. "a:string[1]" → "a:string"
+    /// </summary>
+    private static string NormalizePath(string path)
+    {
+        // Remove trailing [N] from each segment
+        return System.Text.RegularExpressions.Regex.Replace(
+            path.Trim(), @"\[\d+\]", "");
+    }
 }
