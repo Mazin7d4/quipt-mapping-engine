@@ -47,12 +47,25 @@ namespace QuiptMappingEngine.Api
                 return BadRequest($"Quipt parse failed: {ex.Message}");
             }
 
-            // 3) Matching engine (Purvika module) - will plug in when ready
+            // 3) Matching engine (Purvika module)
             var matcher = new MatchingEngine();
             var mappings = matcher.Match(quiptFields, amazonFields);
 
-            // 4) Evaluation (Lamiya module) - will plug in when ready
+            // 4) Evaluation — extract ground truth from manual XSLT
             var groundTruth = new Dictionary<string, string>();
+            var xsltLookup = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
+            {
+                ["laptops"] = "QuiptToAmazonTemplates/CatalogExportTransform.Laptops.xslt",
+                ["desktops"] = "QuiptToAmazonTemplates/CatalogExportTransform.Desktops.xslt",
+                ["smartphones"] = "QuiptToAmazonTemplates/CatalogExportTransform.SmartPhones.xslt"
+            };
+
+            if (xsltLookup.TryGetValue(request.Category.ToLower(), out var xsltPath)
+                && System.IO.File.Exists(xsltPath))
+            {
+                groundTruth = GroundTruthXsltExtractor.ExtractFromFile(xsltPath);
+            }
+
             var evaluatedMappings = mappings.Select(m => new EvaluatedMapping
             {
                 AmazonFieldName = m.AmazonField,
@@ -74,17 +87,53 @@ namespace QuiptMappingEngine.Api
             var xslt = xsltBuilder.Build(request.Category, mappings);
             
 
-            // Response model (keep it simple for now)
+            // Build per-field evaluation details
+            var evalDetails = new List<MappingEvalDetail>();
+            foreach (var m in mappings)
+            {
+                var detail = new MappingEvalDetail
+                {
+                    AmazonField = m.AmazonField,
+                    IsRequired = m.IsRequired,
+                    AutoMatchedPath = m.QuiptPath,
+                    Score = Math.Round(m.Score, 4)
+                };
+
+                // Check against ground truth
+                var key = m.AmazonField;
+                if (groundTruth.TryGetValue(key, out var expected))
+                {
+                    detail.ExpectedPath = expected;
+                    if (string.IsNullOrWhiteSpace(m.QuiptPath))
+                        detail.Verdict = "MISSING";
+                    else if (EvaluationService.PathsEqual(m.QuiptPath, expected))
+                        detail.Verdict = "CORRECT";
+                    else
+                        detail.Verdict = "WRONG";
+                }
+                else
+                {
+                    detail.Verdict = string.IsNullOrWhiteSpace(m.QuiptPath) ? "UNMATCHED" : "NO_GROUND_TRUTH";
+                }
+
+                evalDetails.Add(detail);
+            }
+
+            // Response model
             var response = new ApiResponseModel
             {
                 Category = request.Category,
                 AmazonFieldCount = amazonFields.Count,
                 QuiptFieldCount = quiptFields.Count,
-                MappingCount = mappings.Count,
-                Accuracy = accuracy,
-                RequiredFieldCoverage = requiredCoverage,
+                MappingCount = mappings.Count(m => !m.IsUnmatched),
+                Accuracy = Math.Round(accuracy, 2),
+                RequiredFieldCoverage = Math.Round(requiredCoverage, 2),
+                GroundTruthCount = groundTruth.Count,
+                CorrectMatches = report.CorrectMatches,
+                UnmatchedRequiredFields = report.UnmatchedRequiredFields,
                 GeneratedXslt = xslt,
-                Mappings = mappings
+                Mappings = mappings,
+                EvaluationDetails = evalDetails
             };
 
             return Ok(response);
