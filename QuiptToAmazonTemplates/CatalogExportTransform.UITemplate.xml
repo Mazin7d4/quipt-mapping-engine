@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<UITemplate>
+  <Global>
+    <div>
+      <label>
+        Template Version:
+      </label>
+      <select name="Builder.Global[10].Value" data-bind="value: $data[10] !== undefined ? $data[10].Value : null, indices: {}, event: { blur: $parents[1].clearTarget }, enable: $parent.isEdit !== undefined, select2: { width: '78%' }">
+        <option value="">Legacy</option>
+        <option value="Json">Json</option>
+      </select>
+      <input type="hidden" name="Builder.Global[10].Key" data-bind="indices: {}" value="version"></input>
+    </div>
+    <div>
+      <label>
+        <i>(TEXT) </i>Template Type (Legacy):
+      </label>
+      <input type="text" name="Builder.Global[0].Value" data-bind="value: $data[0] !== undefined ? $data[0].Value : null, indices: {}, event: { blur: $parents[1].clearTarget }, enable: $parent.isEdit !== undefined"/>
+      <input type="hidden" name="Builder.Global[0].Key" data-bind="indices: {}" value="TemplateType"/>
+    </div>
+    <div>
+      <label>
+        <i>(TEXT) </i>Version (Legacy):
+      </label>
+      <input type="text" name="Builder.Global[1].Value" data-bind="value: $data[1] !== undefined ? $data[1].Value : null, indices: {}, event: { blur: $parents[1].clearTarget }, enable: $parent.isEdit !== undefined"/>
+      <input type="hidden" name="Builder.Global[1].Key" data-bind="indices: {}" value="Version"/>
+    </div>
+    <div>
+      <label>
+        <i>(XSLT) </i>Item Type:
+      </label>
+      <input type="hidden" name="Builder.Global[2].Value" data-bind="value: $data[2] !== undefined ? $data[2].Value : null, indices: {}, enable: $parent.isEdit !== undefined"/>
+	  <div data-bind="xmlEditor: { inputElement: $($element).prev('input')[0] }, event: { click: function(d, e){ $parents[1].setTarget(d[2], { target: $($element).prev('input')[0] }); } }, enable: $parent.isEdit !== undefined"></div>
+	  <i>Wrap constants in a text element, ie &lt;xsl:text&gt;VALUE&lt;/xsl:text&gt;.</i>
+      <input type="hidden" name="Builder.Global[2].Key" data-bind="indices: {}" value="ItemType"/>
+    </div>
+    <div>
+      <label>
+        <i>(XSLT) </i>Product Type:
+      </label>
+      <input type="hidden" name="Builder.Global[11].Value" data-bind="value: $data[11] !== undefined ? $data[11].Value : null, indices: {}, enable: $parent.isEdit !== undefined"/>
+	  <div data-bind="xmlEditor: { inputElement: $($element).prev('input')[0] }, event: { click: function(d, e){ $parents[1].setTarget(d[11], { target: $($element).prev('input')[0] }); } }, enable: $parent.isEdit !== undefined"></div>
+	  <i>Wrap constants in a text element, ie &lt;xsl:text&gt;VALUE&lt;/xsl:text&gt;.</i>
+      <input type="hidden" name="Builder.Global[11].Key" data-bind="indices: {}" value="ProductType"/>
+    </div>
+    <div>
+      <label>
+        Language Tag:
+      </label>
+      <input type="text" name="Builder.Global[12].Value" data-bind="value: $data[12] !== undefined ? $data[12].Value : 'en_US', indices: {}, event: { blur: $parents[1].clearTarget }, enable: $parent.isEdit !== undefined"/>
+      <input type="hidden" name="Builder.Global[12].Key" data-bind="indices: {}" value="language_tag"/>
+    </div>
+    <div>
+      <label>
+        <i>(XSLT) </i>Filter:
+      </label>
+      <input type="hidden" name="Builder.Global[3].Value" data-bind="value: $data[3] !== undefined ? $data[3].Value : null, indices: {}, enable: $parent.isEdit !== undefined"/>
+	  <div data-bind="xmlEditor: { inputElement: $($element).prev('input')[0] }, event: { click: function(d, e){ $parents[1].setTarget(d[3], { target: $($element).prev('input')[0] }); } }, enable: $parent.isEdit !== undefined"></div>
+	  <i>Output "1" to apply this template. Wrap constants in a xsl:text element, ie &lt;xsl:text&gt;VALUE&lt;/xsl:text&gt;.</i>
+      <input type="hidden" name="Builder.Global[3].Key" data-bind="indices: {}" value="Filter"/>
+    </div>
+    <div>
+      <label>
+        <i>(XSLT) </i>Features 1:
+      </label>
+      <input type="hidden" name="Builder.Global[4].Value" data-bind="value: $data[4] !== undefined ? $data[4].Value : null, indices: {}, enable: $parent.isEdit !== undefined"/>
+	  <div data-bind="xmlEditor: { inputElement: $($element).prev('input')[0] }, event: { click: function(d, e){ $parents[1].setTarget(d[4], { target: $($element).prev('input')[0] }); } }, enable: $parent.isEdit !== undefined"></div>		
+	  <i>Wrap constants in a text element, ie &lt;xsl:text&gt;VALUE&lt;/xsl:text&gt;.</i>
+	  <input type="hidden" name="Builder.Global[4].Key" data-bind="indices: {}" value="bullet_point1"/>
+    </div>
+    <div>
+      <label>
+        <i>(XSLT) </i>Features 2:
+      </label>
+      <input type="hidden" name="Builder.Global[5].Value" data-bind="value: $data[5] !== undefined ? $data[5].Value : null, indices: {}, enable: $parent.isEdit !== undefined"/>
+      <div data-bind="xmlEditor: { inputElement: $($element).prev('input')[0] }, event: { click: function(d, e){ $parents[1].setTarget(d[5], { target: $($element).prev('input')[0] }); } }, enable: $parent.isEdit !== undefined"></div>
+	  <i>Wrap constants in a text element, ie &lt;xsl:text&gt;VALUE&lt;/xsl:text&gt;.</i>
+      <input type="hidden" name="Builder.Global[5].Key" data-bind="indices: {}" value="bullet_point2"/>
+    </div>
+    <div>
+      <label>
+        <i>(XSLT) </i>Features 3:
+      </label>
+      <input type="hidden" name="Builder.Global[6].Value" data-bind="value: $data[6] !== undefined ? $data[6].Value : null, indices: {}, enable: $parent.isEdit !== undefined"/>
+	  <div data-bind="xmlEditor: { inputElement: $($element).prev('input')[0] }, event: { click: function(d, e){ $parents[1].setTarget(d[6], { target: $($element).prev('input')[0] }); } }, enable: $parent.isEdit !== undefined"></div>
+	  <i>Wrap constants in a text element, ie &lt;xsl:text&gt;VALUE&lt;/xsl:text&gt;.</i>
+      <input type="hidden" name="Builder.Global[6].Key" data-bind="indices: {}" value="bullet_point3"/>
+    </div>
+    <div>
+      <label>
+        <i>(XSLT) </i>Features 4:
+      </label>
+      <input type="hidden" name="Builder.Global[7].Value" data-bind="value: $data[7] !== undefined ? $data[7].Value : null, indices: {}, enable: $parent.isEdit !== undefined"/>
+	  <div data-bind="xmlEditor: { inputElement: $($element).prev('input')[0] }, event: { click: function(d, e){ $parents[1].setTarget(d[7], { target: $($element).prev('input')[0] }); } }, enable: $parent.isEdit !== undefined"></div>
+	  <i>Wrap constants in a text element, ie &lt;xsl:text&gt;VALUE&lt;/xsl:text&gt;.</i>
+      <input type="hidden" name="Builder.Global[7].Key" data-bind="indices: {}" value="bullet_point4"/>
+    </div>
+    <div>
+      <label>
+        <i>(XSLT) </i>Features 5:
+      </label>
+      <input type="hidden" name="Builder.Global[8].Value" data-bind="value: $data[8] !== undefined ? $data[8].Value : null, indices: {}, enable: $parent.isEdit !== undefined"/>
+	  <div data-bind="xmlEditor: { inputElement: $($element).prev('input')[0] }, event: { click: function(d, e){ $parents[1].setTarget(d[8], { target: $($element).prev('input')[0] }); } }, enable: $parent.isEdit !== undefined"></div>
+	  <i>Wrap constants in a text element, ie &lt;xsl:text&gt;VALUE&lt;/xsl:text&gt;.</i>
+      <input type="hidden" name="Builder.Global[8].Key" data-bind="indices: {}" value="bullet_point5"/>
+    </div>
+    <div>
+      <label>
+        <i>(XSLT) </i>Special Features (Legacy):
+      </label>
+	  <input type="hidden" name="Builder.Global[9].Value" data-bind="value: $data[9] !== undefined ? $data[9].Value : null, indices: {}, enable: $parent.isEdit !== undefined"/>
+	  <div data-bind="xmlEditor: { inputElement: $($element).prev('input')[0] }, event: { click: function(d, e){ $parents[1].setTarget(d[9], { target: $($element).prev('input')[0] }); } }, enable: $parent.isEdit !== undefined"></div>
+	  <i>Wrap constants in a text element, ie &lt;xsl:text&gt;VALUE&lt;/xsl:text&gt;.</i>
+      <input type="hidden" name="Builder.Global[9].Key" data-bind="indices: {}" value="special_features"/>
+    </div>
+	<input type="hidden" name="HasTree" value="true"/>
+  </Global>
+  <Attribute Type="Default">
+    <div>
+      <div>
+        <label>
+          <i>(TEXT) </i>Name (Legacy):
+        </label>
+        <br />
+        <input type="text" name="Builder.Attributes[999].Properties[0].Value" data-val="true" data-val-required="The name is required." data-bind="value: $data[0] !== undefined ? $data[0].Value : null, indices: {}, event: { blur: $parents[2].clearTarget }, enable: $parents[1].isEdit !== undefined" />
+        <input type="hidden" name="Builder.Attributes[999].Properties[0].Key" data-val="true" data-val-required="The name key is required." data-bind="indices: {}" value="Name" />
+      </div>
+      <div>
+        <label>
+          <i>(TEXT) </i>Code (Legacy):
+        </label>
+        <br />
+        <input type="text" name="Builder.Attributes[999].Properties[1].Value" data-val="true" data-val-required="The code is required." data-bind="value: $data[1] !== undefined ? $data[1].Value : null, indices: {}, event: { blur: $parents[2].clearTarget }, enable: $parents[1].isEdit !== undefined" />
+        <input type="hidden" name="Builder.Attributes[999].Properties[1].Key" data-val="true" data-val-required="The code key is required." data-bind="indices: {}" value="Code" />
+      </div>
+      <div>
+        <label>
+          <i>(XSLT) </i>Value:
+        </label>
+        <br />
+        <input type="hidden" name="Builder.Attributes[999].Properties[2].Value" data-val="true" data-val-required="The value is required." data-bind="value: $data[2] !== undefined ? $data[2].Value : null, indices: {}, enable: $parents[1].isEdit !== undefined"/>
+		<div data-bind="xmlEditor: { inputElement: $($element).prev('input')[0] }, event: { click: function(d, e){ $parents[2].setTarget(d[2],{ target: $($element).prev('input')[0] }); } }, enable: $parents[1].isEdit !== undefined"></div>
+		<i>Wrap constants in a text element, ie &lt;xsl:text&gt;VALUE&lt;/xsl:text&gt;.</i>
+        <input type="hidden" name="Builder.Attributes[999].Properties[2].Key" data-val="true" data-val-required="The value key is required." data-bind="indices: {}" value="Value" />
+      </div>
+    </div>
+  </Attribute>
+  <Attribute Type="Blank">
+    <div>
+      <label>Blank column:</label>
+      <input type="hidden" name="Type" value="Blank"/>
+    </div>
+  </Attribute>
+</UITemplate>

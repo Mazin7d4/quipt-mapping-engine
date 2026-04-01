@@ -1,0 +1,2614 @@
+{
+    "category": "smartphones",
+    "amazonFieldCount": 173,
+    "quiptFieldCount": 208,
+    "mappingCount": 51,
+    "accuracy": 0,
+    "requiredFieldCoverage": 71.43,
+    "groundTruthCount": 20,
+    "correctMatches": 0,
+    "unmatchedRequiredFields": [
+        "bullet_point",
+        "supplier_declared_dg_hz_regulation"
+    ],
+    "generatedXslt": "<xsl:stylesheet version=\"1.0\" \r\nxmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">\r\n<xsl:output method=\"xml\" indent=\"yes\"/>\r\n<xsl:template match=\"/\">\r\n<Root>\r\n<attributes>\r\n<brand>\r\n  <xsl:value-of select=\"q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Summary/q:Manufacturer\"/>\r\n</brand>\r\n<!-- Unmatched Required Field: bullet_point -->\r\n<country_of_origin>\r\n  <xsl:value-of select=\"q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Catalog/q:CountryOfOrigin/q:ISO3\"/>\r\n</country_of_origin>\r\n<item_name>\r\n  <xsl:value-of select=\"q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Catalog/q:AltTitle\"/>\r\n</item_name>\r\n<item_type_keyword>\r\n  <xsl:value-of select=\"q:Catalog/q:Attributes/q:Attribute[q:Code='RAMTYPE']/q:Value/a:string\"/>\r\n</item_type_keyword>\r\n<product_description>\r\n  <xsl:value-of select=\"q:Catalog/q:Attributes/q:Attribute[q:Code='PRODGEN']/q:Value/a:string\"/>\r\n</product_description>\r\n<!-- Unmatched Required Field: supplier_declared_dg_hz_regulation -->\r\n<batteries_included>\r\n  <xsl:value-of select=\"q:Catalog/q:Attributes/q:Attribute[q:Code='MOUSEINCL']/q:Value/a:string\"/>\r\n</batteries_included>\r\n<camera_description>\r\n  <xsl:value-of select=\"q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Catalog/q:Description\"/>\r\n</camera_description>\r\n<color>\r\n  <xsl:value-of select=\"q:Catalog/q:Attributes/q:Attribute[q:Code='EXACTCOLOR']/q:Value/a:string\"/>\r\n</color>\r\n<computer_memory>\r\n  <xsl:value-of select=\"q:Catalog/q:Attributes/q:Attribute[q:Code='RAMSIZE']/q:Value/a:string\"/>\r\n</computer_memory>\r\n<condition_note>\r\n  <xsl:value-of select=\"q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Summary/q:Condition/q:Suffix\"/>\r\n</condition_note>\r\n<condition_type>\r\n  <xsl:value-of select=\"q:Catalog/q:Attributes/q:Attribute[q:Code='GPUTYPE']/q:Value/a:string\"/>\r\n</condition_type>\r\n<connector_type>\r\n  <xsl:value-of select=\"q:Catalog/q:Attributes/q:Attribute[q:Code='MOUSECON']/q:Value/a:string\"/>\r\n</connector_type>\r\n<cpu_model>\r\n  <xsl:value-of select=\"q:Catalog/q:Attributes/q:Attribute[q:Code='CPUNUM']/q:Value/a:string\"/>\r\n</cpu_model>\r\n<display>\r\n  <xsl:value-of select=\"q:Catalog/q:Attributes/q:Attribute[q:Code='TOTALDSLPRT']/q:Value/a:string\"/>\r\n</display>\r\n<flash_memory>\r\n  <xsl:value-of select=\"q:Catalog/q:Attributes/q:Attribute[q:Code='OPTANEMEM']/q:Value/a:string\"/>\r\n</flash_memory>\r\n<form_factor>\r\n  <xsl:value-of select=\"q:Catalog/q:Attributes/q:Attribute[q:Code='DESKTOPFORMFACT']/q:Value/a:string\"/>\r\n</form_factor>\r\n<genai_model>\r\n  <xsl:value-of select=\"q:Catalog/q:Attributes/q:Attribute[q:Code='MODELNBR']/q:Value/a:string\"/>\r\n</genai_model>\r\n<generic_keyword>\r\n  <xsl:value-of select=\"q:Catalog/q:Attributes/q:Attribute[q:Code='GENERICCOLOR']/q:Value/a:string\"/>\r\n</generic_keyword>\r\n<hard_disk>\r\n  <xsl:value-of select=\"q:Catalog/q:Attributes/q:Attribute[q:Code='HDTYPEHWARE']/q:Value/a:string\"/>\r\n</hard_disk>\r\n<included_components>\r\n  <xsl:value-of select=\"q:Catalog/q:Attributes/q:Attribute[q:Code='KEYBOARDINCL']/q:Value/a:string\"/>\r\n</included_components>\r\n<item_dimensions>\r\n  <xsl:value-of select=\"q:Catalog/q:Attributes/q:Attribute[q:Code='ITEMDIMS']/q:Value/a:string\"/>\r\n</item_dimensions>\r\n<item_length>\r\n  <xsl:value-of select=\"q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Catalog/q:Dimensions/q:Length\"/>\r\n</item_length>\r\n<item_package_dimensions>\r\n  <xsl:value-of select=\"q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Catalog/q:Dimensions/q:Height\"/>\r\n</item_package_dimensions>\r\n<item_package_quantity>\r\n  <xsl:value-of select=\"q:Catalog/q:Attributes/q:Attribute[q:Code='ITEMWEIGHT']/q:Value/a:string\"/>\r\n</item_package_quantity>\r\n<keyboard_layout>\r\n  <xsl:value-of select=\"q:Catalog/q:Attributes/q:Attribute[q:Code='KEYBOARDCON']/q:Value/a:string\"/>\r\n</keyboard_layout>\r\n<manufacturer>\r\n  <xsl:value-of select=\"q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Catalog/q:Brand/q:Id\"/>\r\n</manufacturer>\r\n<map_policy>\r\n  <xsl:value-of select=\"q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:MapURL\"/>\r\n</map_policy>\r\n<merchant_release_date>\r\n  <xsl:value-of select=\"q:Catalog/q:Attributes/q:Attribute[q:Code='RELEASEYEAR']/q:Value/a:string\"/>\r\n</merchant_release_date>\r\n<model_name>\r\n  <xsl:value-of select=\"q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Catalog/q:Title\"/>\r\n</model_name>\r\n<model_number>\r\n  <xsl:value-of select=\"q:Catalog/q:Attributes/q:Attribute[q:Code='GPUMODEL']/q:Value/a:string\"/>\r\n</model_number>\r\n<model_series>\r\n  <xsl:value-of select=\"q:Catalog/q:Attributes/q:Attribute[q:Code='CPUSERIES']/q:Value/a:string\"/>\r\n</model_series>\r\n<operating_system>\r\n  <xsl:value-of select=\"q:Catalog/q:Attributes/q:Attribute[q:Code='DESKTOPOS']/q:Value/a:string\"/>\r\n</operating_system>\r\n<optical_sensor>\r\n  <xsl:value-of select=\"q:Catalog/q:Attributes/q:Attribute[q:Code='OPTDR1']/q:Value/a:string\"/>\r\n</optical_sensor>\r\n<package_level>\r\n  <xsl:value-of select=\"q:Catalog/q:Attributes/q:Attribute[q:Code='EPEATLVL']/q:Value/a:string\"/>\r\n</package_level>\r\n<part_number>\r\n  <xsl:value-of select=\"q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Catalog/q:Support/q:PhoneNumber/q:CountryISO\"/>\r\n</part_number>\r\n<processor_description>\r\n  <xsl:value-of select=\"q:Catalog/q:Attributes/q:Attribute[q:Code='CPUCORE']/q:Value/a:string\"/>\r\n</processor_description>\r\n<product_grade>\r\n  <xsl:value-of select=\"q:Catalog/q:Attributes/q:Attribute[q:Code='DESKTOPPRODLINE']/q:Value/a:string\"/>\r\n</product_grade>\r\n<ram_memory>\r\n  <xsl:value-of select=\"q:Catalog/q:Attributes/q:Attribute[q:Code='RAMMAX']/q:Value/a:string\"/>\r\n</ram_memory>\r\n<resolution>\r\n  <xsl:value-of select=\"q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Catalog/q:PrimaryImage/q:Resolution\"/>\r\n</resolution>\r\n<safety_data_sheet_url>\r\n  <xsl:value-of select=\"q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Catalog/q:SpecSheetURL\"/>\r\n</safety_data_sheet_url>\r\n<service_provider>\r\n  <xsl:value-of select=\"q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Catalog/q:Support/q:Provider\"/>\r\n</service_provider>\r\n<set_name>\r\n  <xsl:value-of select=\"q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Promotion/q:StatusName\"/>\r\n</set_name>\r\n<sim_card_size>\r\n  <xsl:value-of select=\"q:Catalog/q:Attributes/q:Attribute[q:Code='HDSIZE']/q:Value/a:string\"/>\r\n</sim_card_size>\r\n<smart_home_compatibility>\r\n  <xsl:value-of select=\"q:Catalog/q:Attributes/q:Attribute[q:Code='BLUETOOTHVER']/q:Value/a:string\"/>\r\n</smart_home_compatibility>\r\n<special_feature>\r\n  <xsl:value-of select=\"q:Catalog/q:Attributes/q:Attribute[q:Code='SPECIALNOTE']/q:Value/a:string\"/>\r\n</special_feature>\r\n<taa_compliant_country>\r\n  <xsl:value-of select=\"q:Catalog/q:Attributes/q:Attribute[q:Code='ENERGYSTAR']/q:Value/a:string\"/>\r\n</taa_compliant_country>\r\n<telephone_type>\r\n  <xsl:value-of select=\"q:Catalog/q:Attributes/q:Attribute[q:Code='PLUGTYPE']/q:Value/a:string\"/>\r\n</telephone_type>\r\n<title_differentiation>\r\n  <xsl:value-of select=\"q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Vendor/q:MarketplaceName\"/>\r\n</title_differentiation>\r\n<warranty_description>\r\n  <xsl:value-of select=\"q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Catalog/q:Warranty/q:Duration\"/>\r\n</warranty_description>\r\n<wireless_network_technology>\r\n  <xsl:value-of select=\"q:Catalog/q:Attributes/q:Attribute[q:Code='WIFICOMPAT']/q:Value/a:string\"/>\r\n</wireless_network_technology>\r\n<wireless_provider>\r\n  <xsl:value-of select=\"q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Catalog/q:Warranty/q:Provider\"/>\r\n</wireless_provider>\r\n</attributes>\r\n</Root>\r\n</xsl:template>\r\n</xsl:stylesheet>\r\n",
+    "mappings": [
+        {
+            "amazonField": "brand",
+            "quiptPath": "q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Summary/q:Manufacturer",
+            "score": 0.5288,
+            "isRequired": true,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "bullet_point",
+            "quiptPath": null,
+            "score": 0.0477,
+            "isRequired": true,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "country_of_origin",
+            "quiptPath": "q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Catalog/q:CountryOfOrigin/q:ISO3",
+            "score": 0.6803,
+            "isRequired": true,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "item_name",
+            "quiptPath": "q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Catalog/q:AltTitle",
+            "score": 0.2925,
+            "isRequired": true,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "item_type_keyword",
+            "quiptPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='RAMTYPE']/q:Value/a:string",
+            "score": 0.2092,
+            "isRequired": true,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "product_description",
+            "quiptPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='PRODGEN']/q:Value/a:string",
+            "score": 0.3583,
+            "isRequired": true,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "supplier_declared_dg_hz_regulation",
+            "quiptPath": null,
+            "score": 0.119,
+            "isRequired": true,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "aspect_ratio",
+            "quiptPath": null,
+            "score": 0.045,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "baa_taa_compliance_acknowledgement",
+            "quiptPath": null,
+            "score": 0.0484,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "baa_taa_regulation_compliance",
+            "quiptPath": null,
+            "score": 0.1004,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "band",
+            "quiptPath": null,
+            "score": 0.0506,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "batteries_included",
+            "quiptPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='MOUSEINCL']/q:Value/a:string",
+            "score": 0.3294,
+            "isRequired": false,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "batteries_required",
+            "quiptPath": null,
+            "score": 0.0476,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "battery",
+            "quiptPath": null,
+            "score": 0.0462,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "battery_contains_free_unabsorbed_liquid",
+            "quiptPath": null,
+            "score": 0.1364,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "battery_installation_device_type",
+            "quiptPath": null,
+            "score": 0.1814,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "biometric_security_feature",
+            "quiptPath": null,
+            "score": 0.0506,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "california_proposition_65",
+            "quiptPath": null,
+            "score": 0.1017,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "camera_description",
+            "quiptPath": "q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Catalog/q:Description",
+            "score": 0.261,
+            "isRequired": false,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "camera_flash",
+            "quiptPath": null,
+            "score": 0.0491,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "capacity",
+            "quiptPath": null,
+            "score": 0.0625,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "cellular_technology",
+            "quiptPath": null,
+            "score": 0.0417,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "child_parent_sku_relationship",
+            "quiptPath": null,
+            "score": 0.1333,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "color",
+            "quiptPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='EXACTCOLOR']/q:Value/a:string",
+            "score": 0.6,
+            "isRequired": false,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "compatible_devices",
+            "quiptPath": null,
+            "score": 0.0688,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "compliance_media",
+            "quiptPath": null,
+            "score": 0.1971,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "computer_memory",
+            "quiptPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='RAMSIZE']/q:Value/a:string",
+            "score": 0.2768,
+            "isRequired": false,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "condition_note",
+            "quiptPath": "q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Summary/q:Condition/q:Suffix",
+            "score": 0.2219,
+            "isRequired": false,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "condition_type",
+            "quiptPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='GPUTYPE']/q:Value/a:string",
+            "score": 0.3077,
+            "isRequired": false,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "configuration",
+            "quiptPath": null,
+            "score": 0.1108,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "connectivity_technology",
+            "quiptPath": null,
+            "score": 0.1023,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "connector_type",
+            "quiptPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='MOUSECON']/q:Value/a:string",
+            "score": 0.3072,
+            "isRequired": false,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "contains_battery_or_cell",
+            "quiptPath": null,
+            "score": 0.1029,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "control_method",
+            "quiptPath": null,
+            "score": 0.1108,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "cpu_model",
+            "quiptPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='CPUNUM']/q:Value/a:string",
+            "score": 0.705,
+            "isRequired": false,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "customer_package_type",
+            "quiptPath": null,
+            "score": 0.1976,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "digital_storage_capacity",
+            "quiptPath": null,
+            "score": 0.1483,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "digital_zoom",
+            "quiptPath": null,
+            "score": 0.0368,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "display",
+            "quiptPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='TOTALDSLPRT']/q:Value/a:string",
+            "score": 0.4209,
+            "isRequired": false,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "dsa_responsible_party_address",
+            "quiptPath": null,
+            "score": 0.1004,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "edition",
+            "quiptPath": null,
+            "score": 0.1286,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "effective_still_resolution",
+            "quiptPath": null,
+            "score": 0.1013,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "effective_video_resolution",
+            "quiptPath": null,
+            "score": 0.1593,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "externally_assigned_product_identifier",
+            "quiptPath": null,
+            "score": 0.1571,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "fcc_radio_frequency_emission_compliance",
+            "quiptPath": null,
+            "score": 0.0977,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "flash_memory",
+            "quiptPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='OPTANEMEM']/q:Value/a:string",
+            "score": 0.2875,
+            "isRequired": false,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "form_factor",
+            "quiptPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='DESKTOPFORMFACT']/q:Value/a:string",
+            "score": 0.675,
+            "isRequired": false,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "frame_rate",
+            "quiptPath": null,
+            "score": 0.054,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "front_camera_lens",
+            "quiptPath": null,
+            "score": 0.1658,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "front_photo_sensor_resolution",
+            "quiptPath": null,
+            "score": 0.1487,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "fulfillment_availability",
+            "quiptPath": null,
+            "score": 0.0486,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "genai_model",
+            "quiptPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='MODELNBR']/q:Value/a:string",
+            "score": 0.2773,
+            "isRequired": false,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "generation",
+            "quiptPath": null,
+            "score": 0.117,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "generic_keyword",
+            "quiptPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='GENERICCOLOR']/q:Value/a:string",
+            "score": 0.2714,
+            "isRequired": false,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "ghs",
+            "quiptPath": null,
+            "score": 0.0386,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "ghs_chemical_h_code",
+            "quiptPath": null,
+            "score": 0.1187,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "gift_options",
+            "quiptPath": null,
+            "score": 0.1145,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "government_contract_information",
+            "quiptPath": null,
+            "score": 0.0993,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "gps_navigation",
+            "quiptPath": null,
+            "score": 0.1108,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "gpsr_manufacturer_reference",
+            "quiptPath": null,
+            "score": 0.1104,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "gpsr_safety_attestation",
+            "quiptPath": null,
+            "score": 0.1029,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "hard_disk",
+            "quiptPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='HDTYPEHWARE']/q:Value/a:string",
+            "score": 0.3007,
+            "isRequired": false,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "has_less_than_30_percent_state_of_charge",
+            "quiptPath": null,
+            "score": 0.1068,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "has_multiple_battery_powered_components",
+            "quiptPath": null,
+            "score": 0.0977,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "has_replaceable_battery",
+            "quiptPath": null,
+            "score": 0.0514,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "hazmat",
+            "quiptPath": null,
+            "score": 0.0405,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "headphones_jack",
+            "quiptPath": null,
+            "score": 0.1093,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "human_interface_input",
+            "quiptPath": null,
+            "score": 0.1908,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "included_components",
+            "quiptPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='KEYBOARDINCL']/q:Value/a:string",
+            "score": 0.2667,
+            "isRequired": false,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "is_battery_non_spillable",
+            "quiptPath": null,
+            "score": 0.1646,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "is_oem_sourced_product",
+            "quiptPath": null,
+            "score": 0.166,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "is_this_product_subject_to_buyer_age_restrictions",
+            "quiptPath": null,
+            "score": 0.1123,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "item_dimensions",
+            "quiptPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='ITEMDIMS']/q:Value/a:string",
+            "score": 0.5812,
+            "isRequired": false,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "item_length",
+            "quiptPath": "q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Catalog/q:Dimensions/q:Length",
+            "score": 0.297,
+            "isRequired": false,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "item_package_dimensions",
+            "quiptPath": "q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Catalog/q:Dimensions/q:Height",
+            "score": 0.2738,
+            "isRequired": false,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "item_package_quantity",
+            "quiptPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='ITEMWEIGHT']/q:Value/a:string",
+            "score": 0.204,
+            "isRequired": false,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "item_package_weight",
+            "quiptPath": null,
+            "score": 0.1499,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "item_weight",
+            "quiptPath": null,
+            "score": 0.1977,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "keyboard_layout",
+            "quiptPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='KEYBOARDCON']/q:Value/a:string",
+            "score": 0.2807,
+            "isRequired": false,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "list_price",
+            "quiptPath": null,
+            "score": 0.1371,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "lithium_battery",
+            "quiptPath": null,
+            "score": 0.0482,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "main_offer_image_locator",
+            "quiptPath": null,
+            "score": 0.1511,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "main_product_image_locator",
+            "quiptPath": null,
+            "score": 0.1536,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "manufacturer",
+            "quiptPath": "q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Catalog/q:Brand/q:Id",
+            "score": 0.3161,
+            "isRequired": false,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "map_policy",
+            "quiptPath": "q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:MapURL",
+            "score": 0.285,
+            "isRequired": false,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "master_pack_layers_per_pallet_quantity",
+            "quiptPath": null,
+            "score": 0.0409,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "master_packs_per_layer_quantity",
+            "quiptPath": null,
+            "score": 0.045,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "material",
+            "quiptPath": null,
+            "score": 0.045,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "max_order_quantity",
+            "quiptPath": null,
+            "score": 0.0506,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "memory_storage_capacity",
+            "quiptPath": null,
+            "score": 0.1796,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "merchant_release_date",
+            "quiptPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='RELEASEYEAR']/q:Value/a:string",
+            "score": 0.2112,
+            "isRequired": false,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "merchant_shipping_group",
+            "quiptPath": null,
+            "score": 0.1775,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "merchant_suggested_asin",
+            "quiptPath": null,
+            "score": 0.0474,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "model_name",
+            "quiptPath": "q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Catalog/q:Title",
+            "score": 0.2458,
+            "isRequired": false,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "model_number",
+            "quiptPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='GPUMODEL']/q:Value/a:string",
+            "score": 0.5258,
+            "isRequired": false,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "model_series",
+            "quiptPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='CPUSERIES']/q:Value/a:string",
+            "score": 0.2525,
+            "isRequired": false,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "model_year",
+            "quiptPath": null,
+            "score": 0.045,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "national_stock_number",
+            "quiptPath": null,
+            "score": 0.1737,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "non_lithium_battery_energy_content",
+            "quiptPath": null,
+            "score": 0.1312,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "non_lithium_battery_packaging",
+            "quiptPath": null,
+            "score": 0.1046,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "num_batteries",
+            "quiptPath": null,
+            "score": 0.05,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "number_of_esims_supported",
+            "quiptPath": null,
+            "score": 0.1628,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "number_of_front_cameras",
+            "quiptPath": null,
+            "score": 0.1482,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "number_of_items",
+            "quiptPath": null,
+            "score": 0.1797,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "number_of_lithium_ion_cells",
+            "quiptPath": null,
+            "score": 0.1274,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "number_of_lithium_metal_cells",
+            "quiptPath": null,
+            "score": 0.1158,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "operating_system",
+            "quiptPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='DESKTOPOS']/q:Value/a:string",
+            "score": 0.675,
+            "isRequired": false,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "optical_sensor",
+            "quiptPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='OPTDR1']/q:Value/a:string",
+            "score": 0.2436,
+            "isRequired": false,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "other_offer_image_locator_1",
+            "quiptPath": null,
+            "score": 0.1349,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "other_offer_image_locator_2",
+            "quiptPath": null,
+            "score": 0.1349,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "other_offer_image_locator_3",
+            "quiptPath": null,
+            "score": 0.1349,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "other_offer_image_locator_4",
+            "quiptPath": null,
+            "score": 0.1349,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "other_offer_image_locator_5",
+            "quiptPath": null,
+            "score": 0.1349,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "other_product_image_locator_1",
+            "quiptPath": null,
+            "score": 0.1317,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "other_product_image_locator_2",
+            "quiptPath": null,
+            "score": 0.1317,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "other_product_image_locator_3",
+            "quiptPath": null,
+            "score": 0.1317,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "other_product_image_locator_4",
+            "quiptPath": null,
+            "score": 0.1317,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "other_product_image_locator_5",
+            "quiptPath": null,
+            "score": 0.1317,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "other_product_image_locator_6",
+            "quiptPath": null,
+            "score": 0.1317,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "other_product_image_locator_7",
+            "quiptPath": null,
+            "score": 0.1317,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "other_product_image_locator_8",
+            "quiptPath": null,
+            "score": 0.1317,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "package_contains_sku",
+            "quiptPath": null,
+            "score": 0.1367,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "package_level",
+            "quiptPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='EPEATLVL']/q:Value/a:string",
+            "score": 0.325,
+            "isRequired": false,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "parentage_level",
+            "quiptPath": null,
+            "score": 0.0514,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "part_number",
+            "quiptPath": "q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Catalog/q:Support/q:PhoneNumber/q:CountryISO",
+            "score": 0.2009,
+            "isRequired": false,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "pattern",
+            "quiptPath": null,
+            "score": 0.0437,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "payment_schedule",
+            "quiptPath": null,
+            "score": 0.04,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "pesticide_marking",
+            "quiptPath": null,
+            "score": 0.0594,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "phone_talk_time",
+            "quiptPath": null,
+            "score": 0.1411,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "processor_description",
+            "quiptPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='CPUCORE']/q:Value/a:string",
+            "score": 0.2543,
+            "isRequired": false,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "product_grade",
+            "quiptPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='DESKTOPPRODLINE']/q:Value/a:string",
+            "score": 0.2417,
+            "isRequired": false,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "product_site_launch_date",
+            "quiptPath": null,
+            "score": 0.165,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "product_tax_code",
+            "quiptPath": null,
+            "score": 0.1667,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "purchasable_offer",
+            "quiptPath": null,
+            "score": 0.0375,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "quick_charge",
+            "quiptPath": null,
+            "score": 0.0462,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "ram_memory",
+            "quiptPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='RAMMAX']/q:Value/a:string",
+            "score": 0.3445,
+            "isRequired": false,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "rapid_charging_performance",
+            "quiptPath": null,
+            "score": 0.0563,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "rear_camera_lens",
+            "quiptPath": null,
+            "score": 0.0482,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "rear_facing_camera",
+            "quiptPath": null,
+            "score": 0.045,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "refresh_rate",
+            "quiptPath": null,
+            "score": 0.0545,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "regulatory_compliance_certification",
+            "quiptPath": null,
+            "score": 0.0982,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "repairability_index",
+            "quiptPath": null,
+            "score": 0.054,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "resolution",
+            "quiptPath": "q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Catalog/q:PrimaryImage/q:Resolution",
+            "score": 0.2591,
+            "isRequired": false,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "safety_data_sheet_url",
+            "quiptPath": "q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Catalog/q:SpecSheetURL",
+            "score": 0.327,
+            "isRequired": false,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "scent",
+            "quiptPath": null,
+            "score": 0.06,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "service_provider",
+            "quiptPath": "q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Catalog/q:Support/q:Provider",
+            "score": 0.261,
+            "isRequired": false,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "set_name",
+            "quiptPath": "q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Promotion/q:StatusName",
+            "score": 0.2339,
+            "isRequired": false,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "ships_globally",
+            "quiptPath": null,
+            "score": 0.0312,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "shooting_modes",
+            "quiptPath": null,
+            "score": 0.0519,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "sim_card_size",
+            "quiptPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='HDSIZE']/q:Value/a:string",
+            "score": 0.2156,
+            "isRequired": false,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "sim_card_slot_count",
+            "quiptPath": null,
+            "score": 0.1328,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "size",
+            "quiptPath": null,
+            "score": 0.1162,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "skip_offer",
+            "quiptPath": null,
+            "score": 0.0386,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "smart_home_compatibility",
+            "quiptPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='BLUETOOTHVER']/q:Value/a:string",
+            "score": 0.2814,
+            "isRequired": false,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "special_feature",
+            "quiptPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='SPECIALNOTE']/q:Value/a:string",
+            "score": 0.2013,
+            "isRequired": false,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "specific_absorption_rate",
+            "quiptPath": null,
+            "score": 0.1023,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "specific_uses_for_product",
+            "quiptPath": null,
+            "score": 0.0462,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "style",
+            "quiptPath": null,
+            "score": 0.1833,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "supplemental_condition_information",
+            "quiptPath": null,
+            "score": 0.1154,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "supplier_declared_has_product_identifier_exemption",
+            "quiptPath": null,
+            "score": 0.096,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "supported_satellite_navigation_system",
+            "quiptPath": null,
+            "score": 0.1419,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "swatch_product_image_locator",
+            "quiptPath": null,
+            "score": 0.1854,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "taa_compliant_country",
+            "quiptPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='ENERGYSTAR']/q:Value/a:string",
+            "score": 0.2037,
+            "isRequired": false,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "telephone_type",
+            "quiptPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='PLUGTYPE']/q:Value/a:string",
+            "score": 0.2179,
+            "isRequired": false,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "title_differentiation",
+            "quiptPath": "q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Vendor/q:MarketplaceName",
+            "score": 0.217,
+            "isRequired": false,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "unspsc_code",
+            "quiptPath": null,
+            "score": 0.1365,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "variation_theme",
+            "quiptPath": null,
+            "score": 0.1093,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "version_for_country",
+            "quiptPath": null,
+            "score": 0.1772,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "video_capture_resolution",
+            "quiptPath": null,
+            "score": 0.1796,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "warranty_description",
+            "quiptPath": "q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Catalog/q:Warranty/q:Duration",
+            "score": 0.2534,
+            "isRequired": false,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "water_resistance_level",
+            "quiptPath": null,
+            "score": 0.0375,
+            "isRequired": false,
+            "isUnmatched": true
+        },
+        {
+            "amazonField": "wireless_network_technology",
+            "quiptPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='WIFICOMPAT']/q:Value/a:string",
+            "score": 0.3804,
+            "isRequired": false,
+            "isUnmatched": false
+        },
+        {
+            "amazonField": "wireless_provider",
+            "quiptPath": "q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Catalog/q:Warranty/q:Provider",
+            "score": 0.2334,
+            "isRequired": false,
+            "isUnmatched": false
+        }
+    ],
+    "evaluationDetails": [
+        {
+            "amazonField": "brand",
+            "isRequired": true,
+            "autoMatchedPath": "q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Summary/q:Manufacturer",
+            "score": 0.5288,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "bullet_point",
+            "isRequired": true,
+            "autoMatchedPath": null,
+            "score": 0.0477,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "country_of_origin",
+            "isRequired": true,
+            "autoMatchedPath": "q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Catalog/q:CountryOfOrigin/q:ISO3",
+            "score": 0.6803,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "item_name",
+            "isRequired": true,
+            "autoMatchedPath": "q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Catalog/q:AltTitle",
+            "score": 0.2925,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "item_type_keyword",
+            "isRequired": true,
+            "autoMatchedPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='RAMTYPE']/q:Value/a:string",
+            "score": 0.2092,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "product_description",
+            "isRequired": true,
+            "autoMatchedPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='PRODGEN']/q:Value/a:string",
+            "score": 0.3583,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "supplier_declared_dg_hz_regulation",
+            "isRequired": true,
+            "autoMatchedPath": null,
+            "score": 0.119,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "aspect_ratio",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.045,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "baa_taa_compliance_acknowledgement",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.0484,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "baa_taa_regulation_compliance",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1004,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "band",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.0506,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "batteries_included",
+            "isRequired": false,
+            "autoMatchedPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='MOUSEINCL']/q:Value/a:string",
+            "score": 0.3294,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "batteries_required",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.0476,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "battery",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.0462,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "battery_contains_free_unabsorbed_liquid",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1364,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "battery_installation_device_type",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1814,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "biometric_security_feature",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.0506,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "california_proposition_65",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1017,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "camera_description",
+            "isRequired": false,
+            "autoMatchedPath": "q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Catalog/q:Description",
+            "score": 0.261,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "camera_flash",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.0491,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "capacity",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.0625,
+            "expectedPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='BATCAP']/q:Value/a:string[1]",
+            "verdict": "MISSING"
+        },
+        {
+            "amazonField": "cellular_technology",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.0417,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "child_parent_sku_relationship",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1333,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "color",
+            "isRequired": false,
+            "autoMatchedPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='EXACTCOLOR']/q:Value/a:string",
+            "score": 0.6,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "compatible_devices",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.0688,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "compliance_media",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1971,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "computer_memory",
+            "isRequired": false,
+            "autoMatchedPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='RAMSIZE']/q:Value/a:string",
+            "score": 0.2768,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "condition_note",
+            "isRequired": false,
+            "autoMatchedPath": "q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Summary/q:Condition/q:Suffix",
+            "score": 0.2219,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "condition_type",
+            "isRequired": false,
+            "autoMatchedPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='GPUTYPE']/q:Value/a:string",
+            "score": 0.3077,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "configuration",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1108,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "connectivity_technology",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1023,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "connector_type",
+            "isRequired": false,
+            "autoMatchedPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='MOUSECON']/q:Value/a:string",
+            "score": 0.3072,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "contains_battery_or_cell",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1029,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "control_method",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1108,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "cpu_model",
+            "isRequired": false,
+            "autoMatchedPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='CPUNUM']/q:Value/a:string",
+            "score": 0.705,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "customer_package_type",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1976,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "digital_storage_capacity",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1483,
+            "expectedPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='STORSIZE']/q:Value/a:string[1]",
+            "verdict": "MISSING"
+        },
+        {
+            "amazonField": "digital_zoom",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.0368,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "display",
+            "isRequired": false,
+            "autoMatchedPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='TOTALDSLPRT']/q:Value/a:string",
+            "score": 0.4209,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "dsa_responsible_party_address",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1004,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "edition",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1286,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "effective_still_resolution",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1013,
+            "expectedPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='REARCAM']/q:Value/a:string[1]",
+            "verdict": "MISSING"
+        },
+        {
+            "amazonField": "effective_video_resolution",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1593,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "externally_assigned_product_identifier",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1571,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "fcc_radio_frequency_emission_compliance",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.0977,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "flash_memory",
+            "isRequired": false,
+            "autoMatchedPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='OPTANEMEM']/q:Value/a:string",
+            "score": 0.2875,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "form_factor",
+            "isRequired": false,
+            "autoMatchedPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='DESKTOPFORMFACT']/q:Value/a:string",
+            "score": 0.675,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "frame_rate",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.054,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "front_camera_lens",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1658,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "front_photo_sensor_resolution",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1487,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "fulfillment_availability",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.0486,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "genai_model",
+            "isRequired": false,
+            "autoMatchedPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='MODELNBR']/q:Value/a:string",
+            "score": 0.2773,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "generation",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.117,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "generic_keyword",
+            "isRequired": false,
+            "autoMatchedPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='GENERICCOLOR']/q:Value/a:string",
+            "score": 0.2714,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "ghs",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.0386,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "ghs_chemical_h_code",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1187,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "gift_options",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1145,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "government_contract_information",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.0993,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "gps_navigation",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1108,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "gpsr_manufacturer_reference",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1104,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "gpsr_safety_attestation",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1029,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "hard_disk",
+            "isRequired": false,
+            "autoMatchedPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='HDTYPEHWARE']/q:Value/a:string",
+            "score": 0.3007,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "has_less_than_30_percent_state_of_charge",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1068,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "has_multiple_battery_powered_components",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.0977,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "has_replaceable_battery",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.0514,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "hazmat",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.0405,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "headphones_jack",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1093,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "human_interface_input",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1908,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "included_components",
+            "isRequired": false,
+            "autoMatchedPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='KEYBOARDINCL']/q:Value/a:string",
+            "score": 0.2667,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "is_battery_non_spillable",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1646,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "is_oem_sourced_product",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.166,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "is_this_product_subject_to_buyer_age_restrictions",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1123,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "item_dimensions",
+            "isRequired": false,
+            "autoMatchedPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='ITEMDIMS']/q:Value/a:string",
+            "score": 0.5812,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "item_length",
+            "isRequired": false,
+            "autoMatchedPath": "q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Catalog/q:Dimensions/q:Length",
+            "score": 0.297,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "item_package_dimensions",
+            "isRequired": false,
+            "autoMatchedPath": "q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Catalog/q:Dimensions/q:Height",
+            "score": 0.2738,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "item_package_quantity",
+            "isRequired": false,
+            "autoMatchedPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='ITEMWEIGHT']/q:Value/a:string",
+            "score": 0.204,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "item_package_weight",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1499,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "item_weight",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1977,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "keyboard_layout",
+            "isRequired": false,
+            "autoMatchedPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='KEYBOARDCON']/q:Value/a:string",
+            "score": 0.2807,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "list_price",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1371,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "lithium_battery",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.0482,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "main_offer_image_locator",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1511,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "main_product_image_locator",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1536,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "manufacturer",
+            "isRequired": false,
+            "autoMatchedPath": "q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Catalog/q:Brand/q:Id",
+            "score": 0.3161,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "map_policy",
+            "isRequired": false,
+            "autoMatchedPath": "q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:MapURL",
+            "score": 0.285,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "master_pack_layers_per_pallet_quantity",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.0409,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "master_packs_per_layer_quantity",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.045,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "material",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.045,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "max_order_quantity",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.0506,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "memory_storage_capacity",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1796,
+            "expectedPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='STORSIZE']/q:Value/a:string[1]",
+            "verdict": "MISSING"
+        },
+        {
+            "amazonField": "merchant_release_date",
+            "isRequired": false,
+            "autoMatchedPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='RELEASEYEAR']/q:Value/a:string",
+            "score": 0.2112,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "merchant_shipping_group",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1775,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "merchant_suggested_asin",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.0474,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "model_name",
+            "isRequired": false,
+            "autoMatchedPath": "q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Catalog/q:Title",
+            "score": 0.2458,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "model_number",
+            "isRequired": false,
+            "autoMatchedPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='GPUMODEL']/q:Value/a:string",
+            "score": 0.5258,
+            "expectedPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='MODELNBR']/q:Value/a:string[1]",
+            "verdict": "WRONG"
+        },
+        {
+            "amazonField": "model_series",
+            "isRequired": false,
+            "autoMatchedPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='CPUSERIES']/q:Value/a:string",
+            "score": 0.2525,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "model_year",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.045,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "national_stock_number",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1737,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "non_lithium_battery_energy_content",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1312,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "non_lithium_battery_packaging",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1046,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "num_batteries",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.05,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "number_of_esims_supported",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1628,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "number_of_front_cameras",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1482,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "number_of_items",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1797,
+            "expectedPath": "count(q:Catalog/q:InBox/a:string)",
+            "verdict": "MISSING"
+        },
+        {
+            "amazonField": "number_of_lithium_ion_cells",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1274,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "number_of_lithium_metal_cells",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1158,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "operating_system",
+            "isRequired": false,
+            "autoMatchedPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='DESKTOPOS']/q:Value/a:string",
+            "score": 0.675,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "optical_sensor",
+            "isRequired": false,
+            "autoMatchedPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='OPTDR1']/q:Value/a:string",
+            "score": 0.2436,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "other_offer_image_locator_1",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1349,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "other_offer_image_locator_2",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1349,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "other_offer_image_locator_3",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1349,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "other_offer_image_locator_4",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1349,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "other_offer_image_locator_5",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1349,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "other_product_image_locator_1",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1317,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "other_product_image_locator_2",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1317,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "other_product_image_locator_3",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1317,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "other_product_image_locator_4",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1317,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "other_product_image_locator_5",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1317,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "other_product_image_locator_6",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1317,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "other_product_image_locator_7",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1317,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "other_product_image_locator_8",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1317,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "package_contains_sku",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1367,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "package_level",
+            "isRequired": false,
+            "autoMatchedPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='EPEATLVL']/q:Value/a:string",
+            "score": 0.325,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "parentage_level",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.0514,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "part_number",
+            "isRequired": false,
+            "autoMatchedPath": "q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Catalog/q:Support/q:PhoneNumber/q:CountryISO",
+            "score": 0.2009,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "pattern",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.0437,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "payment_schedule",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.04,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "pesticide_marking",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.0594,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "phone_talk_time",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1411,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "processor_description",
+            "isRequired": false,
+            "autoMatchedPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='CPUCORE']/q:Value/a:string",
+            "score": 0.2543,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "product_grade",
+            "isRequired": false,
+            "autoMatchedPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='DESKTOPPRODLINE']/q:Value/a:string",
+            "score": 0.2417,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "product_site_launch_date",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.165,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "product_tax_code",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1667,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "purchasable_offer",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.0375,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "quick_charge",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.0462,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "ram_memory",
+            "isRequired": false,
+            "autoMatchedPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='RAMMAX']/q:Value/a:string",
+            "score": 0.3445,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "rapid_charging_performance",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.0563,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "rear_camera_lens",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.0482,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "rear_facing_camera",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.045,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "refresh_rate",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.0545,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "regulatory_compliance_certification",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.0982,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "repairability_index",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.054,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "resolution",
+            "isRequired": false,
+            "autoMatchedPath": "q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Catalog/q:PrimaryImage/q:Resolution",
+            "score": 0.2591,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "safety_data_sheet_url",
+            "isRequired": false,
+            "autoMatchedPath": "q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Catalog/q:SpecSheetURL",
+            "score": 0.327,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "scent",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.06,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "service_provider",
+            "isRequired": false,
+            "autoMatchedPath": "q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Catalog/q:Support/q:Provider",
+            "score": 0.261,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "set_name",
+            "isRequired": false,
+            "autoMatchedPath": "q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Promotion/q:StatusName",
+            "score": 0.2339,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "ships_globally",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.0312,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "shooting_modes",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.0519,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "sim_card_size",
+            "isRequired": false,
+            "autoMatchedPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='HDSIZE']/q:Value/a:string",
+            "score": 0.2156,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "sim_card_slot_count",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1328,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "size",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1162,
+            "expectedPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='RAMSIZE']/q:Value/a:string[1]",
+            "verdict": "MISSING"
+        },
+        {
+            "amazonField": "skip_offer",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.0386,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "smart_home_compatibility",
+            "isRequired": false,
+            "autoMatchedPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='BLUETOOTHVER']/q:Value/a:string",
+            "score": 0.2814,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "special_feature",
+            "isRequired": false,
+            "autoMatchedPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='SPECIALNOTE']/q:Value/a:string",
+            "score": 0.2013,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "specific_absorption_rate",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1023,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "specific_uses_for_product",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.0462,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "style",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1833,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "supplemental_condition_information",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1154,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "supplier_declared_has_product_identifier_exemption",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.096,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "supported_satellite_navigation_system",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1419,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "swatch_product_image_locator",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1854,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "taa_compliant_country",
+            "isRequired": false,
+            "autoMatchedPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='ENERGYSTAR']/q:Value/a:string",
+            "score": 0.2037,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "telephone_type",
+            "isRequired": false,
+            "autoMatchedPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='PLUGTYPE']/q:Value/a:string",
+            "score": 0.2179,
+            "expectedPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='DUALSIM']/q:Value/a:string[1]",
+            "verdict": "WRONG"
+        },
+        {
+            "amazonField": "title_differentiation",
+            "isRequired": false,
+            "autoMatchedPath": "q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Vendor/q:MarketplaceName",
+            "score": 0.217,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "unspsc_code",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1365,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "variation_theme",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1093,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "version_for_country",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1772,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "video_capture_resolution",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.1796,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "warranty_description",
+            "isRequired": false,
+            "autoMatchedPath": "q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Catalog/q:Warranty/q:Duration",
+            "score": 0.2534,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "water_resistance_level",
+            "isRequired": false,
+            "autoMatchedPath": null,
+            "score": 0.0375,
+            "expectedPath": null,
+            "verdict": "UNMATCHED"
+        },
+        {
+            "amazonField": "wireless_network_technology",
+            "isRequired": false,
+            "autoMatchedPath": "q:Catalog/q:Attributes/q:Attribute[q:Code='WIFICOMPAT']/q:Value/a:string",
+            "score": 0.3804,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        },
+        {
+            "amazonField": "wireless_provider",
+            "isRequired": false,
+            "autoMatchedPath": "q:ArrayOfInventoryVirtualResult/q:InventoryVirtualResult/q:Catalog/q:Warranty/q:Provider",
+            "score": 0.2334,
+            "expectedPath": null,
+            "verdict": "NO_GROUND_TRUTH"
+        }
+    ]
+}
